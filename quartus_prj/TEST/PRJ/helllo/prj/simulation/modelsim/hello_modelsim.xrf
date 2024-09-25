@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, H:/my_workshop/learn_fpga/exercise/helllo/rtl/hello.v
+source_file = 1, H:/my_workshop/learn_fpga/exercise/helllo/prj/db/hello.cbx.xml
+design_name = hello
+instance = comp, \led~output , led~output, hello, 1
+instance = comp, \data~input , data~input, hello, 1
+instance = comp, \Clk~input , Clk~input, hello, 1
+instance = comp, \Rst_n~input , Rst_n~input, hello, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DIN",
+					"strict" : false
+				},
+				{
+					"name" : "CS_N",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_STATE",
+					"strict" : false
+				},
+				{
+					"name" : "Conv_Done",
+					"strict" : false
+				},
+				{
+					"name" : "SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "Data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "En_Conv",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Div_PARM[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Channel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Channel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Channel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DOUT",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

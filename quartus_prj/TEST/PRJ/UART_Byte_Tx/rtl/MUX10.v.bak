@@ -1,0 +1,32 @@
+module MUX10(Clk, Rst_n, bps_cnt, Rs232_Tx);
+
+	input Clk;
+	input Rst_n;
+	input bps_cnt;
+	
+	output Rs232_Tx;
+	
+	localparam START_BIT = 1'b0;
+	localparam STOP_BIT = 1'b1;
+	always@(posedge Clk or negedge Rst_n)
+		if (!Rst_n)
+			Rs232_Tx <= 1'b1;
+		else
+			begin
+				case (bps_cnt)
+					0: Rs232_Tx <= 1'b1;
+					1: Rs232_Tx <= START_BIT;
+					2: Rs232_Tx <= r_Data_Byte[0];
+					3: Rs232_Tx <= r_Data_Byte[1];
+					4: Rs232_Tx <= r_Data_Byte[2];
+					5: Rs232_Tx <= r_Data_Byte[3];
+					6: Rs232_Tx <= r_Data_Byte[4];
+					7: Rs232_Tx <= r_Data_Byte[5];
+					8: Rs232_Tx <= r_Data_Byte[6];
+					9: Rs232_Tx <= r_Data_Byte[7];
+					10: Rs232_Tx <= STOP_BIT;
+				
+					default Rs232_Tx <= 1'b1;
+				endcase
+			end
+endmodule

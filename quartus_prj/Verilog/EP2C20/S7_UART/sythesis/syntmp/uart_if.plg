@@ -1,0 +1,26 @@
+@P:  Part : EP1C12QC240-8
+@P:  Worst Slack : 494.686
+@P:  uart_if|U1.u1.clkdiv_inferred_clock[3] - Estimated Frequency : 262.8 MHz
+@P:  uart_if|U1.u1.clkdiv_inferred_clock[3] - Requested Frequency : 1.0 MHz
+@P:  uart_if|U1.u1.clkdiv_inferred_clock[3] - Estimated Period : 3.805
+@P:  uart_if|U1.u1.clkdiv_inferred_clock[3] - Requested Period : 1000.000
+@P:  uart_if|U1.u1.clkdiv_inferred_clock[3] - Slack : 996.195
+@P:  uart_if|U1.u2.clkdiv_inferred_clock[3] - Estimated Frequency : 2.0 MHz
+@P:  uart_if|U1.u2.clkdiv_inferred_clock[3] - Requested Frequency : 1.0 MHz
+@P:  uart_if|U1.u2.clkdiv_inferred_clock[3] - Estimated Period : 505.314
+@P:  uart_if|U1.u2.clkdiv_inferred_clock[3] - Requested Period : 1000.000
+@P:  uart_if|U1.u2.clkdiv_inferred_clock[3] - Slack : 494.686
+@P:  uart_if|clk - Estimated Frequency : 250.2 MHz
+@P:  uart_if|clk - Requested Frequency : 1.0 MHz
+@P:  uart_if|clk - Estimated Period : 3.997
+@P:  uart_if|clk - Requested Period : 1000.000
+@P:  uart_if|clk - Slack : 996.003
+@P:  uart_if|cnt_inferred_clock[3] - Estimated Frequency : 170.3 MHz
+@P:  uart_if|cnt_inferred_clock[3] - Requested Frequency : 1.0 MHz
+@P:  uart_if|cnt_inferred_clock[3] - Estimated Period : 5.873
+@P:  uart_if|cnt_inferred_clock[3] - Requested Period : 1000.000
+@P:  uart_if|cnt_inferred_clock[3] - Slack : 994.127
+@P: uart_if Part : ep1c12qc240-8
+@P: uart_if I/O ATOMs : 19
+@P: uart_if Total LUTs: : 125 of 12060 ( 1%)
+@P: uart_if Logic resources : 125 ATOMs of 12060 ( 1%)

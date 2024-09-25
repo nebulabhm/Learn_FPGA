@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.186 ns
+From           : reset
+To             : div_256:inst1|clk
+From Clock     : --
+To Clock       : mclk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 25.995 ns
+From           : lcd:inst2|data[3]
+To             : data[3]
+From Clock     : mclk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.040 ns
+From           : ps2_data
+To             : ps2_keyboard_interface:inst3|ps2_data_s
+From Clock     : --
+To Clock       : mclk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'mclk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 97.80 MHz ( period = 10.225 ns )
+From           : ps2_keyboard_interface:inst3|q[2]
+To             : ps2_keyboard_interface:inst3|rx_ascii[6]
+From Clock     : mclk
+To Clock       : mclk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'mclk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : ps2_keyboard_interface:inst3|rx_released
+To             : lcd:inst2|lcd_e
+From Clock     : mclk
+To Clock       : mclk
+Failed Paths   : 166
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 166
+
+--------------------------------------------------------------------------------------
+

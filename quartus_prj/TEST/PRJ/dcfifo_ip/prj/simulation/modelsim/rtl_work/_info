@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/simulation/modelsim
+vdc_fifo
+!s110 1558806020
+!i10b 1
+!s100 dUF?7Dfkz6a;Ei>R08Ac00
+IA;F39bFSgMXS?g1c@2VYF0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1558804480
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/ip/dc_fifo.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/ip/dc_fifo.v
+L0 39
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1558806020.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/ip/dc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/ip|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/ip/dc_fifo.v|
+!i113 1
+Z3 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/ip
+Z4 tCvgOpt 0
+vdcfifo_ip_tb
+!s110 1558806021
+!i10b 1
+!s100 :Ed9Y]<fS[K8mAb[=HJDl1
+IME@YkE`olOe=1G3Q74h2F2
+R1
+R0
+w1558805996
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/../testbench/dcfifo_ip_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/../testbench/dcfifo_ip_tb.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1558806021.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/../testbench/dcfifo_ip_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/../testbench|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/../testbench/dcfifo_ip_tb.v|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dcfifo_ip/prj/../testbench
+R4

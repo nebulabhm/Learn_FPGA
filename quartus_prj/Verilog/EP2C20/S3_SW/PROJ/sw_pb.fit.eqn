@@ -1,0 +1,160 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--pb[0] is pb[0] at PIN_AA8
+--operation mode is input
+
+pb[0] = INPUT();
+
+
+--pb[1] is pb[1] at PIN_W7
+--operation mode is input
+
+pb[1] = INPUT();
+
+
+--pb[2] is pb[2] at PIN_AA7
+--operation mode is input
+
+pb[2] = INPUT();
+
+
+--pb[3] is pb[3] at PIN_AB6
+--operation mode is input
+
+pb[3] = INPUT();
+
+
+--pb[4] is pb[4] at PIN_Y9
+--operation mode is input
+
+pb[4] = INPUT();
+
+
+--pb[5] is pb[5] at PIN_AB8
+--operation mode is input
+
+pb[5] = INPUT();
+
+
+--pb[6] is pb[6] at PIN_W8
+--operation mode is input
+
+pb[6] = INPUT();
+
+
+--pb[7] is pb[7] at PIN_AB7
+--operation mode is input
+
+pb[7] = INPUT();
+
+
+--sw[0] is sw[0] at PIN_AB5
+--operation mode is input
+
+sw[0] = INPUT();
+
+
+--sw[1] is sw[1] at PIN_AB4
+--operation mode is input
+
+sw[1] = INPUT();
+
+
+--sw[2] is sw[2] at PIN_Y5
+--operation mode is input
+
+sw[2] = INPUT();
+
+
+--sw[3] is sw[3] at PIN_AB3
+--operation mode is input
+
+sw[3] = INPUT();
+
+
+--sw[4] is sw[4] at PIN_Y7
+--operation mode is input
+
+sw[4] = INPUT();
+
+
+--sw[5] is sw[5] at PIN_Y6
+--operation mode is input
+
+sw[5] = INPUT();
+
+
+--sw[6] is sw[6] at PIN_AA6
+--operation mode is input
+
+sw[6] = INPUT();
+
+
+--sw[7] is sw[7] at PIN_AA5
+--operation mode is input
+
+sw[7] = INPUT();
+
+
+--led[0] is led[0] at PIN_A20
+--operation mode is output
+
+led[0] = OUTPUT(!sw[0]);
+
+
+--led[1] is led[1] at PIN_A17
+--operation mode is output
+
+led[1] = OUTPUT(!sw[1]);
+
+
+--led[2] is led[2] at PIN_A15
+--operation mode is output
+
+led[2] = OUTPUT(!sw[2]);
+
+
+--led[3] is led[3] at PIN_A11
+--operation mode is output
+
+led[3] = OUTPUT(!sw[3]);
+
+
+--led[4] is led[4] at PIN_B10
+--operation mode is output
+
+led[4] = OUTPUT(!sw[4]);
+
+
+--led[5] is led[5] at PIN_B8
+--operation mode is output
+
+led[5] = OUTPUT(!sw[5]);
+
+
+--led[6] is led[6] at PIN_A5
+--operation mode is output
+
+led[6] = OUTPUT(!sw[6]);
+
+
+--led[7] is led[7] at PIN_B3
+--operation mode is output
+
+led[7] = OUTPUT(!sw[7]);
+
+
+
+
+

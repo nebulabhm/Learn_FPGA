@@ -1,0 +1,6 @@
+module decoder3_8(
+	a,
+	b,
+	c,
+	out);
+endmodule

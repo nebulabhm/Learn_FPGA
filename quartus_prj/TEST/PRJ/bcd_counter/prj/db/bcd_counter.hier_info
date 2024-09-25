@@ -1,0 +1,82 @@
+|bcd_counter_top
+Clk => Clk.IN3
+Cin => Cin.IN1
+Rst_n => Rst_n.IN3
+Cout <= bcd_counter:bcd_counter2.Cout
+q[0] <= bcd_counter:bcd_counter0.q
+q[1] <= bcd_counter:bcd_counter0.q
+q[2] <= bcd_counter:bcd_counter0.q
+q[3] <= bcd_counter:bcd_counter0.q
+q[4] <= bcd_counter:bcd_counter1.q
+q[5] <= bcd_counter:bcd_counter1.q
+q[6] <= bcd_counter:bcd_counter1.q
+q[7] <= bcd_counter:bcd_counter1.q
+q[8] <= bcd_counter:bcd_counter2.q
+q[9] <= bcd_counter:bcd_counter2.q
+q[10] <= bcd_counter:bcd_counter2.q
+q[11] <= bcd_counter:bcd_counter2.q
+
+
+|bcd_counter_top|bcd_counter:bcd_counter0
+Clk => cnt[0].CLK
+Clk => cnt[1].CLK
+Clk => cnt[2].CLK
+Clk => cnt[3].CLK
+Rst_n => cnt[0].ACLR
+Rst_n => cnt[1].ACLR
+Rst_n => cnt[2].ACLR
+Rst_n => cnt[3].ACLR
+Cin => Cout.IN1
+Cin => cnt[3].ENA
+Cin => cnt[2].ENA
+Cin => cnt[1].ENA
+Cin => cnt[0].ENA
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_counter_top|bcd_counter:bcd_counter1
+Clk => cnt[0].CLK
+Clk => cnt[1].CLK
+Clk => cnt[2].CLK
+Clk => cnt[3].CLK
+Rst_n => cnt[0].ACLR
+Rst_n => cnt[1].ACLR
+Rst_n => cnt[2].ACLR
+Rst_n => cnt[3].ACLR
+Cin => Cout.IN1
+Cin => cnt[3].ENA
+Cin => cnt[2].ENA
+Cin => cnt[1].ENA
+Cin => cnt[0].ENA
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bcd_counter_top|bcd_counter:bcd_counter2
+Clk => cnt[0].CLK
+Clk => cnt[1].CLK
+Clk => cnt[2].CLK
+Clk => cnt[3].CLK
+Rst_n => cnt[0].ACLR
+Rst_n => cnt[1].ACLR
+Rst_n => cnt[2].ACLR
+Rst_n => cnt[3].ACLR
+Cin => Cout.IN1
+Cin => cnt[3].ENA
+Cin => cnt[2].ENA
+Cin => cnt[1].ENA
+Cin => cnt[0].ENA
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

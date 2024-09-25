@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/simulation/modelsim
+vcounter
+Z1 !s110 1624935146
+!i10b 1
+!s100 0YEVGcbn>Vo>aT8PDAgU[1
+IEcY<oaA>6FnVd@zW1gdiU1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557236234
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/ip/counter.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/ip/counter.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1624935146.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/ip/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/ip|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/ip/counter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/ip
+Z6 tCvgOpt 0
+vcounter_top
+R1
+!i10b 1
+!s100 A2ZTYE9V^:7JHA6<^:6Jh3
+I0=C1LC7@cV>fYfZIEiONY0
+R2
+R0
+w1557237198
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/rtl/counter_top.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/rtl/counter_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/rtl/counter_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/rtl/counter_top.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/rtl
+R6
+vcounter_top_tb
+R1
+!i10b 1
+!s100 mPOD=X=@<BZ369Xz77a7_3
+Ikm2gb@WPLg3[Gni2e89?=2
+R2
+R0
+w1557237824
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/../testbendch/counter_top_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/../testbendch/counter_top_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/../testbendch/counter_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/../testbendch|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/../testbendch/counter_top_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/counter_ip/prj/../testbendch
+R6

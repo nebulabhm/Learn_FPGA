@@ -1,0 +1,62 @@
+# Reading E:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do LED_RUN_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying E:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {LED_RUN_8_1200mv_85c_slow.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:43 on May 06,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." LED_RUN_8_1200mv_85c_slow.vo 
+# -- Compiling module LED_RUN
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	LED_RUN
+# End time: 23:07:43 on May 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:07:43 on May 06,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v 
+# -- Compiling module LED_RUN_tb
+# 
+# Top level modules:
+# 	LED_RUN_tb
+# End time: 23:07:43 on May 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  LED_RUN_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=""+acc"" LED_RUN_tb 
+# Start time: 23:07:43 on May 06,2019
+# Loading work.LED_RUN_tb
+# Loading work.LED_RUN
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 10.5b Compiler 2016.10 Oct  5 2016
+# 
+# Loading instances from LED_RUN_8_1200mv_85c_v_slow.sdo
+# Loading timing data from LED_RUN_8_1200mv_85c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /LED_RUN_tb File: H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v(56)
+#    Time: 900 ns  Iteration: 0  Instance: /LED_RUN_tb
+# Break in Module LED_RUN_tb at H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v line 56
+# End time: 23:54:50 on May 06,2019, Elapsed time: 0:47:07
+# Errors: 0, Warnings: 0

@@ -1,0 +1,916 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--B1_sp is song:song_inst|sp
+B1_sp = DFFEAS(B1L841, B1L94,  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_divider[0] is song:song_inst|divider[0]
+B1_divider[0] = DFFEAS(B1L56, clk_cnt[2],  ,  ,  , B1_origin[0],  ,  , B1L94);
+
+
+--B1_divider[1] is song:song_inst|divider[1]
+B1_divider[1] = DFFEAS(B1L86, clk_cnt[2],  ,  ,  , B1_origin[1],  ,  , B1L94);
+
+
+--B1_divider[2] is song:song_inst|divider[2]
+B1_divider[2] = DFFEAS(B1L17, clk_cnt[2],  ,  ,  , B1_origin[2],  ,  , B1L94);
+
+
+--B1_divider[3] is song:song_inst|divider[3]
+B1_divider[3] = DFFEAS(B1L47, clk_cnt[2],  ,  ,  , B1_origin[3],  ,  , B1L94);
+
+
+--B1L54 is song:song_inst|carry~89
+B1L54 = !B1_divider[3] # !B1_divider[2] # !B1_divider[1] # !B1_divider[0];
+
+
+--B1_divider[4] is song:song_inst|divider[4]
+B1_divider[4] = DFFEAS(B1L77, clk_cnt[2],  ,  ,  , B1_origin[4],  ,  , B1L94);
+
+
+--B1_divider[5] is song:song_inst|divider[5]
+B1_divider[5] = DFFEAS(B1L08, clk_cnt[2],  ,  ,  , B1_origin[5],  ,  , B1L94);
+
+
+--B1_divider[6] is song:song_inst|divider[6]
+B1_divider[6] = DFFEAS(B1L38, clk_cnt[2],  ,  ,  , B1_origin[6],  ,  , B1L94);
+
+
+--B1_divider[7] is song:song_inst|divider[7]
+B1_divider[7] = DFFEAS(B1L68, clk_cnt[2],  ,  ,  , B1_origin[7],  ,  , B1L94);
+
+
+--B1L64 is song:song_inst|carry~90
+B1L64 = !B1_divider[7] # !B1_divider[6] # !B1_divider[5] # !B1_divider[4];
+
+
+--B1_divider[8] is song:song_inst|divider[8]
+B1_divider[8] = DFFEAS(B1L98, clk_cnt[2],  ,  ,  , B1_origin[8],  ,  , B1L94);
+
+
+--B1_divider[9] is song:song_inst|divider[9]
+B1_divider[9] = DFFEAS(B1L29, clk_cnt[2],  ,  ,  , B1_origin[9],  ,  , B1L94);
+
+
+--B1_divider[10] is song:song_inst|divider[10]
+B1_divider[10] = DFFEAS(B1L59, clk_cnt[2],  ,  ,  , B1_origin[10],  ,  , B1L94);
+
+
+--B1_divider[11] is song:song_inst|divider[11]
+B1_divider[11] = DFFEAS(B1L89, clk_cnt[2],  ,  ,  , B1_origin[11],  ,  , B1L94);
+
+
+--B1L74 is song:song_inst|carry~91
+B1L74 = !B1_divider[11] # !B1_divider[10] # !B1_divider[9] # !B1_divider[8];
+
+
+--B1_divider[12] is song:song_inst|divider[12]
+B1_divider[12] = DFFEAS(B1L101, clk_cnt[2],  ,  ,  , B1_origin[12],  ,  , B1L94);
+
+
+--B1_divider[13] is song:song_inst|divider[13]
+B1_divider[13] = DFFEAS(B1L401, clk_cnt[2],  ,  ,  , B1_origin[13],  ,  , B1L94);
+
+
+--B1L84 is song:song_inst|carry~92
+B1L84 = !B1_divider[13] # !B1_divider[12];
+
+
+--B1L94 is song:song_inst|carry~93
+B1L94 = !B1L54 & !B1L64 & !B1L74 & !B1L84;
+
+
+--clk_cnt[2] is clk_cnt[2]
+clk_cnt[2] = DFFEAS(A1L9, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--B1L56 is song:song_inst|divider[0]~294
+B1L56 = B1_divider[0] $ VCC;
+
+--B1L66 is song:song_inst|divider[0]~295
+B1L66 = CARRY(B1_divider[0]);
+
+
+--B1_origin[0] is song:song_inst|origin[0]
+B1_origin[0] = DFFEAS(B1L3, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L86 is song:song_inst|divider[1]~296
+B1L86 = B1_divider[1] & !B1L66 # !B1_divider[1] & (B1L66 # GND);
+
+--B1L96 is song:song_inst|divider[1]~297
+B1L96 = CARRY(!B1L66 # !B1_divider[1]);
+
+
+--B1_origin[1] is song:song_inst|origin[1]
+B1_origin[1] = DFFEAS(B1L5, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L17 is song:song_inst|divider[2]~298
+B1L17 = B1_divider[2] & (B1L96 $ GND) # !B1_divider[2] & !B1L96 & VCC;
+
+--B1L27 is song:song_inst|divider[2]~299
+B1L27 = CARRY(B1_divider[2] & !B1L96);
+
+
+--B1_origin[2] is song:song_inst|origin[2]
+B1_origin[2] = DFFEAS(B1L7, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L47 is song:song_inst|divider[3]~300
+B1L47 = B1_divider[3] & !B1L27 # !B1_divider[3] & (B1L27 # GND);
+
+--B1L57 is song:song_inst|divider[3]~301
+B1L57 = CARRY(!B1L27 # !B1_divider[3]);
+
+
+--B1_origin[3] is song:song_inst|origin[3]
+B1_origin[3] = DFFEAS(B1L11, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L77 is song:song_inst|divider[4]~302
+B1L77 = B1_divider[4] & (B1L57 $ GND) # !B1_divider[4] & !B1L57 & VCC;
+
+--B1L87 is song:song_inst|divider[4]~303
+B1L87 = CARRY(B1_divider[4] & !B1L57);
+
+
+--B1_origin[4] is song:song_inst|origin[4]
+B1_origin[4] = DFFEAS(B1L21, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L08 is song:song_inst|divider[5]~304
+B1L08 = B1_divider[5] & !B1L87 # !B1_divider[5] & (B1L87 # GND);
+
+--B1L18 is song:song_inst|divider[5]~305
+B1L18 = CARRY(!B1L87 # !B1_divider[5]);
+
+
+--B1_origin[5] is song:song_inst|origin[5]
+B1_origin[5] = DFFEAS(B1L41, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L38 is song:song_inst|divider[6]~306
+B1L38 = B1_divider[6] & (B1L18 $ GND) # !B1_divider[6] & !B1L18 & VCC;
+
+--B1L48 is song:song_inst|divider[6]~307
+B1L48 = CARRY(B1_divider[6] & !B1L18);
+
+
+--B1_origin[6] is song:song_inst|origin[6]
+B1_origin[6] = DFFEAS(B1L61, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L68 is song:song_inst|divider[7]~308
+B1L68 = B1_divider[7] & !B1L48 # !B1_divider[7] & (B1L48 # GND);
+
+--B1L78 is song:song_inst|divider[7]~309
+B1L78 = CARRY(!B1L48 # !B1_divider[7]);
+
+
+--B1_origin[7] is song:song_inst|origin[7]
+B1_origin[7] = DFFEAS(B1L81, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L98 is song:song_inst|divider[8]~310
+B1L98 = B1_divider[8] & (B1L78 $ GND) # !B1_divider[8] & !B1L78 & VCC;
+
+--B1L09 is song:song_inst|divider[8]~311
+B1L09 = CARRY(B1_divider[8] & !B1L78);
+
+
+--B1_origin[8] is song:song_inst|origin[8]
+B1_origin[8] = DFFEAS(B1L02, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L29 is song:song_inst|divider[9]~312
+B1L29 = B1_divider[9] & !B1L09 # !B1_divider[9] & (B1L09 # GND);
+
+--B1L39 is song:song_inst|divider[9]~313
+B1L39 = CARRY(!B1L09 # !B1_divider[9]);
+
+
+--B1_origin[9] is song:song_inst|origin[9]
+B1_origin[9] = DFFEAS(B1L12, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L59 is song:song_inst|divider[10]~314
+B1L59 = B1_divider[10] & (B1L39 $ GND) # !B1_divider[10] & !B1L39 & VCC;
+
+--B1L69 is song:song_inst|divider[10]~315
+B1L69 = CARRY(B1_divider[10] & !B1L39);
+
+
+--B1_origin[10] is song:song_inst|origin[10]
+B1_origin[10] = DFFEAS(B1L32, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L89 is song:song_inst|divider[11]~316
+B1L89 = B1_divider[11] & !B1L69 # !B1_divider[11] & (B1L69 # GND);
+
+--B1L99 is song:song_inst|divider[11]~317
+B1L99 = CARRY(!B1L69 # !B1_divider[11]);
+
+
+--B1_origin[11] is song:song_inst|origin[11]
+B1_origin[11] = DFFEAS(B1L52, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L101 is song:song_inst|divider[12]~318
+B1L101 = B1_divider[12] & (B1L99 $ GND) # !B1_divider[12] & !B1L99 & VCC;
+
+--B1L201 is song:song_inst|divider[12]~319
+B1L201 = CARRY(B1_divider[12] & !B1L99);
+
+
+--B1_origin[12] is song:song_inst|origin[12]
+B1_origin[12] = DFFEAS(B1L62, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L401 is song:song_inst|divider[13]~320
+B1L401 = B1_divider[13] $ B1L201;
+
+
+--B1_origin[13] is song:song_inst|origin[13]
+B1_origin[13] = DFFEAS(B1L72, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[1] is clk_cnt[1]
+clk_cnt[1] = DFFEAS(A1L6, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[0] is clk_cnt[0]
+clk_cnt[0] = DFFEAS(A1L3, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--A1L3 is clk_cnt[0]~192
+A1L3 = clk_cnt[0] $ VCC;
+
+--A1L4 is clk_cnt[0]~193
+A1L4 = CARRY(clk_cnt[0]);
+
+
+--A1L6 is clk_cnt[1]~194
+A1L6 = clk_cnt[1] & !A1L4 # !clk_cnt[1] & (A1L4 # GND);
+
+--A1L7 is clk_cnt[1]~195
+A1L7 = CARRY(!A1L4 # !clk_cnt[1]);
+
+
+--A1L9 is clk_cnt[2]~196
+A1L9 = clk_cnt[2] & (A1L7 $ GND) # !clk_cnt[2] & !A1L7 & VCC;
+
+--A1L01 is clk_cnt[2]~197
+A1L01 = CARRY(clk_cnt[2] & !A1L7);
+
+
+--B1L601Q is song:song_inst|high[0]~reg0
+B1L601Q = DFFEAS(B1L641, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--D1_q_a[0] is song:song_inst|altsyncram:reduce_or_rtl_0|altsyncram_47j:auto_generated|q_a[0]
+--RAM Block Operation Mode: ROM
+--Port A Depth: 256, Port A Width: 1
+--Port A Logical Depth: 256, Port A Logical Width: 6
+--Port A Input: Registered, Port A Output: Un-registered
+D1_q_a[0]_PORT_A_address = BUS(B1L34, B1L14, B1L95, B1L06, B1L53, B1L33, B1L16, B1L26);
+D1_q_a[0]_PORT_A_address_reg = DFFE(D1_q_a[0]_PORT_A_address, D1_q_a[0]_clock_0, , , );
+D1_q_a[0]_clock_0 = clk_cnt[23];
+D1_q_a[0]_PORT_A_data_out = MEMORY(, , D1_q_a[0]_PORT_A_address_reg, , , , , , D1_q_a[0]_clock_0, , , , , );
+D1_q_a[0] = D1_q_a[0]_PORT_A_data_out[0];
+
+
+--D1_q_a[1] is song:song_inst|altsyncram:reduce_or_rtl_0|altsyncram_47j:auto_generated|q_a[1]
+--RAM Block Operation Mode: ROM
+--Port A Depth: 256, Port A Width: 1
+--Port A Logical Depth: 256, Port A Logical Width: 6
+--Port A Input: Registered, Port A Output: Un-registered
+D1_q_a[1]_PORT_A_address = BUS(B1L34, B1L14, B1L95, B1L06, B1L53, B1L33, B1L16, B1L26);
+D1_q_a[1]_PORT_A_address_reg = DFFE(D1_q_a[1]_PORT_A_address, D1_q_a[1]_clock_0, , , );
+D1_q_a[1]_clock_0 = clk_cnt[23];
+D1_q_a[1]_PORT_A_data_out = MEMORY(, , D1_q_a[1]_PORT_A_address_reg, , , , , , D1_q_a[1]_clock_0, , , , , );
+D1_q_a[1] = D1_q_a[1]_PORT_A_data_out[0];
+
+
+--D1_q_a[2] is song:song_inst|altsyncram:reduce_or_rtl_0|altsyncram_47j:auto_generated|q_a[2]
+--RAM Block Operation Mode: ROM
+--Port A Depth: 256, Port A Width: 1
+--Port A Logical Depth: 256, Port A Logical Width: 6
+--Port A Input: Registered, Port A Output: Un-registered
+D1_q_a[2]_PORT_A_address = BUS(B1L34, B1L14, B1L95, B1L06, B1L53, B1L33, B1L16, B1L26);
+D1_q_a[2]_PORT_A_address_reg = DFFE(D1_q_a[2]_PORT_A_address, D1_q_a[2]_clock_0, , , );
+D1_q_a[2]_clock_0 = clk_cnt[23];
+D1_q_a[2]_PORT_A_data_out = MEMORY(, , D1_q_a[2]_PORT_A_address_reg, , , , , , D1_q_a[2]_clock_0, , , , , );
+D1_q_a[2] = D1_q_a[2]_PORT_A_data_out[0];
+
+
+--B1L131 is song:song_inst|reduce_nor~1112
+B1L131 = !D1_q_a[0] & !D1_q_a[1] & !D1_q_a[2];
+
+
+--D1_q_a[3] is song:song_inst|altsyncram:reduce_or_rtl_0|altsyncram_47j:auto_generated|q_a[3]
+--RAM Block Operation Mode: ROM
+--Port A Depth: 256, Port A Width: 1
+--Port A Logical Depth: 256, Port A Logical Width: 6
+--Port A Input: Registered, Port A Output: Un-registered
+D1_q_a[3]_PORT_A_address = BUS(B1L34, B1L14, B1L95, B1L06, B1L53, B1L33, B1L16, B1L26);
+D1_q_a[3]_PORT_A_address_reg = DFFE(D1_q_a[3]_PORT_A_address, D1_q_a[3]_clock_0, , , );
+D1_q_a[3]_clock_0 = clk_cnt[23];
+D1_q_a[3]_PORT_A_data_out = MEMORY(, , D1_q_a[3]_PORT_A_address_reg, , , , , , D1_q_a[3]_clock_0, , , , , );
+D1_q_a[3] = D1_q_a[3]_PORT_A_data_out[0];
+
+
+--D1_q_a[4] is song:song_inst|altsyncram:reduce_or_rtl_0|altsyncram_47j:auto_generated|q_a[4]
+--RAM Block Operation Mode: ROM
+--Port A Depth: 256, Port A Width: 1
+--Port A Logical Depth: 256, Port A Logical Width: 6
+--Port A Input: Registered, Port A Output: Un-registered
+D1_q_a[4]_PORT_A_address = BUS(B1L34, B1L14, B1L95, B1L06, B1L53, B1L33, B1L16, B1L26);
+D1_q_a[4]_PORT_A_address_reg = DFFE(D1_q_a[4]_PORT_A_address, D1_q_a[4]_clock_0, , , );
+D1_q_a[4]_clock_0 = clk_cnt[23];
+D1_q_a[4]_PORT_A_data_out = MEMORY(, , D1_q_a[4]_PORT_A_address_reg, , , , , , D1_q_a[4]_clock_0, , , , , );
+D1_q_a[4] = D1_q_a[4]_PORT_A_data_out[0];
+
+
+--D1_q_a[5] is song:song_inst|altsyncram:reduce_or_rtl_0|altsyncram_47j:auto_generated|q_a[5]
+--RAM Block Operation Mode: ROM
+--Port A Depth: 256, Port A Width: 1
+--Port A Logical Depth: 256, Port A Logical Width: 6
+--Port A Input: Registered, Port A Output: Un-registered
+D1_q_a[5]_PORT_A_address = BUS(B1L34, B1L14, B1L95, B1L06, B1L53, B1L33, B1L16, B1L26);
+D1_q_a[5]_PORT_A_address_reg = DFFE(D1_q_a[5]_PORT_A_address, D1_q_a[5]_clock_0, , , );
+D1_q_a[5]_clock_0 = clk_cnt[23];
+D1_q_a[5]_PORT_A_data_out = MEMORY(, , D1_q_a[5]_PORT_A_address_reg, , , , , , D1_q_a[5]_clock_0, , , , , );
+D1_q_a[5] = D1_q_a[5]_PORT_A_data_out[0];
+
+
+--B1L231 is song:song_inst|reduce_nor~1113
+B1L231 = !D1_q_a[3] & !D1_q_a[4] & !D1_q_a[5];
+
+
+--B1L921 is song:song_inst|reduce_nor~9
+B1L921 = B1L601Q & B1L131 & B1L231;
+
+
+--B1L331 is song:song_inst|reduce_nor~1114
+B1L331 = !B1L601Q & !D1_q_a[3];
+
+
+--B1L431 is song:song_inst|reduce_nor~1115
+B1L431 = D1_q_a[5] & (D1_q_a[1] # D1_q_a[2] # D1_q_a[0]) # !D1_q_a[5] & D1_q_a[0] & (D1_q_a[1] $ !D1_q_a[2]);
+
+
+--B1L531 is song:song_inst|reduce_nor~1116
+B1L531 = B1L331 & !B1L431 & (D1_q_a[4] $ !D1_q_a[5]);
+
+
+--B1L631 is song:song_inst|reduce_nor~1117
+B1L631 = !D1_q_a[1] & !D1_q_a[2] & (D1_q_a[5] # D1_q_a[4]);
+
+
+--B1L731 is song:song_inst|reduce_nor~1118
+B1L731 = D1_q_a[3] & B1L631 & !B1L601Q & !D1_q_a[0];
+
+
+--B1L831 is song:song_inst|reduce_nor~1119
+B1L831 = B1L921 # B1L531 # B1L731;
+
+
+--B1L931 is song:song_inst|reduce_nor~1120
+B1L931 = !B1L601Q & !D1_q_a[3] & !D1_q_a[4] & !D1_q_a[5];
+
+
+--B1L1 is song:song_inst|Select~1257
+B1L1 = D1_q_a[0] # D1_q_a[1] & !D1_q_a[2] # !B1L931;
+
+
+--B1L041 is song:song_inst|reduce_nor~1121
+B1L041 = D1_q_a[3] & !B1L601Q;
+
+
+--B1L421 is song:song_inst|reduce_nor~2
+B1L421 = B1L041 & B1L131 & D1_q_a[4] & !D1_q_a[5];
+
+
+--B1L221 is song:song_inst|reduce_nor~0
+B1L221 = B1L131 & D1_q_a[4] & D1_q_a[5] & B1L331;
+
+
+--B1L2 is song:song_inst|Select~1258
+B1L2 = B1L1 & !B1L421 & !B1L221;
+
+
+--B1L3 is song:song_inst|Select~1259
+B1L3 = B1_origin[0] & !B1L831 # !B1L2;
+
+
+--clk_cnt[23] is clk_cnt[23]
+clk_cnt[23] = DFFEAS(A1L27, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--B1L321 is song:song_inst|reduce_nor~1
+B1L321 = B1L041 & B1L131 & D1_q_a[5] & !D1_q_a[4];
+
+
+--B1L821 is song:song_inst|reduce_nor~8
+B1L821 = D1_q_a[0] & D1_q_a[1] & B1L931 & !D1_q_a[2];
+
+
+--B1L521 is song:song_inst|reduce_nor~3
+B1L521 = B1L041 & B1L131 & D1_q_a[4] & D1_q_a[5];
+
+
+--B1L4 is song:song_inst|Select~1260
+B1L4 = B1L1 & !B1L821 & !B1L521;
+
+
+--B1L5 is song:song_inst|Select~1261
+B1L5 = B1L321 # B1_origin[1] & !B1L831 # !B1L4;
+
+
+--B1L721 is song:song_inst|reduce_nor~7
+B1L721 = D1_q_a[0] & D1_q_a[2] & B1L931 & !D1_q_a[1];
+
+
+--B1L6 is song:song_inst|Select~1262
+B1L6 = B1L4 & !B1L421 & !B1L921 & !B1L721;
+
+
+--B1L7 is song:song_inst|Select~1263
+B1L7 = B1_origin[2] & !B1L831 # !B1L6;
+
+
+--B1L8 is song:song_inst|Select~1264
+B1L8 = B1_origin[3] & !B1L921 & !B1L531 & !B1L731;
+
+
+--B1L9 is song:song_inst|Select~1265
+B1L9 = !B1L031 & !B1L921 & !B1L821 & !B1L721;
+
+
+--B1L141 is song:song_inst|reduce_nor~1122
+B1L141 = D1_q_a[3] & B1L131 & !B1L601Q;
+
+
+--B1L621 is song:song_inst|reduce_nor~5
+B1L621 = D1_q_a[1] & B1L931 & !D1_q_a[0] & !D1_q_a[2];
+
+
+--B1L01 is song:song_inst|Select~1266
+B1L01 = !B1L621 & (D1_q_a[4] # !D1_q_a[5] # !B1L141);
+
+
+--B1L11 is song:song_inst|Select~1267
+B1L11 = B1L421 # B1L8 # !B1L01 # !B1L9;
+
+
+--B1L21 is song:song_inst|Select~1268
+B1L21 = B1L321 # B1_origin[4] & !B1L831 # !B1L2;
+
+
+--B1L31 is song:song_inst|Select~1269
+B1L31 = D1_q_a[0] & (D1_q_a[2] # !D1_q_a[1]) # !D1_q_a[0] & (D1_q_a[2] $ D1_q_a[1]) # !B1L931;
+
+
+--B1L41 is song:song_inst|Select~1270
+B1L41 = B1L221 # B1_origin[5] & !B1L831 # !B1L31;
+
+
+--B1L51 is song:song_inst|Select~1271
+B1L51 = !B1L421 & !B1L221 & !B1L031 & !B1L921;
+
+
+--B1L61 is song:song_inst|Select~1272
+B1L61 = B1L521 # B1_origin[6] & !B1L831 # !B1L51;
+
+
+--B1L71 is song:song_inst|Select~1273
+B1L71 = D1_q_a[0] # D1_q_a[1] # !B1L931;
+
+
+--B1L81 is song:song_inst|Select~1274
+B1L81 = B1_origin[7] & !B1L831 # !B1L82 # !B1L71;
+
+
+--B1L91 is song:song_inst|Select~1275
+B1L91 = !B1L721 & (D1_q_a[5] # !D1_q_a[4] # !B1L141);
+
+
+--B1L02 is song:song_inst|Select~1276
+B1L02 = B1_origin[8] & !B1L831 # !B1L91 # !B1L71;
+
+
+--B1L12 is song:song_inst|Select~1277
+B1L12 = B1L321 # B1_origin[9] & !B1L831 # !B1L31;
+
+
+--B1L22 is song:song_inst|Select~1278
+B1L22 = D1_q_a[1] & B1L931 & !D1_q_a[0];
+
+
+--B1L32 is song:song_inst|Select~1279
+B1L32 = B1L22 # B1_origin[10] & !B1L831 # !B1L51;
+
+
+--B1L42 is song:song_inst|Select~1280
+B1L42 = B1L221 # B1L521 # !B1L1;
+
+
+--B1L52 is song:song_inst|Select~1281
+B1L52 = B1L621 # B1L42 # B1_origin[11] & !B1L831;
+
+
+--B1L62 is song:song_inst|Select~1282
+B1L62 = B1L221 # B1_origin[12] & !B1L831 # !B1L9;
+
+
+--B1L72 is song:song_inst|Select~1283
+B1L72 = B1_origin[13] & !B1L831 # !B1L01 # !B1L6;
+
+
+--B1_counter[5] is song:song_inst|counter[5]
+B1_counter[5] = DFFEAS(B1L95, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_counter[4] is song:song_inst|counter[4]
+B1_counter[4] = DFFEAS(B1L06, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_counter[3] is song:song_inst|counter[3]
+B1_counter[3] = DFFEAS(B1L53, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_counter[2] is song:song_inst|counter[2]
+B1_counter[2] = DFFEAS(B1L33, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_counter[1] is song:song_inst|counter[1]
+B1_counter[1] = DFFEAS(B1L16, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_counter[0] is song:song_inst|counter[0]
+B1_counter[0] = DFFEAS(B1L26, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L92 is song:song_inst|add~409
+B1L92 = B1_counter[0] $ VCC;
+
+--B1L03 is song:song_inst|add~410
+B1L03 = CARRY(B1_counter[0]);
+
+
+--B1L13 is song:song_inst|add~411
+B1L13 = B1_counter[1] & !B1L03 # !B1_counter[1] & (B1L03 # GND);
+
+--B1L23 is song:song_inst|add~412
+B1L23 = CARRY(!B1L03 # !B1_counter[1]);
+
+
+--B1L33 is song:song_inst|add~413
+B1L33 = B1_counter[2] & (B1L23 $ GND) # !B1_counter[2] & !B1L23 & VCC;
+
+--B1L43 is song:song_inst|add~414
+B1L43 = CARRY(B1_counter[2] & !B1L23);
+
+
+--B1L53 is song:song_inst|add~415
+B1L53 = B1_counter[3] & !B1L43 # !B1_counter[3] & (B1L43 # GND);
+
+--B1L63 is song:song_inst|add~416
+B1L63 = CARRY(!B1L43 # !B1_counter[3]);
+
+
+--B1L73 is song:song_inst|add~417
+B1L73 = B1_counter[4] & (B1L63 $ GND) # !B1_counter[4] & !B1L63 & VCC;
+
+--B1L83 is song:song_inst|add~418
+B1L83 = CARRY(B1_counter[4] & !B1L63);
+
+
+--B1L93 is song:song_inst|add~419
+B1L93 = B1_counter[5] & !B1L83 # !B1_counter[5] & (B1L83 # GND);
+
+--B1L04 is song:song_inst|add~420
+B1L04 = CARRY(!B1L83 # !B1_counter[5]);
+
+
+--B1_counter[7] is song:song_inst|counter[7]
+B1_counter[7] = DFFEAS(B1L34, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1_counter[6] is song:song_inst|counter[6]
+B1_counter[6] = DFFEAS(B1L14, clk_cnt[23],  ,  ,  ,  ,  ,  ,  );
+
+
+--B1L241 is song:song_inst|reduce_nor~1123
+B1L241 = B1_counter[7] # B1_counter[6] # !B1_counter[4] # !B1_counter[5];
+
+
+--B1L341 is song:song_inst|reduce_nor~1124
+B1L341 = B1_counter[3] # B1_counter[2] # B1_counter[0] # !B1_counter[1];
+
+
+--B1L95 is song:song_inst|counter~256
+B1L95 = B1L93 & (B1L241 # B1L341);
+
+
+--B1L441 is song:song_inst|reduce_nor~1125
+B1L441 = !B1L241 & !B1L341 # !B1L13 # !B1L92;
+
+
+--B1L14 is song:song_inst|add~421
+B1L14 = B1_counter[6] & (B1L04 $ GND) # !B1_counter[6] & !B1L04 & VCC;
+
+--B1L24 is song:song_inst|add~422
+B1L24 = CARRY(B1_counter[6] & !B1L04);
+
+
+--B1L34 is song:song_inst|add~423
+B1L34 = B1_counter[7] $ B1L24;
+
+
+--B1L541 is song:song_inst|reduce_nor~1126
+B1L541 = B1L34 # B1L33 # B1L53 # B1L14;
+
+
+--B1L06 is song:song_inst|counter~257
+B1L06 = B1L73 & (B1L241 # B1L341);
+
+
+--B1L641 is song:song_inst|reduce_nor~1127
+B1L641 = !B1L95 & !B1L441 & !B1L541 & B1L06;
+
+
+--B1L16 is song:song_inst|counter~258
+B1L16 = B1L13 & (B1L241 # B1L341);
+
+
+--B1L26 is song:song_inst|counter~259
+B1L26 = B1L92 & (B1L241 # B1L341);
+
+
+--clk_cnt[22] is clk_cnt[22]
+clk_cnt[22] = DFFEAS(A1L96, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[21] is clk_cnt[21]
+clk_cnt[21] = DFFEAS(A1L66, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[20] is clk_cnt[20]
+clk_cnt[20] = DFFEAS(A1L36, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[19] is clk_cnt[19]
+clk_cnt[19] = DFFEAS(A1L06, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[18] is clk_cnt[18]
+clk_cnt[18] = DFFEAS(A1L75, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[17] is clk_cnt[17]
+clk_cnt[17] = DFFEAS(A1L45, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[16] is clk_cnt[16]
+clk_cnt[16] = DFFEAS(A1L15, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[15] is clk_cnt[15]
+clk_cnt[15] = DFFEAS(A1L84, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[14] is clk_cnt[14]
+clk_cnt[14] = DFFEAS(A1L54, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[13] is clk_cnt[13]
+clk_cnt[13] = DFFEAS(A1L24, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[12] is clk_cnt[12]
+clk_cnt[12] = DFFEAS(A1L93, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[11] is clk_cnt[11]
+clk_cnt[11] = DFFEAS(A1L63, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[10] is clk_cnt[10]
+clk_cnt[10] = DFFEAS(A1L33, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[9] is clk_cnt[9]
+clk_cnt[9] = DFFEAS(A1L03, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[8] is clk_cnt[8]
+clk_cnt[8] = DFFEAS(A1L72, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[7] is clk_cnt[7]
+clk_cnt[7] = DFFEAS(A1L42, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[6] is clk_cnt[6]
+clk_cnt[6] = DFFEAS(A1L12, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[5] is clk_cnt[5]
+clk_cnt[5] = DFFEAS(A1L81, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[4] is clk_cnt[4]
+clk_cnt[4] = DFFEAS(A1L51, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--clk_cnt[3] is clk_cnt[3]
+clk_cnt[3] = DFFEAS(A1L21, sys_clk, !rst_n,  ,  ,  ,  ,  ,  );
+
+
+--A1L21 is clk_cnt[3]~198
+A1L21 = clk_cnt[3] & !A1L01 # !clk_cnt[3] & (A1L01 # GND);
+
+--A1L31 is clk_cnt[3]~199
+A1L31 = CARRY(!A1L01 # !clk_cnt[3]);
+
+
+--A1L51 is clk_cnt[4]~200
+A1L51 = clk_cnt[4] & (A1L31 $ GND) # !clk_cnt[4] & !A1L31 & VCC;
+
+--A1L61 is clk_cnt[4]~201
+A1L61 = CARRY(clk_cnt[4] & !A1L31);
+
+
+--A1L81 is clk_cnt[5]~202
+A1L81 = clk_cnt[5] & !A1L61 # !clk_cnt[5] & (A1L61 # GND);
+
+--A1L91 is clk_cnt[5]~203
+A1L91 = CARRY(!A1L61 # !clk_cnt[5]);
+
+
+--A1L12 is clk_cnt[6]~204
+A1L12 = clk_cnt[6] & (A1L91 $ GND) # !clk_cnt[6] & !A1L91 & VCC;
+
+--A1L22 is clk_cnt[6]~205
+A1L22 = CARRY(clk_cnt[6] & !A1L91);
+
+
+--A1L42 is clk_cnt[7]~206
+A1L42 = clk_cnt[7] & !A1L22 # !clk_cnt[7] & (A1L22 # GND);
+
+--A1L52 is clk_cnt[7]~207
+A1L52 = CARRY(!A1L22 # !clk_cnt[7]);
+
+
+--A1L72 is clk_cnt[8]~208
+A1L72 = clk_cnt[8] & (A1L52 $ GND) # !clk_cnt[8] & !A1L52 & VCC;
+
+--A1L82 is clk_cnt[8]~209
+A1L82 = CARRY(clk_cnt[8] & !A1L52);
+
+
+--A1L03 is clk_cnt[9]~210
+A1L03 = clk_cnt[9] & !A1L82 # !clk_cnt[9] & (A1L82 # GND);
+
+--A1L13 is clk_cnt[9]~211
+A1L13 = CARRY(!A1L82 # !clk_cnt[9]);
+
+
+--A1L33 is clk_cnt[10]~212
+A1L33 = clk_cnt[10] & (A1L13 $ GND) # !clk_cnt[10] & !A1L13 & VCC;
+
+--A1L43 is clk_cnt[10]~213
+A1L43 = CARRY(clk_cnt[10] & !A1L13);
+
+
+--A1L63 is clk_cnt[11]~214
+A1L63 = clk_cnt[11] & !A1L43 # !clk_cnt[11] & (A1L43 # GND);
+
+--A1L73 is clk_cnt[11]~215
+A1L73 = CARRY(!A1L43 # !clk_cnt[11]);
+
+
+--A1L93 is clk_cnt[12]~216
+A1L93 = clk_cnt[12] & (A1L73 $ GND) # !clk_cnt[12] & !A1L73 & VCC;
+
+--A1L04 is clk_cnt[12]~217
+A1L04 = CARRY(clk_cnt[12] & !A1L73);
+
+
+--A1L24 is clk_cnt[13]~218
+A1L24 = clk_cnt[13] & !A1L04 # !clk_cnt[13] & (A1L04 # GND);
+
+--A1L34 is clk_cnt[13]~219
+A1L34 = CARRY(!A1L04 # !clk_cnt[13]);
+
+
+--A1L54 is clk_cnt[14]~220
+A1L54 = clk_cnt[14] & (A1L34 $ GND) # !clk_cnt[14] & !A1L34 & VCC;
+
+--A1L64 is clk_cnt[14]~221
+A1L64 = CARRY(clk_cnt[14] & !A1L34);
+
+
+--A1L84 is clk_cnt[15]~222
+A1L84 = clk_cnt[15] & !A1L64 # !clk_cnt[15] & (A1L64 # GND);
+
+--A1L94 is clk_cnt[15]~223
+A1L94 = CARRY(!A1L64 # !clk_cnt[15]);
+
+
+--A1L15 is clk_cnt[16]~224
+A1L15 = clk_cnt[16] & (A1L94 $ GND) # !clk_cnt[16] & !A1L94 & VCC;
+
+--A1L25 is clk_cnt[16]~225
+A1L25 = CARRY(clk_cnt[16] & !A1L94);
+
+
+--A1L45 is clk_cnt[17]~226
+A1L45 = clk_cnt[17] & !A1L25 # !clk_cnt[17] & (A1L25 # GND);
+
+--A1L55 is clk_cnt[17]~227
+A1L55 = CARRY(!A1L25 # !clk_cnt[17]);
+
+
+--A1L75 is clk_cnt[18]~228
+A1L75 = clk_cnt[18] & (A1L55 $ GND) # !clk_cnt[18] & !A1L55 & VCC;
+
+--A1L85 is clk_cnt[18]~229
+A1L85 = CARRY(clk_cnt[18] & !A1L55);
+
+
+--A1L06 is clk_cnt[19]~230
+A1L06 = clk_cnt[19] & !A1L85 # !clk_cnt[19] & (A1L85 # GND);
+
+--A1L16 is clk_cnt[19]~231
+A1L16 = CARRY(!A1L85 # !clk_cnt[19]);
+
+
+--A1L36 is clk_cnt[20]~232
+A1L36 = clk_cnt[20] & (A1L16 $ GND) # !clk_cnt[20] & !A1L16 & VCC;
+
+--A1L46 is clk_cnt[20]~233
+A1L46 = CARRY(clk_cnt[20] & !A1L16);
+
+
+--A1L66 is clk_cnt[21]~234
+A1L66 = clk_cnt[21] & !A1L46 # !clk_cnt[21] & (A1L46 # GND);
+
+--A1L76 is clk_cnt[21]~235
+A1L76 = CARRY(!A1L46 # !clk_cnt[21]);
+
+
+--A1L96 is clk_cnt[22]~236
+A1L96 = clk_cnt[22] & (A1L76 $ GND) # !clk_cnt[22] & !A1L76 & VCC;
+
+--A1L07 is clk_cnt[22]~237
+A1L07 = CARRY(clk_cnt[22] & !A1L76);
+
+
+--A1L27 is clk_cnt[23]~238
+A1L27 = clk_cnt[23] $ A1L07;
+
+
+--B1L031 is song:song_inst|reduce_nor~10
+B1L031 = !D1_q_a[0] & !D1_q_a[1] & !D1_q_a[2] & B1L931;
+
+
+--B1L82 is song:song_inst|Select~1284
+B1L82 = !B1L821 & (!B1L231 # !B1L131 # !B1L601Q);
+
+
+--B1L841 is song:song_inst|sp~2
+B1L841 = !B1_sp;
+
+
+--sys_clk is sys_clk
+--operation mode is input
+
+sys_clk = INPUT();
+
+
+--rst_n is rst_n
+--operation mode is input
+
+rst_n = INPUT();
+
+
+--sp is sp
+--operation mode is output
+
+sp = OUTPUT(B1_sp);
+
+

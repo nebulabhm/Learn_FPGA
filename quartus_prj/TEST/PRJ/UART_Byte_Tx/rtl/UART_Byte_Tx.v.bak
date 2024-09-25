@@ -1,0 +1,22 @@
+module UART_Byte_Tx(Clk, Rst_n, Data_Byte, Send_En, baud_set, Rs232_Tx, Tx_Done, UART_state);
+
+	input Clk;
+	input Rst_n;
+	input Data_Byte;
+	input Send_En;
+	input baud_set;
+	
+	output Rs232_Tx; 
+	output Tx_Done;
+	output UART_state;
+	
+	DR_LUT(Clk, Rst_n, Baud_set, bps_DR);
+	Div_cnt(Clk, Rst_n, uart_state, bps_DR, bps_clk);
+	bps_cnt(ClK, Rst_n, bps_clk, bps_cnt, Tx_done);
+	MUX2(Clk, Rst_n, Send_En, bps_cnt, UART_state);
+	Data_reg(Clk, Rst_n, Send_En, Data_Byte, r_Data_Byte);
+	MUX10(Clk, Rst_n, bps_cnt, Rs232_Tx);
+
+
+
+endmodule

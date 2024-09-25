@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/simulation/modelsim
+vcounter
+Z1 !s110 1624845645
+!i10b 1
+!s100 YdLI85gIL_2C`3::ciXIk0
+Ilc7Q<B5mZnhROlnnBf11C1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1558830987
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1624845645.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl
+Z7 tCvgOpt 0
+vcounter_pll_tb
+R1
+!i10b 1
+!s100 1_7bl2Q1czIT7RE]P@NkY1
+IM^58@T?MRo4hM__eF;jlb0
+R2
+R0
+w1558877524
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/../testbench/counter_pll_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/../testbench/counter_pll_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/../testbench/counter_pll_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/../testbench|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/../testbench/counter_pll_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/../testbench
+R7
+vcounter_pll_top
+R1
+!i10b 1
+!s100 CB5nClaO@VC<BoTED^lQM2
+I]i`3ni?=b8JTl0N16>V8`1
+R2
+R0
+w1558878018
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter_pll_top.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter_pll_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter_pll_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/rtl/counter_pll_top.v|
+!i113 1
+R5
+R6
+R7
+vpll_ip
+R1
+!i10b 1
+!s100 ?JmUlV;48M8E503RDaG^I3
+I6<jk6=;C2k;K?P5A@`_hT1
+R2
+R0
+w1624845621
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/ip/pll_ip.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/ip/pll_ip.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/ip/pll_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/ip|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/ip/pll_ip.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/ip
+R7
+vpll_ip_altpll
+R1
+!i10b 1
+!s100 BO0iUBQM20]kPSL=k@W@Q0
+IS4Eb@<FMeMzAB4`4AQ4@j2
+R2
+R0
+w1558830493
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/db/pll_ip_altpll.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/db/pll_ip_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/db/pll_ip_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/db|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/db/pll_ip_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/pll_ip/prj/db
+R7

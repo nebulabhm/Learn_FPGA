@@ -1,0 +1,9 @@
+Selecting top level module uart_if
+Synthesizing module rcvr
+Synthesizing module txmit
+Synthesizing module uart
+Synthesizing module uart_if
+@W: CL112 :"D:\RedLogic\RCII_samples\UART\Src\uart_if.v":57:0:57:5|Feedback mux created for signal read_once. Did you forget the set/reset assignment for this signal?
+@W: CL190 :"D:\RedLogic\RCII_samples\UART\Src\uart_if.v":57:0:57:5|Optimizing register bit rom_addr_d[7] to a constant 0
+@W: CL171 :"D:\RedLogic\RCII_samples\UART\Src\uart_if.v":57:0:57:5|Pruning Register bit <7> of rom_addr_d[7:0] 
+

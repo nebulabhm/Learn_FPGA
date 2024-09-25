@@ -1,0 +1,49 @@
+#
+# Synplicity Verification Interface File
+# Generated using Synplify-pro
+#
+# Copyright (c) 1996-2004 Synplicity, Inc.
+# All rights reserved
+#
+
+# Set logfile options
+vif_set_result_file  uart_if.vlf
+
+# RTL and technology files
+vif_add_file -original  -verilog ../Src/rcvr.v
+vif_add_file -original  -verilog ../Src/txmit.v
+vif_add_file -original  -verilog ../Src/uart.v
+vif_add_file -original  -verilog ../Src/uart_if.v
+vif_set_top_module -original -top uart_if
+ 
+vif_add_file -translated -verilog uart_if.vm
+vif_set_top_module -translated -top uart_if 
+
+
+# Read FSM encoding
+
+
+# Memory map points
+# Memory redundancies
+
+
+# SRL redundancies
+# SRL map points
+
+
+# RTL sequential redundancies
+
+# Technology sequential redundancies
+
+# Inverted map points
+
+# Port directions
+
+# Black box mapping
+
+
+# Register pruning
+vif_set_constant -original -1 U1.u1.parity
+vif_set_constant -original -1 U1.u1.framing_error
+vif_set_constant -original -1 U1.u1.parity_error
+

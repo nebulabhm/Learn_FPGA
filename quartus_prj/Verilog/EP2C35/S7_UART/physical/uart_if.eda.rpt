@@ -1,0 +1,91 @@
+EDA Netlist Writer report for uart_if
+Fri Apr 24 16:07:21 2009
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Fri Apr 24 16:07:21 2009 ;
+; Revision Name             ; uart_if                               ;
+; Top-level Entity Name     ; uart_if_rom                           ;
+; Family                    ; Cyclone II                            ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                                        ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------+
+; Option                                                                                     ; Setting                                       ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------+
+; Tool Name                                                                                  ; ModelSim (Verilog HDL output from Quartus II) ;
+; Generate netlist for functional simulation only                                            ; Off                                           ;
+; Time scale                                                                                 ; 1 ps                                          ;
+; Truncate long hierarchy paths                                                              ; Off                                           ;
+; Map illegal HDL characters                                                                 ; Off                                           ;
+; Flatten buses into individual nodes                                                        ; Off                                           ;
+; Maintain hierarchy                                                                         ; Off                                           ;
+; Bring out device-wide set/reset signals as ports                                           ; Off                                           ;
+; Enable glitch filtering                                                                    ; Off                                           ;
+; Do not write top level VHDL entity                                                         ; Off                                           ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                           ;
+; Architecture name in VHDL output netlist                                                   ; structure                                     ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Simulation Generated Files                                                ;
++---------------------------------------------------------------------------+
+; Generated Files                                                           ;
++---------------------------------------------------------------------------+
+; E:/code/III_new/EP2C35/S7_UART/physical/simulation/modelsim/uart_if.vo    ;
+; E:/code/III_new/EP2C35/S7_UART/physical/simulation/modelsim/uart_if_v.sdo ;
++---------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II EDA Netlist Writer
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Fri Apr 24 16:07:20 2009
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off uart_if -c uart_if
+Info: Generated files "uart_if.vo" and "uart_if_v.sdo" in directory "E:/code/III_new/EP2C35/S7_UART/physical/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Allocated 113 megabytes of memory during processing
+    Info: Processing ended: Fri Apr 24 16:07:21 2009
+    Info: Elapsed time: 00:00:01
+
+

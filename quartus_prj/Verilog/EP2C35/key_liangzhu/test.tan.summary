@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 16.943 ns
+From           : song:song_inst|sp
+To             : sp
+From Clock     : sys_clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'sys_clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 102.38 MHz ( period = 9.768 ns )
+From           : song:song_inst|altsyncram:WideOr27_rtl_0|altsyncram_jcu:auto_generated|ram_block1a0~porta_address_reg7
+To             : song:song_inst|origin[8]
+From Clock     : sys_clk
+To Clock       : sys_clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'sys_clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : song:song_inst|sp
+To             : song:song_inst|sp
+From Clock     : sys_clk
+To Clock       : sys_clk
+Failed Paths   : 1
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1
+
+--------------------------------------------------------------------------------------
+

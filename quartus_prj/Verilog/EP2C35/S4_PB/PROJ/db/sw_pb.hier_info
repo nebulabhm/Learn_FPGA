@@ -1,0 +1,27 @@
+|sw_pb
+sw[0] => ~NO_FANOUT~
+sw[1] => ~NO_FANOUT~
+sw[2] => ~NO_FANOUT~
+sw[3] => ~NO_FANOUT~
+sw[4] => ~NO_FANOUT~
+sw[5] => ~NO_FANOUT~
+sw[6] => ~NO_FANOUT~
+sw[7] => ~NO_FANOUT~
+pb[0] => led[0].DATAIN
+pb[1] => led[1].DATAIN
+pb[2] => led[2].DATAIN
+pb[3] => led[3].DATAIN
+pb[4] => led[4].DATAIN
+pb[5] => led[5].DATAIN
+pb[6] => led[6].DATAIN
+pb[7] => led[7].DATAIN
+led[0] <= pb[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= pb[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= pb[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= pb[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= pb[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= pb[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= pb[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= pb[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

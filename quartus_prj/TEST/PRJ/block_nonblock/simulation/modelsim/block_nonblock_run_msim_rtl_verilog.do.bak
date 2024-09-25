@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/block_nonblock {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/block_nonblock/block_nonblock.v}
+

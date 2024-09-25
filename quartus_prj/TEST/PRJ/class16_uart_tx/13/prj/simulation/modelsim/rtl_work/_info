@@ -1,0 +1,121 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/simulation/modelsim
+vISSP
+Z1 !s110 1558529787
+!i10b 1
+!s100 BG20gfghdQMkniJz3;h=W1
+IL`>9zc?=j?UzeekDJNWT41
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1558449055
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/ip/ISSP.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/ip/ISSP.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1558529787.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/ip/ISSP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/ip|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/ip/ISSP.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/ip
+Z6 tCvgOpt 0
+n@i@s@s@p
+vkey_filter
+R1
+!i10b 1
+!s100 _mQJ[h?=`CS59mSTD0^z]1
+IIJ<Jd`m1nhQaW>^KzW>Em3
+R2
+R0
+w1491011451
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/key_filter.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/key_filter.v
+Z7 L0 11
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/key_filter.v|
+!i113 1
+R5
+Z8 !s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl
+R6
+vuart_byte_tx
+R1
+!i10b 1
+!s100 :d<Iz7oN8R=bIY1O`QEK:3
+I`?R9le7;kD9>:8LTUelBX3
+R2
+R0
+w1491011559
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_byte_tx.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_byte_tx.v
+R7
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_byte_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_byte_tx.v|
+!i113 1
+R5
+R8
+R6
+vuart_byte_tx_tb
+!s110 1558529788
+!i10b 1
+!s100 Ah=JNQnUH]ozIZe]W7LaF1
+I_;`b[h9FfUg<8IQOKcbTL2
+R2
+R0
+w1442753190
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/../testbench/uart_byte_tx_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/../testbench/uart_byte_tx_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1558529788.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/../testbench/uart_byte_tx_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/../testbench|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/../testbench/uart_byte_tx_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/prj/../testbench
+R6
+vuart_tx_top
+R1
+!i10b 1
+!s100 dhModcBQgV>TA;Y7QPUoD2
+Id4M`APfX6e^:z24<mZB4C2
+R2
+R0
+w1491011683
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_tx_top.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_tx_top.v
+R7
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_tx_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/class16_uart_tx/13/rtl/uart_tx_top.v|
+!i113 1
+R5
+R8
+R6

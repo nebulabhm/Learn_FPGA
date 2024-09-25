@@ -1,0 +1,379 @@
+m255
+cModel Technology
+dd:\Modeltech_5.8b\examples
+vand1
+IX09K0lfgFmPbh5GS`l[6m0
+VZSSZDDj<@SOhS^Zn<5ETC3
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 256
+OE;L;5.8b;17
+r1
+31
+o-work work
+vand16
+IFkmmW[?d8<AAC=PWU0z6a2
+VRNFVodbX2zfV?MH_b@5ZQ2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 269
+OE;L;5.8b;17
+r1
+31
+o-work work
+vb17mux21
+IjUec;?dW<=j2EO=87HHj20
+Vj19WggD6aChTIGNA88c601
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 309
+OE;L;5.8b;17
+r1
+31
+o-work work
+vb5mux21
+Iz_F=IhTz_3ldY`]@DUiAB1
+VEO1B0b@F<G`7GB@m8OHH:1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 330
+OE;L;5.8b;17
+r1
+31
+o-work work
+vbmux21
+IYGV^glDaBYWY8e2;bARYR2
+VOI6DBcPmJIeIX<@5AgS581
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 298
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_asmiblock
+I`_0ILhFWaok8Bz8diD`Mn2
+V]0LhOYf:Uj^<Wg;zZT_2c1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 7678
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_asynch_io
+I;CDYeM1I3VTng=TbLR2__3
+V7=M]a5DDc8ZRkXGNN>cKJ2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 7396
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_asynch_lcell
+Ie71A45SnSz:NU_A:5Pj[W3
+VH`^jeC?eCb4^d<XPeXZ>>0
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 356
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_crcblock
+I[WcmnLc8hXFXgi0l_O[e63
+V?4>KJXz>S]DhHoPf83dmn1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 7369
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_dll
+IlKWbCHiI=hb8R64`45n_n3
+VDHXV68C:z[^UG?3PHl2cC2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 7013
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_io
+Ii0FMSM^V<<XmZFP^H[^WR3
+V=n67:[Ej1bc?U__Pd_4NT2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 7535
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_jtag
+IdG:3ZAlXA9f8F<?a]c^JY1
+VlmW605W_cMdZRG`:l2VSg0
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 7343
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_lcell
+I`6de<lz<kWkX@[GD?z:@O0
+VU2LaMaZOS1MZZ>Z=h1H7Z1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 960
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_lcell_register
+Ia=@nGNML9cVjRf3gO4c``1
+VT3kG`jUefj5:Z7LGLL6P12
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 779
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_pll
+Ie_fGU1NY7c^moS:NSolLO3
+VH@56Ld5<MhO5m?DCEDkiI1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 3705
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_ram_block
+I]`fU<Mj;0BjCRE0zhP?m91
+VzW;?_KQJg=UeX`LPA9d=V0
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 2714
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_ram_clear
+IHdT;LJD6kd0ij@`G<FKES0
+V3Cz4KD@mhD:cEWUcZ1dJa3
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 1555
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_ram_internal
+I<Y>Mf:<MOojaBF3EUXY7V1
+V=f2<h5dLoSc:jlUNncf[W1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 1611
+OE;L;5.8b;17
+r1
+31
+o-work work
+vcyclone_ram_register
+IJU3G3c5CUllFB5[R8mCdg1
+V:Y^YR4SK@b6mR9fFY_WTe2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 1078
+OE;L;5.8b;17
+r1
+31
+o-work work
+vdffe
+IIz9EZNYCkh_h8?`UnYhV91
+VJ5oXmgYJm>1D;m8@Q@NBH1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 103
+OE;L;5.8b;17
+r1
+31
+o-work work
+vlatch
+I<I8E<TQ?@WFCBIGUA=Kgj3
+V_PLhJG4Na=z_D:hAd09eO2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 146
+OE;L;5.8b;17
+r1
+31
+o-work work
+vm_cntr
+ILE2`enkTVT[BfLiRl@zk^3
+V`C:Yzni1I>kcmUa5?SHTg3
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 3371
+OE;L;5.8b;17
+r1
+31
+o-work work
+vmux21
+IBdHQ18[WTBL3I=_k1W3;]0
+Vm6?W>?E@Ln8Zhf4d^]>l60
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 199
+OE;L;5.8b;17
+r1
+31
+o-work work
+vmux41
+IkD92SUg<V7UOPFg=0TLRB2
+VhlmT4_ZRU4N1ZkmOnnWPG2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 222
+OE;L;5.8b;17
+r1
+31
+o-work work
+vn_cntr
+IZNX1f6jNTMjejKiPIA;B22
+Ve@8WkBhY_dNzi=nWN>kNe1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 3447
+OE;L;5.8b;17
+r1
+31
+o-work work
+vnmux21
+Ifz@5MQ:ALS]^=4>>1VGC61
+V9Zl_H[9M<8Roea>mBOJUj2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 320
+OE;L;5.8b;17
+r1
+31
+o-work work
+vpll_reg
+IFUbHTT=Zg[<IQ]>M8;Ylh2
+Va:[10h]9z?A8P9kz4lAC:0
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 3644
+OE;L;5.8b;17
+r1
+31
+o-work work
+UPRIM_DFFE
+I[;K>MJZb38FkF?XVnXLbR3
+V6lKJT;LajPIA_TlXU=@YX1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 31
+OE;L;5.8b;17
+r1
+31
+o-work work
+n@p@r@i@m_@d@f@f@e
+vrcvr
+I6@4b]BfJD<hM3;g;d^>Wd1
+V1IEIeYW>n>7];4XPz4>aK0
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1092146170
+FJ:/NewProj/3DConvertor/UART/src/rcvr.v
+L0 23
+OE;L;5.8b;17
+r1
+31
+o-work work
+vscale_cntr
+IX0<T?J7lI=ThUS3e1W8lB0
+VTo9o]5hcKlk?;=<;<D51W3
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1075266848
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/cyclone_atoms.v
+L0 3522
+OE;L;5.8b;17
+r1
+31
+o-work work
+vtxmit
+I=Pz5BG=]77dlCz00k6G>l0
+V2X5>zKGA2dVP6?@?5W]Do0
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w955701536
+FJ:/NewProj/3DConvertor/UART/src/txmit.v
+L0 23
+OE;L;5.8b;17
+r1
+31
+o-work work
+vuart
+I6JMl?m>CWHSP>A2L867M60
+VAL6N^fD0gW8?XcVf`QkZQ2
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w948950942
+FJ:/NewProj/3DConvertor/UART/src/uart.v
+L0 24
+OE;L;5.8b;17
+r1
+31
+o-work work
+vuart_if
+ISa0j;:b_KQo]CU4=We9YU3
+VUC?aH5dgCU^<B<C0JkePg1
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1092294084
+FJ:/NewProj/3DConvertor/UART/physical/simulation/modelsim/uart_if.vo
+L0 37
+OE;L;5.8b;17
+r1
+31
+o-work work
+vUART_tb
+I3:6VXX=D5f3bokORakMiE2
+VZzYO6HjR<]<2_bm?EhR?51
+dJ:\NewProj\3DConvertor\UART\physical\simulation\modelsim
+w1092293778
+FJ:/NewProj/3DConvertor/UART/src/uart_tb.v
+L0 3
+OE;L;5.8b;17
+r1
+31
+o-work work
+n@u@a@r@t_tb

@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/key_stable/rtl {H:/my_workshop/learn_fpga/exercise/key_stable/rtl/key_stable.v}
+
+vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench {H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_filter_tb.v}
+vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench {H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_module.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  key_filter_tb
+
+add wave *
+view structure
+view signals
+run -all

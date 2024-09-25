@@ -1,0 +1,163 @@
+
+BeginView uart_if NoName
+Inst: rom_addr_d[0]   rom_addr_d_0_ stratix_lcell_ff 
+Inst: rom_addr_d[1]   rom_addr_d_1_ stratix_lcell_ff 
+Inst: rom_addr_d[2]   rom_addr_d_2_ stratix_lcell_ff 
+Inst: rom_addr_d[3]   rom_addr_d_3_ stratix_lcell_ff 
+Inst: rom_addr_d[4]   rom_addr_d_4_ stratix_lcell_ff 
+Inst: rom_addr_d[5]   rom_addr_d_5_ stratix_lcell_ff 
+Inst: rom_addr_d[6]   rom_addr_d_6_ stratix_lcell_ff 
+Inst: cnt[3]   cnt_3_ stratix_lcell_ff 
+Inst: cnt[2]   cnt_2_ stratix_lcell_ff 
+Inst: cnt[1]   cnt_1_ stratix_lcell_ff 
+Inst: cnt[0]   cnt_0_ stratix_lcell_ff 
+Inst: rom_addr[6]   rom_addr_6_ stratix_lcell_ff 
+Inst: rom_addr[5]   rom_addr_5_ stratix_lcell_ff 
+Inst: rom_addr[4]   rom_addr_4_ stratix_lcell_ff 
+Inst: rom_addr[3]   rom_addr_3_ stratix_lcell_ff 
+Inst: rom_addr[2]   rom_addr_2_ stratix_lcell_ff 
+Inst: rom_addr[1]   rom_addr_1_ stratix_lcell_ff 
+Inst: rom_addr[0]   rom_addr_0_ stratix_lcell_ff 
+Inst: din[7]   din_7_ stratix_lcell_ff 
+Inst: din[6]   din_6_ stratix_lcell_ff 
+Inst: din[5]   din_5_ stratix_lcell_ff 
+Inst: din[4]   din_4_ stratix_lcell_ff 
+Inst: din[3]   din_3_ stratix_lcell_ff 
+Inst: din[2]   din_2_ stratix_lcell_ff 
+Inst: din[1]   din_1_ stratix_lcell_ff 
+Inst: din[0]   din_0_ stratix_lcell_ff 
+Inst: read_en_i_0   read_en_i_0_Z stratix_lcell_ff 
+Inst: read_once   read_once_Z stratix_lcell_ff 
+Inst: wrn_i_0   wrn_i_0_Z stratix_lcell_ff 
+Inst: rdn_i_0   rdn_i_0_Z stratix_lcell_ff 
+Inst: rdn_d2_i   rdn_d2_i_Z stratix_lcell_ff 
+Inst: rdn_d_i_0   rdn_d_i_0_Z stratix_lcell_ff 
+Inst: read_once_9_iv_i_0_a2_0_2_a_x   read_once_9_iv_i_0_a2_0_2_a_x_Z stratix_lcell 
+Inst: I_40_a   I_40_a_Z stratix_lcell 
+Inst: read_once_9_iv_i_0_a2_0_2   read_once_9_iv_i_0_a2_0_2_Z stratix_lcell 
+Inst: un1_rom_addr9_3_i   un1_rom_addr9_3_i_Z stratix_lcell 
+Inst: un1_rom_addr9_3_i_a   un1_rom_addr9_3_i_a_Z stratix_lcell 
+Inst: un1_rdn_1_0_a4   un1_rdn_1_0_a4_Z stratix_lcell 
+Inst: un1_rdn_1_0_a4_a   un1_rdn_1_0_a4_a_Z stratix_lcell 
+Inst: read_once_9_iv_i_0_a2_0_5   read_once_9_iv_i_0_a2_0_5_Z stratix_lcell 
+Inst: I_39_0   I_39_0_Z stratix_lcell 
+Inst: I_45   I_45_Z stratix_lcell 
+Inst: I_43   I_43_Z stratix_lcell 
+Inst: rom_data_in[7]   rom_data_in_7_ stratix_io 
+Inst: rom_data_in[6]   rom_data_in_6_ stratix_io 
+Inst: rom_data_in[5]   rom_data_in_5_ stratix_io 
+Inst: rom_data_in[4]   rom_data_in_4_ stratix_io 
+Inst: rom_data_in[3]   rom_data_in_3_ stratix_io 
+Inst: rom_data_in[2]   rom_data_in_2_ stratix_io 
+Inst: rom_data_in[1]   rom_data_in_1_ stratix_io 
+Inst: rom_data_in[0]   rom_data_in_0_ stratix_io 
+Inst: rom_addr_out[6]   rom_addr_out_6_ stratix_io 
+Inst: rom_addr_out[5]   rom_addr_out_5_ stratix_io 
+Inst: rom_addr_out[4]   rom_addr_out_4_ stratix_io 
+Inst: rom_addr_out[3]   rom_addr_out_3_ stratix_io 
+Inst: rom_addr_out[2]   rom_addr_out_2_ stratix_io 
+Inst: rom_addr_out[1]   rom_addr_out_1_ stratix_io 
+Inst: rom_addr_out[0]   rom_addr_out_0_ stratix_io 
+Inst: rst_n_c_i   rst_n_c_i_Z inv 
+Net:  wrn_i_1_i_x_i_n   wrn 
+Net:  U1.u1.rbr[3]   U1_u1_rbr[3] 
+Net:  U1.u1.rbr[2]   U1_u1_rbr[2] 
+Net:  cnt_i[3]   cnt[3] 
+Net:  U1.u2.tsre_i   U1_u2_tsre_i 
+Net:  U1.u2.tbre   U1_u2_tbre 
+Net:  U1.u1.data_ready   U1_u1_data_ready 
+Net:  U1.u2.tsr[0]   U1_u2_tsr[0] 
+Net:  U1.u2.no_bits_sent[2]   U1_u2_no_bits_sent[2] 
+Net:  U1.u2.no_bits_sent[3]   U1_u2_no_bits_sent[3] 
+Net:  U1.u2.no_bits_sent[1]   U1_u2_no_bits_sent[1] 
+Net:  U1.u2.no_bits_sent[0]   U1_u2_no_bits_sent[0] 
+Net:  U1.u2.parity_i   U1_u2_parity_i 
+Net:  U1.u2.sdo_i_i   U1_u2_sdo_i_i 
+EndView uart_if NoName
+
+BeginView uart NoName
+EndView uart NoName
+
+BeginView rcvr NoName
+Inst: rbr[0]   rbr_0_ stratix_lcell_ff 
+Inst: rbr[4]   rbr_4_ stratix_lcell_ff 
+Inst: clk1x_enable_0   clk1x_enable_0_Z stratix_lcell_ff 
+Inst: clkdiv[3]   clkdiv_3_ stratix_lcell_ff 
+Inst: clkdiv[2]   clkdiv_2_ stratix_lcell_ff 
+Inst: clkdiv[1]   clkdiv_1_ stratix_lcell_ff 
+Inst: clkdiv[0]   clkdiv_0_ stratix_lcell_ff 
+Inst: no_bits_rcvd[3]   no_bits_rcvd_3_ stratix_lcell_ff 
+Inst: no_bits_rcvd[2]   no_bits_rcvd_2_ stratix_lcell_ff 
+Inst: no_bits_rcvd[1]   no_bits_rcvd_1_ stratix_lcell_ff 
+Inst: no_bits_rcvd[0]   no_bits_rcvd_0_ stratix_lcell_ff 
+Inst: rsr[7]   rsr_7_ stratix_lcell_ff 
+Inst: rsr[6]   rsr_6_ stratix_lcell_ff 
+Inst: rsr[5]   rsr_5_ stratix_lcell_ff 
+Inst: rsr[4]   rsr_4_ stratix_lcell_ff 
+Inst: rsr[3]   rsr_3_ stratix_lcell_ff 
+Inst: rsr[2]   rsr_2_ stratix_lcell_ff 
+Inst: rsr[1]   rsr_1_ stratix_lcell_ff 
+Inst: rsr[0]   rsr_0_ stratix_lcell_ff 
+Inst: rbr[7]   rbr_7_ stratix_lcell_ff 
+Inst: rbr[6]   rbr_6_ stratix_lcell_ff 
+Inst: rbr[5]   rbr_5_ stratix_lcell_ff 
+Inst: rbr[3]   rbr_3_ stratix_lcell_ff 
+Inst: rbr[2]   rbr_2_ stratix_lcell_ff 
+Inst: rbr[1]   rbr_1_ stratix_lcell_ff 
+Inst: data_ready   data_ready_0 stratix_lcell_ff 
+Inst: clk1x_enable   clk1x_enable_Z stratix_lcell_ff 
+Inst: rxd2_i   rxd2_i_Z stratix_lcell_ff 
+Inst: rxd1_i_0   rxd1_i_0_Z stratix_lcell_ff 
+Inst: clkdiv_5_sum3_a   clkdiv_5_sum3_a_Z stratix_lcell 
+Inst: un1_clk1x_enable13_0_a   un1_clk1x_enable13_0_a_Z stratix_lcell 
+Inst: parity8_0_x2   parity8_0_x2_Z stratix_lcell 
+Inst: data_ready12_0_a2   data_ready12_0_a2_Z stratix_lcell 
+Inst: parity9_0_a3   parity9_0_a3_Z stratix_lcell 
+Net:  U1.u1.clkdiv[3]   U1_u1_clkdiv[3] 
+Net:  clkdiv_i[3]   U1_u1_clkdiv[3] 
+EndView rcvr NoName
+
+BeginView txmit NoName
+Inst: tbr[7]   tbr_7_ stratix_lcell_ff 
+Inst: tbr[6]   tbr_6_ stratix_lcell_ff 
+Inst: tbr[5]   tbr_5_ stratix_lcell_ff 
+Inst: tbr[4]   tbr_4_ stratix_lcell_ff 
+Inst: tbr[3]   tbr_3_ stratix_lcell_ff 
+Inst: tbr[2]   tbr_2_ stratix_lcell_ff 
+Inst: tbr[1]   tbr_1_ stratix_lcell_ff 
+Inst: tbr[0]   tbr_0_ stratix_lcell_ff 
+Inst: clkdiv[3]   clkdiv_3_ stratix_lcell_ff 
+Inst: clkdiv[2]   clkdiv_2_ stratix_lcell_ff 
+Inst: clkdiv[1]   clkdiv_1_ stratix_lcell_ff 
+Inst: clkdiv[0]   clkdiv_0_ stratix_lcell_ff 
+Inst: no_bits_sent[3]   no_bits_sent_3_ stratix_lcell_ff 
+Inst: no_bits_sent[2]   no_bits_sent_2_ stratix_lcell_ff 
+Inst: no_bits_sent[1]   no_bits_sent_1_ stratix_lcell_ff 
+Inst: no_bits_sent[0]   no_bits_sent_0_ stratix_lcell_ff 
+Inst: tsr[7]   tsr_7_ stratix_lcell_ff 
+Inst: tsr[6]   tsr_6_ stratix_lcell_ff 
+Inst: tsr[5]   tsr_5_ stratix_lcell_ff 
+Inst: tsr[4]   tsr_4_ stratix_lcell_ff 
+Inst: tsr[3]   tsr_3_ stratix_lcell_ff 
+Inst: tsr[2]   tsr_2_ stratix_lcell_ff 
+Inst: tsr[1]   tsr_1_ stratix_lcell_ff 
+Inst: tsr[0]   tsr_0_ stratix_lcell_ff 
+Inst: tsre_i   tsre_i_0 stratix_lcell_ff 
+Inst: tbre   tbre_0 stratix_lcell_ff 
+Inst: clk1x_enable   clk1x_enable_Z stratix_lcell_ff 
+Inst: parity_i   parity_i_0 stratix_lcell_ff 
+Inst: sdo_i   sdo_i_Z stratix_lcell_ff 
+Inst: wrn2_i   wrn2_i_Z stratix_lcell_ff 
+Inst: wrn1_i_0   wrn1_i_0_Z stratix_lcell_ff 
+Inst: un1_tsr15_1_a_x   un1_tsr15_1_a_x_Z stratix_lcell 
+Inst: un17_clk1x_enable   un17_clk1x_enable_Z stratix_lcell 
+Inst: un17_clk1x_enable_a   un17_clk1x_enable_a_Z stratix_lcell 
+Inst: un1_clk1x_enable13_2_a   un1_clk1x_enable13_2_a_Z stratix_lcell 
+Inst: clkdiv_5_sum3_a   clkdiv_5_sum3_a_Z stratix_lcell 
+Inst: tsr16   tsr16_Z stratix_lcell 
+Inst: tsr14   tsr14_Z stratix_lcell 
+Inst: sdo_i_i   sdo_i_i_0 inv 
+Inst: clkdiv_i[3]   clkdiv_i_3_ inv 
+Net:  U1.u2.clkdiv[3]   U1_u2_clkdiv[3] 
+Net:  clkdiv_i_0[3]   U1_u2_clkdiv[3] 
+EndView txmit NoName

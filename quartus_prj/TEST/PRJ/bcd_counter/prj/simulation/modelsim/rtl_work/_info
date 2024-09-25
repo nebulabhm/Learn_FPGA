@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/simulation/modelsim
+vbcd_counter
+Z1 !s110 1723517919
+!i10b 1
+!s100 5aRgS]_2[zh[;]eRfFc^A2
+IOBW[1]c<gD30g_Qg7Vfk43
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557405069
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1723517919.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl
+Z7 tCvgOpt 0
+vbcd_counter_top
+R1
+!i10b 1
+!s100 ^<aa?z1EQ^?YWPkZ=]Nbl2
+IQLzWX2JcJi:YKKG@;W;Ac3
+R2
+R0
+w1557364746
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter_top.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/rtl/bcd_counter_top.v|
+!i113 1
+R5
+R6
+R7
+vbcd_counter_top_tb
+R1
+!i10b 1
+!s100 QA7d7_TXa41K@EQH]8cUg0
+IRm5=ZOBOK>ITR[1UV@J3l3
+R2
+R0
+w1557365234
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/../testbench/bcd_counter_top_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/../testbench/bcd_counter_top_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/../testbench/bcd_counter_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/../testbench|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/../testbench/bcd_counter_top_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/bcd_counter/prj/../testbench
+R7

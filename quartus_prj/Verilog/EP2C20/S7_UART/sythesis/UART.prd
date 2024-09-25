@@ -1,0 +1,13 @@
+#-- Synplicity, Inc.
+#-- Version 7.6       
+#-- Project file D:\RedLogic\RCII_samples\UART\sythesis\UART.prd
+#-- Written on Mon May 09 12:47:56 2005
+
+#
+### Watch Implementation type ###
+#
+watch_impl -active
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

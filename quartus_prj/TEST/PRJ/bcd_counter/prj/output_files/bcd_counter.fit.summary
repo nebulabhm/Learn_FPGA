@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Jun 29 16:03:41 2021
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : bcd_counter
+Top-level Entity Name : bcd_counter_top
+Family : MAX V
+Device : 5M570ZT100C5
+Timing Models : Final
+Total logic elements : 18 / 570 ( 3 % )
+Total pins : 16 / 74 ( 22 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

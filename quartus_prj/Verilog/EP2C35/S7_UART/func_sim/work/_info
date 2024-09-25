@@ -1,0 +1,64 @@
+m255
+cModel Technology
+dF:\NewProj\3DConvertor\SDR_SDRAM\FUNC_SIM
+vrcvr
+I<=hWCoCLU2>]S80:]7FJ`1
+V1IEIeYW>n>7];4XPz4>aK0
+dE:\code\ep1c20_fudan\S10_UART\func_sim
+w1099461232
+FE:/code/ep1c20_fudan/S10_UART/Src/rcvr.v
+L0 12
+OE;L;6.0;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vtxmit
+IJ4FQjAhCmU_]>?fcUBjY]3
+V2X5>zKGA2dVP6?@?5W]Do0
+dE:\code\ep1c20_fudan\S10_UART\func_sim
+w1099461264
+FE:/code/ep1c20_fudan/S10_UART/Src/txmit.v
+L0 13
+OE;L;6.0;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vuart
+I:fSa6I<m3YH2fVgBNYm8C2
+VAL6N^fD0gW8?XcVf`QkZQ2
+dE:\code\ep1c20_fudan\S10_UART\func_sim
+w1099461244
+FE:/code/ep1c20_fudan/S10_UART/Src/uart.v
+L0 13
+OE;L;6.0;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vuart_if
+I15`E?]N3=4Xm5ejglcQ300
+V1^nWl`Q5cAFLjd4XRa]a43
+dE:\code\ep1c20_fudan\S10_UART\func_sim
+w1099469026
+FE:/code/ep1c20_fudan/S10_UART/Src/uart_if.v
+L0 3
+OE;L;6.0;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vUART_tb
+I3Mkm[ZJVn53<<[Bi1;g`a3
+VbLZPiKKo[60E2jdIXfk`C2
+dE:\code\ep1c20_fudan\S10_UART\func_sim
+w1134800993
+FE:/code/ep1c20_fudan/S10_UART/Src/uart_tb.v
+L0 3
+OE;L;6.0;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+n@u@a@r@t_tb

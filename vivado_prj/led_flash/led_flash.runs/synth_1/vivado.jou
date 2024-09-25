@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Aug 29 13:45:05 2024
+# Process ID: 24500
+# Current directory: H:/my_workshop/learn_fpga/prj/led_flash/led_flash.runs/synth_1
+# Command line: vivado.exe -log led_flash.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_flash.tcl
+# Log file: H:/my_workshop/learn_fpga/prj/led_flash/led_flash.runs/synth_1/led_flash.vds
+# Journal file: H:/my_workshop/learn_fpga/prj/led_flash/led_flash.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source led_flash.tcl -notrace

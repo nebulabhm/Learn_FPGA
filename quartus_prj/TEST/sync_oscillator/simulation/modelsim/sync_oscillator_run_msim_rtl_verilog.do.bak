@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/sync_oscillator/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/sync_oscillator/rtl/sync_oscillator.v}
+

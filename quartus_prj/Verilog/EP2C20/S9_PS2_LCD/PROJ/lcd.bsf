@@ -1,0 +1,224 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2005 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic       
+functions, and any output files any of the foregoing           
+(including device programming or simulation files), and any    
+associated documentation or information are expressly subject  
+to the terms and conditions of the Altera Program License      
+Subscription Agreement, Altera MegaCore Function License       
+Agreement, or other applicable license agreement, including,   
+without limitation, that your use is for the sole purpose of   
+programming logic devices manufactured by Altera and sold by   
+Altera or its authorized distributors.  Please refer to the    
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 176 144)
+	(text "lcd" (rect 5 0 19 12)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "data_in[7..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "data_in[7..0]" (rect 21 59 82 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "lcd_e" (rect 0 0 25 12)(font "Arial" ))
+		(text "lcd_e" (rect 114 27 139 39)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32)(line_width 1))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "lcd_rw" (rect 0 0 30 12)(font "Arial" ))
+		(text "lcd_rw" (rect 109 43 139 55)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48)(line_width 1))
+	)
+	(port
+		(pt 160 64)
+		(output)
+		(text "lcd_rs" (rect 0 0 29 12)(font "Arial" ))
+		(text "lcd_rs" (rect 110 59 139 71)(font "Arial" ))
+		(line (pt 160 64)(pt 144 64)(line_width 1))
+	)
+	(port
+		(pt 160 80)
+		(output)
+		(text "data[7..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "data[7..0]" (rect 92 75 139 87)(font "Arial" ))
+		(line (pt 160 80)(pt 144 80)(line_width 3))
+	)
+	(parameter
+		"IDLE"
+		"B\"00000000000\""
+		""
+	)
+	(parameter
+		"CLEAR"
+		"B\"00000000001\""
+		""
+	)
+	(parameter
+		"RETURNCURSOR"
+		"B\"00000000010\""
+		""
+	)
+	(parameter
+		"SETMODE"
+		"B\"00000000100\""
+		""
+	)
+	(parameter
+		"SWITCHMODE"
+		"B\"00000001000\""
+		""
+	)
+	(parameter
+		"SHIFT"
+		"B\"00000010000\""
+		""
+	)
+	(parameter
+		"SETFUNCTION"
+		"B\"00000100000\""
+		""
+	)
+	(parameter
+		"SETCGRAM"
+		"B\"00001000000\""
+		""
+	)
+	(parameter
+		"SETDDRAM"
+		"B\"00010000000\""
+		""
+	)
+	(parameter
+		"READFLAG"
+		"B\"00100000000\""
+		""
+	)
+	(parameter
+		"WRITERAM"
+		"B\"01000000000\""
+		""
+	)
+	(parameter
+		"READRAM"
+		"B\"10000000000\""
+		""
+	)
+	(parameter
+		"cur_inc"
+		"1"
+		""
+	)
+	(parameter
+		"cur_dec"
+		"0"
+		""
+	)
+	(parameter
+		"cur_shift"
+		"1"
+		""
+	)
+	(parameter
+		"cur_noshift"
+		"0"
+		""
+	)
+	(parameter
+		"open_display"
+		"1"
+		""
+	)
+	(parameter
+		"open_cur"
+		"0"
+		""
+	)
+	(parameter
+		"blank_cur"
+		"0"
+		""
+	)
+	(parameter
+		"shift_display"
+		"1"
+		""
+	)
+	(parameter
+		"shift_cur"
+		"0"
+		""
+	)
+	(parameter
+		"right_shift"
+		"1"
+		""
+	)
+	(parameter
+		"left_shift"
+		"0"
+		""
+	)
+	(parameter
+		"datawidth8"
+		"1"
+		""
+	)
+	(parameter
+		"datawidth4"
+		"0"
+		""
+	)
+	(parameter
+		"twoline"
+		"1"
+		""
+	)
+	(parameter
+		"oneline"
+		"0"
+		""
+	)
+	(parameter
+		"font5x10"
+		"1"
+		""
+	)
+	(parameter
+		"font5x7"
+		"0"
+		""
+	)
+	(drawing
+		(rectangle (rect 16 16 144 112)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 176 -64 276 16))
+)

@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/simulation/modelsim
+vcrystal_1KHz
+!s110 1558114636
+!i10b 1
+!s100 5:MiDB:mJFPVdZMZ<]4nR0
+IzoHKENQ2FzoVI;?7MP2XJ1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557973434
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/crystal_1KHz.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/crystal_1KHz.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1558114636.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/crystal_1KHz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/crystal_1KHz.v|
+!i113 1
+Z4 o-vlog01compat -work work
+Z5 !s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl
+Z6 tCvgOpt 0
+ncrystal_1@k@hz
+vdled_decoder
+Z7 !s110 1558114637
+!i10b 1
+!s100 XiW;Obbn>5la=;Q^R;G>X3
+I3@:DOQH?2Kn`iT?54SJhJ0
+R1
+R0
+w1557975228
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_decoder.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_decoder.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z8 !s108 1558114637.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_decoder.v|
+!i113 1
+R4
+R5
+R6
+vdled_disp_data_decoder
+R7
+!i10b 1
+!s100 mH;V9M4Fz@Ye0:>?aaFHD3
+IIe`m6lLWX[O2Jzci;lDI^3
+R1
+R0
+w1557969508
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_disp_data_decoder.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_disp_data_decoder.v
+L0 1
+R2
+r1
+!s85 0
+31
+R8
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_disp_data_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_disp_data_decoder.v|
+!i113 1
+R4
+R5
+R6
+vdled_hex8
+R7
+!i10b 1
+!s100 ;^2cUkedlZ9SRWDGI1Fzm0
+I[DgHTMGLSizOVTL5dAg`32
+R1
+R0
+w1557974490
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_hex8.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_hex8.v
+L0 1
+R2
+r1
+!s85 0
+31
+R8
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_hex8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_hex8.v|
+!i113 1
+R4
+R5
+R6
+vdled_hex8_tb
+!s110 1558114638
+!i10b 1
+!s100 9f6<P5fBGNQTd2965[45g1
+I@]ef94@o8dX<M?n:afo0Q2
+R1
+R0
+w1557971950
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/../testbench/dled_hex8_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/../testbench/dled_hex8_tb.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1558114638.000000
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/../testbench/dled_hex8_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/../testbench|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/../testbench/dled_hex8_tb.v|
+!i113 1
+R4
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/prj/../testbench
+R6
+vdled_module_enable
+R7
+!i10b 1
+!s100 ]z<;=nZ:<MBM:Y;?l>TLB3
+I<2EzK]iSPflWN?BE_fTC]3
+R1
+R0
+w1557969882
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_module_enable.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_module_enable.v
+L0 1
+R2
+r1
+!s85 0
+31
+R8
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_module_enable.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/dled_module_enable.v|
+!i113 1
+R4
+R5
+R6
+vHC595_Driver
+R7
+!i10b 1
+!s100 ]FS0WZXE@3?ci2j;[NmPI1
+IMAK3dnBP3A_iHK3S??`Po2
+R1
+R0
+w1557977882
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HC595_Driver.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HC595_Driver.v
+L0 1
+R2
+r1
+!s85 0
+31
+R8
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HC595_Driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HC595_Driver.v|
+!i113 1
+R4
+R5
+R6
+n@h@c595_@driver
+vHXE_top
+R7
+!i10b 1
+!s100 ORI<3_o^KRTP@KQ_[0MUU0
+IiOmU[;_2dZBldaC[jFC`P1
+R1
+R0
+w1557986120
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HXE_top.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HXE_top.v
+L0 1
+R2
+r1
+!s85 0
+31
+R8
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HXE_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/HXE_top.v|
+!i113 1
+R4
+R5
+R6
+n@h@x@e_top
+vloop_shifter_8b
+R7
+!i10b 1
+!s100 hUb2lhH8UfdVdk7>l@>R82
+IQ0zGQFM1iKO>9SI2FW1PD1
+R1
+R0
+w1557908558
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/loop_shifter_8b.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/loop_shifter_8b.v
+L0 1
+R2
+r1
+!s85 0
+31
+R3
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/loop_shifter_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/dled_control/rtl/loop_shifter_8b.v|
+!i113 1
+R4
+R5
+R6

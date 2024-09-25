@@ -1,0 +1,96 @@
+|lcd_v
+lcd_e <= lcd:inst1.lcd_e
+mclk => div16:inst.clk
+rst => div16:inst.rst
+rst => lcd:inst1.rst
+lcd_rw <= lcd:inst1.lcd_rw
+lcd_rs <= lcd:inst1.lcd_rs
+data[0] <= lcd:inst1.data[0]
+data[1] <= lcd:inst1.data[1]
+data[2] <= lcd:inst1.data[2]
+data[3] <= lcd:inst1.data[3]
+data[4] <= lcd:inst1.data[4]
+data[5] <= lcd:inst1.data[5]
+data[6] <= lcd:inst1.data[6]
+data[7] <= lcd:inst1.data[7]
+
+
+|lcd_v|lcd:inst1
+clk => clkcnt[15].CLK
+clk => clkcnt[14].CLK
+clk => clkcnt[13].CLK
+clk => clkcnt[12].CLK
+clk => clkcnt[11].CLK
+clk => clkcnt[10].CLK
+clk => clkcnt[9].CLK
+clk => clkcnt[8].CLK
+clk => clkcnt[7].CLK
+clk => clkcnt[6].CLK
+clk => clkcnt[5].CLK
+clk => clkcnt[4].CLK
+clk => clkcnt[3].CLK
+clk => clkcnt[2].CLK
+clk => clkcnt[1].CLK
+clk => clkcnt[0].CLK
+rst => lcd_e~0.OUTPUTSELECT
+rst => clk_int~0.OUTPUTSELECT
+rst => clkdiv~0.OUTPUTSELECT
+rst => data[7]~14.IN0
+rst => data[6]~12.IN0
+rst => data[5]~10.IN0
+rst => data[4]~8.IN0
+rst => data[3]~6.IN0
+rst => data[2]~4.IN0
+rst => data[1]~2.IN0
+rst => data[0]~0.IN0
+rst => clkcnt~16.OUTPUTSELECT
+rst => clkcnt~17.OUTPUTSELECT
+rst => clkcnt~18.OUTPUTSELECT
+rst => clkcnt~19.OUTPUTSELECT
+rst => clkcnt~20.OUTPUTSELECT
+rst => clkcnt~21.OUTPUTSELECT
+rst => clkcnt~22.OUTPUTSELECT
+rst => clkcnt~23.OUTPUTSELECT
+rst => clkcnt~24.OUTPUTSELECT
+rst => clkcnt~25.OUTPUTSELECT
+rst => clkcnt~26.OUTPUTSELECT
+rst => clkcnt~27.OUTPUTSELECT
+rst => clkcnt~28.OUTPUTSELECT
+rst => clkcnt~29.OUTPUTSELECT
+rst => clkcnt~30.OUTPUTSELECT
+rst => clkcnt~31.OUTPUTSELECT
+rst => address[5].ACLR
+rst => address[4].ACLR
+rst => address[3].ACLR
+rst => address[2].ACLR
+rst => address[1].ACLR
+rst => address[0].ACLR
+rst => flag.ACLR
+rst => lcd_rw~reg0.ENA
+rst => lcd_rs~reg0.ENA
+rst => state~3.IN1
+lcd_e <= lcd_e~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_rw <= lcd_rw~reg0.DB_MAX_OUTPUT_PORT_TYPE
+lcd_rs <= lcd_rs~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= data[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data[1]~3.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data[2]~5.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data[3]~7.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= data[4]~9.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= data[5]~11.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= data[6]~13.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= data[7]~15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lcd_v|div16:inst
+clk => count[3].CLK
+clk => count[2].CLK
+clk => count[1].CLK
+clk => count[0].CLK
+rst => count[3].ACLR
+rst => count[2].ACLR
+rst => count[1].ACLR
+rst => count[0].ACLR
+clk_16 <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

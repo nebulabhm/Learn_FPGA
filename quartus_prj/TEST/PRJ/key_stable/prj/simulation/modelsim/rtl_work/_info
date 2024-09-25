@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/exercise/key_stable/prj/simulation/modelsim
+vkey_filter_tb
+Z1 !s110 1557817200
+!i10b 1
+!s100 L;c0UdHQ[O6hi7FkJZTAQ0
+IQE[^kmm8CCflZbzlzN_8k2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557815839
+8H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_filter_tb.v
+FH:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_filter_tb.v
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1557817200.000000
+!s107 H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_filter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench|H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_filter_tb.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench
+Z7 tCvgOpt 0
+vkey_module
+R1
+!i10b 1
+!s100 2z1Pdkk28gkS^]RLbG7;22
+I0dc[10F5XBn79QL1ja2V60
+R2
+R0
+w1557815866
+8H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_module.v
+FH:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_module.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench|H:/my_workshop/learn_fpga/exercise/key_stable/prj/../testbench/key_module.v|
+!i113 1
+R5
+R6
+R7
+vkey_stable
+R1
+!i10b 1
+!s100 :;DRegaYTcLUU[FWNL:A]0
+I=@WDHQD97UmgX9]Z=KgDJ3
+R2
+R0
+w1557794329
+8H:/my_workshop/learn_fpga/exercise/key_stable/rtl/key_stable.v
+FH:/my_workshop/learn_fpga/exercise/key_stable/rtl/key_stable.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/exercise/key_stable/rtl/key_stable.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/exercise/key_stable/rtl|H:/my_workshop/learn_fpga/exercise/key_stable/rtl/key_stable.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/key_stable/rtl
+R7

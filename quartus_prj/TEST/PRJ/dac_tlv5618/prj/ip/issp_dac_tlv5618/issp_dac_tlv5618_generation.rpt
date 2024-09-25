@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate H:\my_workshop\learn_fpga\Exercises\TEST\PRJ\dac_tlv5618\prj\ip\issp_dac_tlv5618.qsys --block-symbol-file --output-directory=H:\my_workshop\learn_fpga\Exercises\TEST\PRJ\dac_tlv5618\prj\ip\issp_dac_tlv5618 --family="Cyclone IV E" --part=EP4CE10F17C8
+Progress: Loading ip/issp_dac_tlv5618.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 18.0]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate H:\my_workshop\learn_fpga\Exercises\TEST\PRJ\dac_tlv5618\prj\ip\issp_dac_tlv5618.qsys --synthesis=VERILOG --output-directory=H:\my_workshop\learn_fpga\Exercises\TEST\PRJ\dac_tlv5618\prj\ip\issp_dac_tlv5618\synthesis --family="Cyclone IV E" --part=EP4CE10F17C8
+Progress: Loading ip/issp_dac_tlv5618.qsys
+Progress: Reading input file
+Progress: Adding in_system_sources_probes_0 [altera_in_system_sources_probes 18.0]
+Progress: Parameterizing module in_system_sources_probes_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: issp_dac_tlv5618: Generating issp_dac_tlv5618 "issp_dac_tlv5618" for QUARTUS_SYNTH
+Info: in_system_sources_probes_0: "issp_dac_tlv5618" instantiated altera_in_system_sources_probes "in_system_sources_probes_0"
+Info: issp_dac_tlv5618: Done "issp_dac_tlv5618" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

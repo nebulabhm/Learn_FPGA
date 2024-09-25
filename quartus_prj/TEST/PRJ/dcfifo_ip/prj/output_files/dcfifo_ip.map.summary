@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May 26 01:28:14 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : dcfifo_ip
+Top-level Entity Name : dc_fifo
+Family : Cyclone IV E
+Total logic elements : 171
+    Total combinational functions : 106
+    Dedicated logic registers : 124
+Total registers : 124
+Total pins : 47
+Total virtual pins : 0
+Total memory bits : 4,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

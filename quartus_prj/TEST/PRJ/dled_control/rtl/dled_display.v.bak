@@ -1,0 +1,17 @@
+module dled_display(Clk, Rst_n, En, Disp_data, sel, seg);
+
+	input Clk;
+	input Rst_n;
+	input En;
+	input [15:0] Disp_data;
+	output reg [7:0] sel;
+	output reg [6:0] seg;
+	
+	//code...
+	
+	reg [3:0] data_tmp;
+	always@(*)
+		case (sel_r)
+
+
+endmodule

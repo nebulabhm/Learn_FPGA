@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Set_Done",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_CS_N",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DIN",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_State",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Start",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DATA[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

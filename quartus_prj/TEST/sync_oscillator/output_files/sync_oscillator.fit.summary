@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Jul 06 15:52:13 2021
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : sync_oscillator
+Top-level Entity Name : sync_oscillator
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 6 / 240 ( 3 % )
+Total pins : 3 / 80 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

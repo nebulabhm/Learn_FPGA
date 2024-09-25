@@ -1,0 +1,38 @@
+module dled_hex8(Clk, Rst_n, Disp_data, En, seg, sel);
+	
+	input Clk;
+	input Rst_n;
+	input [31:0] Disp_data;
+	input En;
+	
+	output seg;
+	output sel;
+	
+	wire [7:0] sel;
+	reg [6:0] seg;
+	
+	wire Clk_1k;
+	crystal_1KHz crystal_1KHz0(
+		.Clk(Clk), 
+		.Rst_n(Rst_n), 
+		.En(En), 
+		.Clk_1k(ClK_1K)
+	);
+	
+	
+	wire [7:0] sel_r;
+	loop_shifter_8b loop_shifter_8b0(
+		.Rst_n(Rst_n), 
+		.Clk_1k(Clk_1k), 
+		.sel_r(sel_r)
+	);
+	
+	wire [3:0] data_tmp;
+	dled_decoder dled_decoder0(
+		.sel_r(sel_r), 
+		.Disp_data(disp_data), 
+		.data_tmp(data_tmp)
+		);
+	
+
+endmodule

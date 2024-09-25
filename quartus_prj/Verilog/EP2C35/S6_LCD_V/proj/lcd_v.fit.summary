@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Mar 30 14:54:51 2009
+Quartus II Version : 7.2 Build 151 09/26/2007 SJ Full Version
+Revision Name : lcd_v
+Top-level Entity Name : lcd_v
+Family : Cyclone II
+Device : EP2C35F484C8
+Timing Models : Final
+Total logic elements : 641 / 33,216 ( 2 % )
+    Total combinational functions : 439 / 33,216 ( 1 % )
+    Dedicated logic registers : 514 / 33,216 ( 2 % )
+Total registers : 514
+Total pins : 17 / 322 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 53,248 / 483,840 ( 11 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

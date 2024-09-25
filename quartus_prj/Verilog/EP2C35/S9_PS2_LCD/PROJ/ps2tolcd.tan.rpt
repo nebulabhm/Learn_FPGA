@@ -1,0 +1,769 @@
+Classic Timing Analyzer report for ps2tolcd
+Tue Mar 31 17:36:41 2009
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Clock Setup: 'mclk'
+  6. Clock Hold: 'mclk'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                                                  ;
++------------------------------+------------------------------------------+---------------+----------------------------------+------------------------------------------+-------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                      ; From                                     ; To                                        ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+----------------------------------+------------------------------------------+-------------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A                                      ; None          ; 5.837 ns                         ; reset                                    ; ps2_keyboard_interface:inst3|bit_count[2] ; --         ; mclk     ; 0            ;
+; Worst-case tco               ; N/A                                      ; None          ; 23.286 ns                        ; lcd:inst2|data[3]                        ; data[3]                                   ; mclk       ; --       ; 0            ;
+; Worst-case th                ; N/A                                      ; None          ; -0.457 ns                        ; ps2_data                                 ; ps2_keyboard_interface:inst3|ps2_data_s   ; --         ; mclk     ; 0            ;
+; Clock Setup: 'mclk'          ; N/A                                      ; None          ; 99.04 MHz ( period = 10.097 ns ) ; ps2_keyboard_interface:inst3|q[4]        ; ps2_keyboard_interface:inst3|rx_ascii[1]  ; mclk       ; mclk     ; 0            ;
+; Clock Hold: 'mclk'           ; Not operational: Clock Skew > Data Delay ; None          ; N/A                              ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|lcd_rs                          ; mclk       ; mclk     ; 161          ;
+; Total number of failed paths ;                                          ;               ;                                  ;                                          ;                                           ;            ;          ; 161          ;
++------------------------------+------------------------------------------+---------------+----------------------------------+------------------------------------------+-------------------------------------------+------------+----------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                      ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                         ; Setting            ; From ; To ; Entity Name ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                    ; EP2C35F484C8       ;      ;    ;             ;
+; Timing Models                                                  ; Final              ;      ;    ;             ;
+; Default hold multicycle                                        ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                      ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                         ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                 ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                               ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                          ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                        ; Off                ;      ;    ;             ;
+; Enable Recovery/Removal analysis                               ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                           ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                  ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                              ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                              ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node          ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                          ; 10                 ;      ;    ;             ;
+; Number of paths to report                                      ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                   ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                         ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                     ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                   ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis ; Off                ;      ;    ;             ;
++----------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; mclk            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'mclk'                                                                                                                                                                                                                                                                                                      ;
++-----------------------------------------+-----------------------------------------------------+---------------------------------------------------------------+----------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                                                          ; To                                           ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+---------------------------------------------------------------+----------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 99.04 MHz ( period = 10.097 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 9.836 ns                ;
+; N/A                                     ; 99.59 MHz ( period = 10.041 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 9.780 ns                ;
+; N/A                                     ; 100.62 MHz ( period = 9.938 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 9.675 ns                ;
+; N/A                                     ; 103.38 MHz ( period = 9.673 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 9.412 ns                ;
+; N/A                                     ; 103.98 MHz ( period = 9.617 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 9.356 ns                ;
+; N/A                                     ; 104.79 MHz ( period = 9.543 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 9.280 ns                ;
+; N/A                                     ; 105.11 MHz ( period = 9.514 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 9.251 ns                ;
+; N/A                                     ; 107.39 MHz ( period = 9.312 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 9.049 ns                ;
+; N/A                                     ; 108.15 MHz ( period = 9.246 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 8.983 ns                ;
+; N/A                                     ; 109.66 MHz ( period = 9.119 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 8.856 ns                ;
+; N/A                                     ; 110.31 MHz ( period = 9.065 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 8.804 ns                ;
+; N/A                                     ; 111.00 MHz ( period = 9.009 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 8.748 ns                ;
+; N/A                                     ; 111.01 MHz ( period = 9.008 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 8.745 ns                ;
+; N/A                                     ; 111.26 MHz ( period = 8.988 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 8.725 ns                ;
+; N/A                                     ; 112.28 MHz ( period = 8.906 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 8.643 ns                ;
+; N/A                                     ; 112.51 MHz ( period = 8.888 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 8.625 ns                ;
+; N/A                                     ; 112.91 MHz ( period = 8.857 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 8.592 ns                ;
+; N/A                                     ; 113.35 MHz ( period = 8.822 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 8.559 ns                ;
+; N/A                                     ; 113.74 MHz ( period = 8.792 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 8.531 ns                ;
+; N/A                                     ; 114.06 MHz ( period = 8.767 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 8.502 ns                ;
+; N/A                                     ; 114.38 MHz ( period = 8.743 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 8.480 ns                ;
+; N/A                                     ; 114.47 MHz ( period = 8.736 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 8.475 ns                ;
+; N/A                                     ; 114.82 MHz ( period = 8.709 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 8.444 ns                ;
+; N/A                                     ; 115.69 MHz ( period = 8.644 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[1]     ; mclk       ; mclk     ; None                        ; None                      ; 8.379 ns                ;
+; N/A                                     ; 115.83 MHz ( period = 8.633 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 8.370 ns                ;
+; N/A                                     ; 116.50 MHz ( period = 8.584 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 8.321 ns                ;
+; N/A                                     ; 116.77 MHz ( period = 8.564 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 8.301 ns                ;
+; N/A                                     ; 117.50 MHz ( period = 8.511 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 8.248 ns                ;
+; N/A                                     ; 117.87 MHz ( period = 8.484 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 8.218 ns                ;
+; N/A                                     ; 118.58 MHz ( period = 8.433 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 8.170 ns                ;
+; N/A                                     ; 119.08 MHz ( period = 8.398 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 8.134 ns                ;
+; N/A                                     ; 119.35 MHz ( period = 8.379 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 8.116 ns                ;
+; N/A                                     ; 119.86 MHz ( period = 8.343 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 8.078 ns                ;
+; N/A                                     ; 119.96 MHz ( period = 8.336 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 8.070 ns                ;
+; N/A                                     ; 120.77 MHz ( period = 8.280 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 8.017 ns                ;
+; N/A                                     ; 120.79 MHz ( period = 8.279 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 8.013 ns                ;
+; N/A                                     ; 121.65 MHz ( period = 8.220 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[6]     ; mclk       ; mclk     ; None                        ; None                      ; 7.955 ns                ;
+; N/A                                     ; 121.74 MHz ( period = 8.214 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 7.951 ns                ;
+; N/A                                     ; 121.74 MHz ( period = 8.214 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 7.948 ns                ;
+; N/A                                     ; 122.79 MHz ( period = 8.144 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 7.879 ns                ;
+; N/A                                     ; 123.06 MHz ( period = 8.126 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 7.861 ns                ;
+; N/A                                     ; 123.53 MHz ( period = 8.095 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 7.828 ns                ;
+; N/A                                     ; 123.85 MHz ( period = 8.074 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 7.808 ns                ;
+; N/A                                     ; 124.39 MHz ( period = 8.039 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 7.775 ns                ;
+; N/A                                     ; 124.89 MHz ( period = 8.007 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 7.744 ns                ;
+; N/A                                     ; 125.06 MHz ( period = 7.996 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 7.733 ns                ;
+; N/A                                     ; 125.38 MHz ( period = 7.976 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 7.713 ns                ;
+; N/A                                     ; 125.44 MHz ( period = 7.972 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 7.705 ns                ;
+; N/A                                     ; 125.69 MHz ( period = 7.956 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 7.693 ns                ;
+; N/A                                     ; 125.96 MHz ( period = 7.939 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 7.674 ns                ;
+; N/A                                     ; 126.69 MHz ( period = 7.893 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 7.627 ns                ;
+; N/A                                     ; 127.88 MHz ( period = 7.820 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 7.552 ns                ;
+; N/A                                     ; 128.35 MHz ( period = 7.791 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 7.528 ns                ;
+; N/A                                     ; 128.90 MHz ( period = 7.758 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.516 ns                ;
+; N/A                                     ; 129.28 MHz ( period = 7.735 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 7.470 ns                ;
+; N/A                                     ; 129.42 MHz ( period = 7.727 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 7.464 ns                ;
+; N/A                                     ; 129.58 MHz ( period = 7.717 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.477 ns                ;
+; N/A                                     ; 129.92 MHz ( period = 7.697 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[3]     ; mclk       ; mclk     ; None                        ; None                      ; 7.429 ns                ;
+; N/A                                     ; 129.94 MHz ( period = 7.696 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[5]     ; mclk       ; mclk     ; None                        ; None                      ; 7.431 ns                ;
+; N/A                                     ; 130.92 MHz ( period = 7.638 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.398 ns                ;
+; N/A                                     ; 130.98 MHz ( period = 7.635 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.393 ns                ;
+; N/A                                     ; 131.20 MHz ( period = 7.622 ns )                    ; ps2_keyboard_interface:inst3|q[5]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.382 ns                ;
+; N/A                                     ; 131.37 MHz ( period = 7.612 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[0]     ; mclk       ; mclk     ; None                        ; None                      ; 7.347 ns                ;
+; N/A                                     ; 131.94 MHz ( period = 7.579 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.341 ns                ;
+; N/A                                     ; 132.26 MHz ( period = 7.561 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.325 ns                ;
+; N/A                                     ; 132.26 MHz ( period = 7.561 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.325 ns                ;
+; N/A                                     ; 132.66 MHz ( period = 7.538 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.300 ns                ;
+; N/A                                     ; 132.96 MHz ( period = 7.521 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.282 ns                ;
+; N/A                                     ; 133.64 MHz ( period = 7.483 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.247 ns                ;
+; N/A                                     ; 133.96 MHz ( period = 7.465 ns )                    ; ps2_keyboard_interface:inst3|q[3]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.225 ns                ;
+; N/A                                     ; 134.01 MHz ( period = 7.462 ns )                    ; ps2_keyboard_interface:inst3|right_shift_key                  ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 7.197 ns                ;
+; N/A                                     ; 134.16 MHz ( period = 7.454 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.214 ns                ;
+; N/A                                     ; 134.88 MHz ( period = 7.414 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.175 ns                ;
+; N/A                                     ; 135.01 MHz ( period = 7.407 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.168 ns                ;
+; N/A                                     ; 135.70 MHz ( period = 7.369 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.133 ns                ;
+; N/A                                     ; 136.26 MHz ( period = 7.339 ns )                    ; ps2_keyboard_interface:inst3|left_shift_key                   ; ps2_keyboard_interface:inst3|rx_ascii[2]     ; mclk       ; mclk     ; None                        ; None                      ; 7.074 ns                ;
+; N/A                                     ; 136.43 MHz ( period = 7.330 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.091 ns                ;
+; N/A                                     ; 136.80 MHz ( period = 7.310 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.074 ns                ;
+; N/A                                     ; 136.80 MHz ( period = 7.310 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.074 ns                ;
+; N/A                                     ; 137.14 MHz ( period = 7.292 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 6.056 ns                ;
+; N/A                                     ; 137.72 MHz ( period = 7.261 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_ascii[4]     ; mclk       ; mclk     ; None                        ; None                      ; 7.021 ns                ;
+; N/A                                     ; 140.47 MHz ( period = 7.119 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.883 ns                ;
+; N/A                                     ; 140.47 MHz ( period = 7.119 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.883 ns                ;
+; N/A                                     ; 143.37 MHz ( period = 6.975 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.736 ns                ;
+; N/A                                     ; 143.82 MHz ( period = 6.953 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.714 ns                ;
+; N/A                                     ; 144.22 MHz ( period = 6.934 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.695 ns                ;
+; N/A                                     ; 144.47 MHz ( period = 6.922 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[6]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.683 ns                ;
+; N/A                                     ; 144.61 MHz ( period = 6.915 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.679 ns                ;
+; N/A                                     ; 145.01 MHz ( period = 6.896 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.660 ns                ;
+; N/A                                     ; 146.84 MHz ( period = 6.810 ns )                    ; ps2_keyboard_interface:inst3|bit_count[3]                     ; ps2_keyboard_interface:inst3|bit_count[3]    ; mclk       ; mclk     ; None                        ; None                      ; 6.546 ns                ;
+; N/A                                     ; 146.84 MHz ( period = 6.810 ns )                    ; ps2_keyboard_interface:inst3|bit_count[3]                     ; ps2_keyboard_interface:inst3|bit_count[1]    ; mclk       ; mclk     ; None                        ; None                      ; 6.546 ns                ;
+; N/A                                     ; 146.84 MHz ( period = 6.810 ns )                    ; ps2_keyboard_interface:inst3|bit_count[3]                     ; ps2_keyboard_interface:inst3|bit_count[0]    ; mclk       ; mclk     ; None                        ; None                      ; 6.546 ns                ;
+; N/A                                     ; 146.84 MHz ( period = 6.810 ns )                    ; ps2_keyboard_interface:inst3|bit_count[3]                     ; ps2_keyboard_interface:inst3|bit_count[2]    ; mclk       ; mclk     ; None                        ; None                      ; 6.546 ns                ;
+; N/A                                     ; 147.41 MHz ( period = 6.784 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.545 ns                ;
+; N/A                                     ; 148.32 MHz ( period = 6.742 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.506 ns                ;
+; N/A                                     ; 148.32 MHz ( period = 6.742 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.506 ns                ;
+; N/A                                     ; 148.74 MHz ( period = 6.723 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.487 ns                ;
+; N/A                                     ; 148.74 MHz ( period = 6.723 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.487 ns                ;
+; N/A                                     ; 149.01 MHz ( period = 6.711 ns )                    ; ps2_keyboard_interface:inst3|bit_count[1]                     ; ps2_keyboard_interface:inst3|bit_count[3]    ; mclk       ; mclk     ; None                        ; None                      ; 6.447 ns                ;
+; N/A                                     ; 149.01 MHz ( period = 6.711 ns )                    ; ps2_keyboard_interface:inst3|bit_count[1]                     ; ps2_keyboard_interface:inst3|bit_count[1]    ; mclk       ; mclk     ; None                        ; None                      ; 6.447 ns                ;
+; N/A                                     ; 149.01 MHz ( period = 6.711 ns )                    ; ps2_keyboard_interface:inst3|bit_count[1]                     ; ps2_keyboard_interface:inst3|bit_count[0]    ; mclk       ; mclk     ; None                        ; None                      ; 6.447 ns                ;
+; N/A                                     ; 149.01 MHz ( period = 6.711 ns )                    ; ps2_keyboard_interface:inst3|bit_count[1]                     ; ps2_keyboard_interface:inst3|bit_count[2]    ; mclk       ; mclk     ; None                        ; None                      ; 6.447 ns                ;
+; N/A                                     ; 150.74 MHz ( period = 6.634 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.398 ns                ;
+; N/A                                     ; 150.74 MHz ( period = 6.634 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.398 ns                ;
+; N/A                                     ; 151.15 MHz ( period = 6.616 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[6]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.377 ns                ;
+; N/A                                     ; 152.00 MHz ( period = 6.579 ns )                    ; ps2_keyboard_interface:inst3|q[2]                             ; ps2_keyboard_interface:inst3|left_shift_key  ; mclk       ; mclk     ; None                        ; None                      ; 6.319 ns                ;
+; N/A                                     ; 152.00 MHz ( period = 6.579 ns )                    ; lcd:inst2|count[0]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.340 ns                ;
+; N/A                                     ; 152.25 MHz ( period = 6.568 ns )                    ; lcd:inst2|state.SETFUNCTION                                   ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.326 ns                ;
+; N/A                                     ; 152.88 MHz ( period = 6.541 ns )                    ; lcd:inst2|count[0]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.305 ns                ;
+; N/A                                     ; 154.06 MHz ( period = 6.491 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[4]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.252 ns                ;
+; N/A                                     ; 154.11 MHz ( period = 6.489 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|data[5]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.250 ns                ;
+; N/A                                     ; 154.15 MHz ( period = 6.487 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|lcd_rs                             ; mclk       ; mclk     ; None                        ; None                      ; 5.248 ns                ;
+; N/A                                     ; 154.89 MHz ( period = 6.456 ns )                    ; ps2_keyboard_interface:inst3|bit_count[0]                     ; ps2_keyboard_interface:inst3|bit_count[3]    ; mclk       ; mclk     ; None                        ; None                      ; 6.192 ns                ;
+; N/A                                     ; 154.89 MHz ( period = 6.456 ns )                    ; ps2_keyboard_interface:inst3|bit_count[0]                     ; ps2_keyboard_interface:inst3|bit_count[1]    ; mclk       ; mclk     ; None                        ; None                      ; 6.192 ns                ;
+; N/A                                     ; 154.89 MHz ( period = 6.456 ns )                    ; ps2_keyboard_interface:inst3|bit_count[0]                     ; ps2_keyboard_interface:inst3|bit_count[0]    ; mclk       ; mclk     ; None                        ; None                      ; 6.192 ns                ;
+; N/A                                     ; 154.89 MHz ( period = 6.456 ns )                    ; ps2_keyboard_interface:inst3|bit_count[0]                     ; ps2_keyboard_interface:inst3|bit_count[2]    ; mclk       ; mclk     ; None                        ; None                      ; 6.192 ns                ;
+; N/A                                     ; 155.16 MHz ( period = 6.445 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|rx_released     ; mclk       ; mclk     ; None                        ; None                      ; 6.199 ns                ;
+; N/A                                     ; 155.64 MHz ( period = 6.425 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[6]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.186 ns                ;
+; N/A                                     ; 156.08 MHz ( period = 6.407 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.168 ns                ;
+; N/A                                     ; 156.54 MHz ( period = 6.388 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.149 ns                ;
+; N/A                                     ; 157.04 MHz ( period = 6.368 ns )                    ; lcd:inst2|count[0]                                            ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.132 ns                ;
+; N/A                                     ; 157.04 MHz ( period = 6.368 ns )                    ; lcd:inst2|count[0]                                            ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.132 ns                ;
+; N/A                                     ; 157.26 MHz ( period = 6.359 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|state.WRITERAM                     ; mclk       ; mclk     ; None                        ; None                      ; 5.120 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[10]                         ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[8]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[9]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[11]                         ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[1]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[2]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[0]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[3]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[7]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[4]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[6]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[5]                          ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[15]                         ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[13]                         ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[14]                         ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 157.73 MHz ( period = 6.340 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|clkcnt[12]                         ; mclk       ; mclk     ; None                        ; None                      ; 3.093 ns                ;
+; N/A                                     ; 159.90 MHz ( period = 6.254 ns )                    ; ps2_keyboard_interface:inst3|bit_count[2]                     ; ps2_keyboard_interface:inst3|bit_count[3]    ; mclk       ; mclk     ; None                        ; None                      ; 5.990 ns                ;
+; N/A                                     ; 159.90 MHz ( period = 6.254 ns )                    ; ps2_keyboard_interface:inst3|bit_count[2]                     ; ps2_keyboard_interface:inst3|bit_count[1]    ; mclk       ; mclk     ; None                        ; None                      ; 5.990 ns                ;
+; N/A                                     ; 159.90 MHz ( period = 6.254 ns )                    ; ps2_keyboard_interface:inst3|bit_count[2]                     ; ps2_keyboard_interface:inst3|bit_count[0]    ; mclk       ; mclk     ; None                        ; None                      ; 5.990 ns                ;
+; N/A                                     ; 159.90 MHz ( period = 6.254 ns )                    ; ps2_keyboard_interface:inst3|bit_count[2]                     ; ps2_keyboard_interface:inst3|bit_count[2]    ; mclk       ; mclk     ; None                        ; None                      ; 5.990 ns                ;
+; N/A                                     ; 160.26 MHz ( period = 6.240 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[4]                            ; mclk       ; mclk     ; None                        ; None                      ; 5.001 ns                ;
+; N/A                                     ; 160.31 MHz ( period = 6.238 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|data[5]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.999 ns                ;
+; N/A                                     ; 160.36 MHz ( period = 6.236 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|lcd_rs                             ; mclk       ; mclk     ; None                        ; None                      ; 4.997 ns                ;
+; N/A                                     ; 161.16 MHz ( period = 6.205 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.969 ns                ;
+; N/A                                     ; 163.40 MHz ( period = 6.120 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|right_shift_key ; mclk       ; mclk     ; None                        ; None                      ; 5.858 ns                ;
+; N/A                                     ; 165.32 MHz ( period = 6.049 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[4]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.810 ns                ;
+; N/A                                     ; 165.34 MHz ( period = 6.048 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[6]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.809 ns                ;
+; N/A                                     ; 165.34 MHz ( period = 6.048 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 12.504 ns               ;
+; N/A                                     ; 165.34 MHz ( period = 6.048 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 12.504 ns               ;
+; N/A                                     ; 165.37 MHz ( period = 6.047 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|data[5]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.808 ns                ;
+; N/A                                     ; 165.43 MHz ( period = 6.045 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|lcd_rs                             ; mclk       ; mclk     ; None                        ; None                      ; 4.806 ns                ;
+; N/A                                     ; 165.76 MHz ( period = 6.033 ns )                    ; lcd:inst2|count[0]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.794 ns                ;
+; N/A                                     ; 165.86 MHz ( period = 6.029 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[6]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.790 ns                ;
+; N/A                                     ; 166.53 MHz ( period = 6.005 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|count[5]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.766 ns                ;
+; N/A                                     ; 166.56 MHz ( period = 6.004 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|count[2]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.765 ns                ;
+; N/A                                     ; 167.62 MHz ( period = 5.966 ns )                    ; lcd:inst2|state.SETDDRAM                                      ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.724 ns                ;
+; N/A                                     ; 168.52 MHz ( period = 5.934 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|rx_released     ; mclk       ; mclk     ; None                        ; None                      ; 5.688 ns                ;
+; N/A                                     ; 168.69 MHz ( period = 5.928 ns )                    ; lcd:inst2|state.SETDDRAM                                      ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.689 ns                ;
+; N/A                                     ; 168.92 MHz ( period = 5.920 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|state.WRITERAM                     ; mclk       ; mclk     ; None                        ; None                      ; 4.681 ns                ;
+; N/A                                     ; 169.20 MHz ( period = 5.910 ns )                    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_keyboard_ack ; ps2_keyboard_interface:inst3|bit_count[3]    ; mclk       ; mclk     ; None                        ; None                      ; 5.625 ns                ;
+; N/A                                     ; 169.20 MHz ( period = 5.910 ns )                    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_keyboard_ack ; ps2_keyboard_interface:inst3|bit_count[1]    ; mclk       ; mclk     ; None                        ; None                      ; 5.625 ns                ;
+; N/A                                     ; 169.20 MHz ( period = 5.910 ns )                    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_keyboard_ack ; ps2_keyboard_interface:inst3|bit_count[0]    ; mclk       ; mclk     ; None                        ; None                      ; 5.625 ns                ;
+; N/A                                     ; 169.20 MHz ( period = 5.910 ns )                    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_keyboard_ack ; ps2_keyboard_interface:inst3|bit_count[2]    ; mclk       ; mclk     ; None                        ; None                      ; 5.625 ns                ;
+; N/A                                     ; 169.29 MHz ( period = 5.907 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|left_shift_key  ; mclk       ; mclk     ; None                        ; None                      ; 5.645 ns                ;
+; N/A                                     ; 169.46 MHz ( period = 5.901 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 12.354 ns               ;
+; N/A                                     ; 169.66 MHz ( period = 5.894 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 12.347 ns               ;
+; N/A                                     ; 170.01 MHz ( period = 5.882 ns )                    ; lcd:inst2|count[4]                                            ; lcd:inst2|state.CLEAR                        ; mclk       ; mclk     ; None                        ; None                      ; 4.643 ns                ;
+; N/A                                     ; 170.77 MHz ( period = 5.856 ns )                    ; ps2_keyboard_interface:inst3|rx_released                      ; lcd:inst2|data[0]                            ; mclk       ; mclk     ; None                        ; None                      ; 12.312 ns               ;
+; N/A                                     ; 171.59 MHz ( period = 5.828 ns )                    ; ps2_keyboard_interface:inst3|q[8]                             ; ps2_keyboard_interface:inst3|rx_released     ; mclk       ; mclk     ; None                        ; None                      ; 5.582 ns                ;
+; N/A                                     ; 171.61 MHz ( period = 5.827 ns )                    ; ps2_keyboard_interface:inst3|q[7]                             ; ps2_keyboard_interface:inst3|right_shift_key ; mclk       ; mclk     ; None                        ; None                      ; 5.565 ns                ;
+; N/A                                     ; 172.00 MHz ( period = 5.814 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|count[5]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.575 ns                ;
+; N/A                                     ; 172.03 MHz ( period = 5.813 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|count[2]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.574 ns                ;
+; N/A                                     ; 173.67 MHz ( period = 5.758 ns )                    ; ps2_keyboard_interface:inst3|q[4]                             ; ps2_keyboard_interface:inst3|rx_released     ; mclk       ; mclk     ; None                        ; None                      ; 5.514 ns                ;
+; N/A                                     ; 174.55 MHz ( period = 5.729 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|state.WRITERAM                     ; mclk       ; mclk     ; None                        ; None                      ; 4.490 ns                ;
+; N/A                                     ; 174.95 MHz ( period = 5.716 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[3]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.477 ns                ;
+; N/A                                     ; 175.38 MHz ( period = 5.702 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|count[1]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.463 ns                ;
+; N/A                                     ; 175.44 MHz ( period = 5.700 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|count[4]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.461 ns                ;
+; N/A                                     ; 175.47 MHz ( period = 5.699 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|count[3]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.460 ns                ;
+; N/A                                     ; 175.69 MHz ( period = 5.692 ns )                    ; lcd:inst2|state.SETFUNCTION                                   ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.453 ns                ;
+; N/A                                     ; 176.15 MHz ( period = 5.677 ns )                    ; lcd:inst2|state.IDLE                                          ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.438 ns                ;
+; N/A                                     ; 176.24 MHz ( period = 5.674 ns )                    ; lcd:inst2|count[0]                                            ; lcd:inst2|data[6]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.435 ns                ;
+; N/A                                     ; 176.30 MHz ( period = 5.672 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[4]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.433 ns                ;
+; N/A                                     ; 176.37 MHz ( period = 5.670 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|data[5]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.431 ns                ;
+; N/A                                     ; 176.43 MHz ( period = 5.668 ns )                    ; lcd:inst2|count[2]                                            ; lcd:inst2|lcd_rs                             ; mclk       ; mclk     ; None                        ; None                      ; 4.429 ns                ;
+; N/A                                     ; 176.90 MHz ( period = 5.653 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[4]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.414 ns                ;
+; N/A                                     ; 176.96 MHz ( period = 5.651 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|data[5]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.412 ns                ;
+; N/A                                     ; 177.02 MHz ( period = 5.649 ns )                    ; lcd:inst2|count[1]                                            ; lcd:inst2|lcd_rs                             ; mclk       ; mclk     ; None                        ; None                      ; 4.410 ns                ;
+; N/A                                     ; 177.05 MHz ( period = 5.648 ns )                    ; ps2_keyboard_interface:inst3|q[6]                             ; ps2_keyboard_interface:inst3|right_shift_key ; mclk       ; mclk     ; None                        ; None                      ; 5.386 ns                ;
+; N/A                                     ; 177.59 MHz ( period = 5.631 ns )                    ; lcd:inst2|count[5]                                            ; lcd:inst2|state.CLEAR                        ; mclk       ; mclk     ; None                        ; None                      ; 4.392 ns                ;
+; N/A                                     ; 179.73 MHz ( period = 5.564 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[4]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.325 ns                ;
+; N/A                                     ; 179.79 MHz ( period = 5.562 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[5]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.323 ns                ;
+; N/A                                     ; 179.86 MHz ( period = 5.560 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|lcd_rs                             ; mclk       ; mclk     ; None                        ; None                      ; 4.321 ns                ;
+; N/A                                     ; 180.18 MHz ( period = 5.550 ns )                    ; lcd:inst2|state.SETDDRAM                                      ; lcd:inst2|data[2]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.311 ns                ;
+; N/A                                     ; 180.57 MHz ( period = 5.538 ns )                    ; lcd:inst2|state.SETDDRAM                                      ; lcd:inst2|data[1]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.299 ns                ;
+; N/A                                     ; 180.64 MHz ( period = 5.536 ns )                    ; ps2_keyboard_interface:inst3|q[1]                             ; ps2_keyboard_interface:inst3|hold_released   ; mclk       ; mclk     ; None                        ; None                      ; 5.271 ns                ;
+; N/A                                     ; 180.83 MHz ( period = 5.530 ns )                    ; lcd:inst2|count[6]                                            ; lcd:inst2|data[7]                            ; mclk       ; mclk     ; None                        ; None                      ; 4.291 ns                ;
+; N/A                                     ; 181.46 MHz ( period = 5.511 ns )                    ; lcd:inst2|count[3]                                            ; lcd:inst2|count[1]                           ; mclk       ; mclk     ; None                        ; None                      ; 4.272 ns                ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                                                               ;                                              ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+---------------------------------------------------------------+----------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'mclk'                                                                                                                                                                                                             ;
++------------------------------------------+------------------------------------------+-----------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From                                     ; To                          ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+------------------------------------------+-----------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 2.327 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 2.327 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 2.327 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 2.327 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 2.327 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 2.327 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 2.336 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 2.336 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 2.336 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|lcd_e             ; mclk       ; mclk     ; None                       ; None                       ; 1.964 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 3.334 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 3.508 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 3.833 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 4.016 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 4.029 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 4.256 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 4.397 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 4.441 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 4.681 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 4.762 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 4.780 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 4.859 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 4.963 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 5.002 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 5.071 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 5.093 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 5.108 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 5.143 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 5.155 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 5.233 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 5.236 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 5.284 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 5.311 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 5.359 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 5.360 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 5.362 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 5.367 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 5.369 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 5.371 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 5.388 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 5.396 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 5.401 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 5.452 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 5.473 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 5.476 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 5.533 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|clk_int           ; mclk       ; mclk     ; None                       ; None                       ; 0.769 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 5.599 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 5.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 5.602 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 5.605 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 5.606 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 5.607 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 5.609 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 5.611 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 5.614 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 5.617 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 5.636 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 5.641 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 5.709 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 5.740 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 5.741 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 5.743 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 5.747 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 5.748 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 5.750 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 5.752 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 5.777 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 5.782 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 5.769 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 5.854 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 5.914 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 6.015 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 6.018 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 6.076 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 6.079 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 6.085 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 6.163 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 6.180 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 6.183 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 6.202 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 6.203 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 6.205 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 6.209 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 6.210 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 6.214 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|data[6]           ; mclk       ; mclk     ; None                       ; None                       ; 6.194 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 6.239 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 6.244 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 6.306 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 6.307 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 6.309 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 6.313 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 6.314 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 6.316 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 6.318 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 6.325 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 6.328 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 6.343 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 6.348 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 6.396 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 6.444 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[3] ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 6.444 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 6.451 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 6.452 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 6.454 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 6.458 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 6.459 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 6.461 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 6.463 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 6.488 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 6.493 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|state.CLEAR       ; mclk       ; mclk     ; None                       ; None                       ; 6.515 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 6.684 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[0] ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 6.684 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 6.825 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[6] ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 6.825 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 6.824 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 6.858 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 6.962 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[0]          ; mclk       ; mclk     ; None                       ; None                       ; 6.986 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[6]          ; mclk       ; mclk     ; None                       ; None                       ; 6.989 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 7.107 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[4]          ; mclk       ; mclk     ; None                       ; None                       ; 7.112 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[3]          ; mclk       ; mclk     ; None                       ; None                       ; 7.113 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[1]          ; mclk       ; mclk     ; None                       ; None                       ; 7.115 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 7.119 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 7.120 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 7.122 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 7.149 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[4] ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 7.154 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|lcd_e                          ; lcd:inst2|lcd_e             ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|clkdiv                         ; lcd:inst2|clkdiv            ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|lcd_rs                         ; lcd:inst2|lcd_rs            ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|clk_int                        ; lcd:inst2|clk_int           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|flag                           ; lcd:inst2|flag              ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[7]                        ; lcd:inst2|data[7]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[5]                        ; lcd:inst2|data[5]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[4]                        ; lcd:inst2|data[4]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[3]                        ; lcd:inst2|data[3]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[2]                        ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[1]                        ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|data[0]                        ; lcd:inst2|data[0]           ; mclk       ; mclk     ; None                       ; None                       ; 0.501 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 7.287 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[5] ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 7.287 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_released ; lcd:inst2|state.WRITERAM    ; mclk       ; mclk     ; None                       ; None                       ; 7.321 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[1] ; lcd:inst2|data[2]           ; mclk       ; mclk     ; None                       ; None                       ; 7.391 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|state.SHIFT                    ; lcd:inst2|state.IDLE        ; mclk       ; mclk     ; None                       ; None                       ; 0.740 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|state.IDLE                     ; lcd:inst2|flag              ; mclk       ; mclk     ; None                       ; None                       ; 0.780 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|count[6]                       ; lcd:inst2|count[2]          ; mclk       ; mclk     ; None                       ; None                       ; 0.783 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|count[6]                       ; lcd:inst2|count[5]          ; mclk       ; mclk     ; None                       ; None                       ; 0.785 ns                 ;
+; Not operational: Clock Skew > Data Delay ; ps2_keyboard_interface:inst3|rx_ascii[2] ; lcd:inst2|data[1]           ; mclk       ; mclk     ; None                       ; None                       ; 7.536 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|state.SWITCHMODE               ; lcd:inst2|state.SETMODE     ; mclk       ; mclk     ; None                       ; None                       ; 0.875 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|state.SETMODE                  ; lcd:inst2|state.SETDDRAM    ; mclk       ; mclk     ; None                       ; None                       ; 0.908 ns                 ;
+; Not operational: Clock Skew > Data Delay ; lcd:inst2|flag                           ; lcd:inst2|state.SETFUNCTION ; mclk       ; mclk     ; None                       ; None                       ; 0.924 ns                 ;
++------------------------------------------+------------------------------------------+-----------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                         ;
++-------+--------------+------------+----------+-------------------------------------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From     ; To                                                                ; To Clock ;
++-------+--------------+------------+----------+-------------------------------------------------------------------+----------+
+; N/A   ; None         ; 5.837 ns   ; reset    ; ps2_keyboard_interface:inst3|bit_count[3]                         ; mclk     ;
+; N/A   ; None         ; 5.837 ns   ; reset    ; ps2_keyboard_interface:inst3|bit_count[1]                         ; mclk     ;
+; N/A   ; None         ; 5.837 ns   ; reset    ; ps2_keyboard_interface:inst3|bit_count[0]                         ; mclk     ;
+; N/A   ; None         ; 5.837 ns   ; reset    ; ps2_keyboard_interface:inst3|bit_count[2]                         ; mclk     ;
+; N/A   ; None         ; 5.716 ns   ; reset    ; div_256:inst1|clk                                                 ; mclk     ;
+; N/A   ; None         ; 4.693 ns   ; reset    ; ps2_keyboard_interface:inst3|q[0]                                 ; mclk     ;
+; N/A   ; None         ; 4.677 ns   ; reset    ; ps2_keyboard_interface:inst3|q[9]                                 ; mclk     ;
+; N/A   ; None         ; 4.677 ns   ; reset    ; ps2_keyboard_interface:inst3|q[10]                                ; mclk     ;
+; N/A   ; None         ; 4.659 ns   ; reset    ; ps2_keyboard_interface:inst3|q[2]                                 ; mclk     ;
+; N/A   ; None         ; 4.659 ns   ; reset    ; ps2_keyboard_interface:inst3|q[4]                                 ; mclk     ;
+; N/A   ; None         ; 4.392 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[6]                          ; mclk     ;
+; N/A   ; None         ; 4.392 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[0]                          ; mclk     ;
+; N/A   ; None         ; 4.392 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[1]                          ; mclk     ;
+; N/A   ; None         ; 4.392 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[2]                          ; mclk     ;
+; N/A   ; None         ; 4.391 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[4]                          ; mclk     ;
+; N/A   ; None         ; 4.380 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[3]                          ; mclk     ;
+; N/A   ; None         ; 4.262 ns   ; reset    ; ps2_keyboard_interface:inst3|q[3]                                 ; mclk     ;
+; N/A   ; None         ; 4.262 ns   ; reset    ; ps2_keyboard_interface:inst3|q[5]                                 ; mclk     ;
+; N/A   ; None         ; 4.262 ns   ; reset    ; ps2_keyboard_interface:inst3|q[8]                                 ; mclk     ;
+; N/A   ; None         ; 4.262 ns   ; reset    ; ps2_keyboard_interface:inst3|q[1]                                 ; mclk     ;
+; N/A   ; None         ; 4.262 ns   ; reset    ; ps2_keyboard_interface:inst3|q[7]                                 ; mclk     ;
+; N/A   ; None         ; 4.262 ns   ; reset    ; ps2_keyboard_interface:inst3|q[6]                                 ; mclk     ;
+; N/A   ; None         ; 3.909 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_released                          ; mclk     ;
+; N/A   ; None         ; 3.634 ns   ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[5]                          ; mclk     ;
+; N/A   ; None         ; 2.792 ns   ; reset    ; ps2_keyboard_interface:inst3|hold_released                        ; mclk     ;
+; N/A   ; None         ; 1.960 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_keyboard_ack     ; mclk     ;
+; N/A   ; None         ; 1.960 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_clk_h            ; mclk     ;
+; N/A   ; None         ; 1.960 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_done_recovery         ; mclk     ;
+; N/A   ; None         ; 1.960 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_error_no_keyboard_ack ; mclk     ;
+; N/A   ; None         ; 1.960 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_clk_h                 ; mclk     ;
+; N/A   ; None         ; 1.960 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_clk_l                 ; mclk     ;
+; N/A   ; None         ; 1.705 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_clk_l                 ; mclk     ;
+; N/A   ; None         ; 1.602 ns   ; reset    ; ps2_keyboard_interface:inst3|left_shift_key                       ; mclk     ;
+; N/A   ; None         ; 1.602 ns   ; reset    ; ps2_keyboard_interface:inst3|right_shift_key                      ; mclk     ;
+; N/A   ; None         ; 1.366 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_falling_edge_marker   ; mclk     ;
+; N/A   ; None         ; 1.123 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_clk_h                 ; mclk     ;
+; N/A   ; None         ; 1.123 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_rising_edge_marker    ; mclk     ;
+; N/A   ; None         ; 1.122 ns   ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_rising_edge_marker    ; mclk     ;
+; N/A   ; None         ; 0.766 ns   ; ps2_clk  ; ps2_keyboard_interface:inst3|ps2_clk_s                            ; mclk     ;
+; N/A   ; None         ; 0.723 ns   ; ps2_data ; ps2_keyboard_interface:inst3|ps2_data_s                           ; mclk     ;
++-------+--------------+------------+----------+-------------------------------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                        ;
++-------+--------------+------------+----------------------------------------------------------------+----------+------------+
+; Slack ; Required tco ; Actual tco ; From                                                           ; To       ; From Clock ;
++-------+--------------+------------+----------------------------------------------------------------+----------+------------+
+; N/A   ; None         ; 23.286 ns  ; lcd:inst2|data[3]                                              ; data[3]  ; mclk       ;
+; N/A   ; None         ; 23.279 ns  ; lcd:inst2|data[7]                                              ; data[7]  ; mclk       ;
+; N/A   ; None         ; 22.982 ns  ; lcd:inst2|data[6]                                              ; data[6]  ; mclk       ;
+; N/A   ; None         ; 22.944 ns  ; lcd:inst2|data[4]                                              ; data[4]  ; mclk       ;
+; N/A   ; None         ; 22.787 ns  ; lcd:inst2|data[5]                                              ; data[5]  ; mclk       ;
+; N/A   ; None         ; 22.624 ns  ; lcd:inst2|data[2]                                              ; data[2]  ; mclk       ;
+; N/A   ; None         ; 22.622 ns  ; lcd:inst2|data[1]                                              ; data[1]  ; mclk       ;
+; N/A   ; None         ; 21.948 ns  ; lcd:inst2|data[0]                                              ; data[0]  ; mclk       ;
+; N/A   ; None         ; 21.887 ns  ; lcd:inst2|lcd_rs                                               ; lcd_rs   ; mclk       ;
+; N/A   ; None         ; 21.569 ns  ; lcd:inst2|lcd_e                                                ; lcd_e    ; mclk       ;
+; N/A   ; None         ; 18.705 ns  ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_clk_h         ; ps2_data ; mclk       ;
+; N/A   ; None         ; 18.491 ns  ; ps2_keyboard_interface:inst3|m1_state.m1_tx_rising_edge_marker ; ps2_data ; mclk       ;
+; N/A   ; None         ; 18.183 ns  ; ps2_keyboard_interface:inst3|m1_state.m1_tx_clk_h              ; ps2_data ; mclk       ;
+; N/A   ; None         ; 16.107 ns  ; ps2_keyboard_interface:inst3|rx_ascii[6]                       ; led[6]   ; mclk       ;
+; N/A   ; None         ; 16.026 ns  ; ps2_keyboard_interface:inst3|m1_state.m1_tx_clk_l              ; ps2_data ; mclk       ;
+; N/A   ; None         ; 15.851 ns  ; ps2_keyboard_interface:inst3|q[0]                              ; ps2_data ; mclk       ;
+; N/A   ; None         ; 15.181 ns  ; ps2_keyboard_interface:inst3|rx_ascii[0]                       ; led[0]   ; mclk       ;
+; N/A   ; None         ; 15.162 ns  ; ps2_keyboard_interface:inst3|rx_ascii[5]                       ; led[5]   ; mclk       ;
+; N/A   ; None         ; 15.042 ns  ; ps2_keyboard_interface:inst3|rx_ascii[4]                       ; led[4]   ; mclk       ;
+; N/A   ; None         ; 14.879 ns  ; ps2_keyboard_interface:inst3|rx_ascii[3]                       ; led[3]   ; mclk       ;
+; N/A   ; None         ; 14.816 ns  ; ps2_keyboard_interface:inst3|rx_ascii[1]                       ; led[1]   ; mclk       ;
+; N/A   ; None         ; 14.492 ns  ; ps2_keyboard_interface:inst3|rx_ascii[2]                       ; led[2]   ; mclk       ;
++-------+--------------+------------+----------------------------------------------------------------+----------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                ;
++---------------+-------------+-----------+----------+-------------------------------------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From     ; To                                                                ; To Clock ;
++---------------+-------------+-----------+----------+-------------------------------------------------------------------+----------+
+; N/A           ; None        ; -0.457 ns ; ps2_data ; ps2_keyboard_interface:inst3|ps2_data_s                           ; mclk     ;
+; N/A           ; None        ; -0.500 ns ; ps2_clk  ; ps2_keyboard_interface:inst3|ps2_clk_s                            ; mclk     ;
+; N/A           ; None        ; -0.651 ns ; reset    ; ps2_keyboard_interface:inst3|q[9]                                 ; mclk     ;
+; N/A           ; None        ; -0.654 ns ; reset    ; ps2_keyboard_interface:inst3|q[10]                                ; mclk     ;
+; N/A           ; None        ; -0.856 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_rising_edge_marker    ; mclk     ;
+; N/A           ; None        ; -0.857 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_clk_h                 ; mclk     ;
+; N/A           ; None        ; -0.857 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_rising_edge_marker    ; mclk     ;
+; N/A           ; None        ; -0.976 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[3]                          ; mclk     ;
+; N/A           ; None        ; -1.100 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_falling_edge_marker   ; mclk     ;
+; N/A           ; None        ; -1.109 ns ; reset    ; ps2_keyboard_interface:inst3|rx_released                          ; mclk     ;
+; N/A           ; None        ; -1.116 ns ; reset    ; ps2_keyboard_interface:inst3|q[2]                                 ; mclk     ;
+; N/A           ; None        ; -1.116 ns ; reset    ; ps2_keyboard_interface:inst3|q[4]                                 ; mclk     ;
+; N/A           ; None        ; -1.136 ns ; reset    ; ps2_keyboard_interface:inst3|q[0]                                 ; mclk     ;
+; N/A           ; None        ; -1.154 ns ; reset    ; ps2_keyboard_interface:inst3|q[7]                                 ; mclk     ;
+; N/A           ; None        ; -1.155 ns ; reset    ; ps2_keyboard_interface:inst3|q[8]                                 ; mclk     ;
+; N/A           ; None        ; -1.156 ns ; reset    ; ps2_keyboard_interface:inst3|q[5]                                 ; mclk     ;
+; N/A           ; None        ; -1.157 ns ; reset    ; ps2_keyboard_interface:inst3|q[1]                                 ; mclk     ;
+; N/A           ; None        ; -1.158 ns ; reset    ; ps2_keyboard_interface:inst3|q[6]                                 ; mclk     ;
+; N/A           ; None        ; -1.159 ns ; reset    ; ps2_keyboard_interface:inst3|q[3]                                 ; mclk     ;
+; N/A           ; None        ; -1.296 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[4]                          ; mclk     ;
+; N/A           ; None        ; -1.336 ns ; reset    ; ps2_keyboard_interface:inst3|left_shift_key                       ; mclk     ;
+; N/A           ; None        ; -1.336 ns ; reset    ; ps2_keyboard_interface:inst3|right_shift_key                      ; mclk     ;
+; N/A           ; None        ; -1.439 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_clk_l                 ; mclk     ;
+; N/A           ; None        ; -1.694 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_keyboard_ack     ; mclk     ;
+; N/A           ; None        ; -1.694 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_wait_clk_h            ; mclk     ;
+; N/A           ; None        ; -1.694 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_done_recovery         ; mclk     ;
+; N/A           ; None        ; -1.694 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_error_no_keyboard_ack ; mclk     ;
+; N/A           ; None        ; -1.694 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_tx_clk_h                 ; mclk     ;
+; N/A           ; None        ; -1.694 ns ; reset    ; ps2_keyboard_interface:inst3|m1_state.m1_rx_clk_l                 ; mclk     ;
+; N/A           ; None        ; -1.698 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[6]                          ; mclk     ;
+; N/A           ; None        ; -1.698 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[0]                          ; mclk     ;
+; N/A           ; None        ; -1.698 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[1]                          ; mclk     ;
+; N/A           ; None        ; -1.698 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[2]                          ; mclk     ;
+; N/A           ; None        ; -1.754 ns ; reset    ; ps2_keyboard_interface:inst3|rx_ascii[5]                          ; mclk     ;
+; N/A           ; None        ; -2.526 ns ; reset    ; ps2_keyboard_interface:inst3|hold_released                        ; mclk     ;
+; N/A           ; None        ; -5.450 ns ; reset    ; div_256:inst1|clk                                                 ; mclk     ;
+; N/A           ; None        ; -5.571 ns ; reset    ; ps2_keyboard_interface:inst3|bit_count[3]                         ; mclk     ;
+; N/A           ; None        ; -5.571 ns ; reset    ; ps2_keyboard_interface:inst3|bit_count[1]                         ; mclk     ;
+; N/A           ; None        ; -5.571 ns ; reset    ; ps2_keyboard_interface:inst3|bit_count[0]                         ; mclk     ;
+; N/A           ; None        ; -5.571 ns ; reset    ; ps2_keyboard_interface:inst3|bit_count[2]                         ; mclk     ;
++---------------+-------------+-----------+----------+-------------------------------------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Tue Mar 31 17:36:40 2009
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off ps2tolcd -c ps2tolcd --timing_analysis_only
+Warning: Timing Analysis found one or more latches implemented as combinational loops
+    Warning: Node "lcd:inst2|data_in_buf[6]" is a latch
+    Warning: Node "lcd:inst2|data_in_buf[5]" is a latch
+    Warning: Node "lcd:inst2|data_in_buf[0]" is a latch
+    Warning: Node "lcd:inst2|data_in_buf[4]" is a latch
+    Warning: Node "lcd:inst2|data_in_buf[1]" is a latch
+    Warning: Node "lcd:inst2|data_in_buf[2]" is a latch
+    Warning: Node "lcd:inst2|data_in_buf[3]" is a latch
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[6]"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[5]"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[0]"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[4]"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[1]"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[2]"
+Warning: Found combinational loop of 1 nodes
+    Warning: Node "lcd:inst2|data_in_buf[3]"
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "mclk" is an undefined clock
+Warning: Found 24 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "lcd:inst2|clk_int" as buffer
+    Info: Detected ripple clock "div_256:inst1|count[3]" as buffer
+    Info: Detected ripple clock "div_256:inst1|clk" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[12]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[14]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[13]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[15]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[5]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[6]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[4]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[7]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[3]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[0]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[2]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[1]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[11]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[9]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[8]" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkcnt[10]" as buffer
+    Info: Detected gated clock "lcd:inst2|Equal0~157" as buffer
+    Info: Detected gated clock "lcd:inst2|Equal0~155" as buffer
+    Info: Detected gated clock "lcd:inst2|Equal0~154" as buffer
+    Info: Detected gated clock "lcd:inst2|Equal0~156" as buffer
+    Info: Detected ripple clock "lcd:inst2|clkdiv" as buffer
+Info: Clock "mclk" has Internal fmax of 99.04 MHz between source register "ps2_keyboard_interface:inst3|q[4]" and destination register "ps2_keyboard_interface:inst3|rx_ascii[1]" (period= 10.097 ns)
+    Info: + Longest register to register delay is 9.836 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X42_Y21_N19; Fanout = 33; REG Node = 'ps2_keyboard_interface:inst3|q[4]'
+        Info: 2: + IC(0.834 ns) + CELL(0.370 ns) = 1.204 ns; Loc. = LCCOMB_X42_Y21_N0; Fanout = 7; COMB Node = 'ps2_keyboard_interface:inst3|Equal71~6135'
+        Info: 3: + IC(2.208 ns) + CELL(0.615 ns) = 4.027 ns; Loc. = LCCOMB_X43_Y19_N22; Fanout = 2; COMB Node = 'ps2_keyboard_interface:inst3|Equal71~6138'
+        Info: 4: + IC(1.039 ns) + CELL(0.505 ns) = 5.571 ns; Loc. = LCCOMB_X40_Y19_N6; Fanout = 2; COMB Node = 'ps2_keyboard_interface:inst3|WideOr17~291'
+        Info: 5: + IC(0.395 ns) + CELL(0.614 ns) = 6.580 ns; Loc. = LCCOMB_X40_Y19_N20; Fanout = 2; COMB Node = 'ps2_keyboard_interface:inst3|WideOr18~126'
+        Info: 6: + IC(0.420 ns) + CELL(0.651 ns) = 7.651 ns; Loc. = LCCOMB_X40_Y19_N16; Fanout = 3; COMB Node = 'ps2_keyboard_interface:inst3|WideNor6~134'
+        Info: 7: + IC(0.428 ns) + CELL(0.650 ns) = 8.729 ns; Loc. = LCCOMB_X40_Y19_N26; Fanout = 2; COMB Node = 'ps2_keyboard_interface:inst3|WideOr19~204'
+        Info: 8: + IC(0.375 ns) + CELL(0.624 ns) = 9.728 ns; Loc. = LCCOMB_X40_Y19_N18; Fanout = 1; COMB Node = 'ps2_keyboard_interface:inst3|WideOr19'
+        Info: 9: + IC(0.000 ns) + CELL(0.108 ns) = 9.836 ns; Loc. = LCFF_X40_Y19_N19; Fanout = 3; REG Node = 'ps2_keyboard_interface:inst3|rx_ascii[1]'
+        Info: Total cell delay = 4.137 ns ( 42.06 % )
+        Info: Total interconnect delay = 5.699 ns ( 57.94 % )
+    Info: - Smallest clock skew is 0.003 ns
+        Info: + Shortest clock path from clock "mclk" to destination register is 7.987 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+            Info: 2: + IC(1.959 ns) + CELL(0.970 ns) = 4.009 ns; Loc. = LCFF_X37_Y19_N7; Fanout = 1; REG Node = 'div_256:inst1|clk'
+            Info: 3: + IC(2.131 ns) + CELL(0.000 ns) = 6.140 ns; Loc. = CLKCTRL_G4; Fanout = 59; COMB Node = 'div_256:inst1|clk~clkctrl'
+            Info: 4: + IC(1.181 ns) + CELL(0.666 ns) = 7.987 ns; Loc. = LCFF_X40_Y19_N19; Fanout = 3; REG Node = 'ps2_keyboard_interface:inst3|rx_ascii[1]'
+            Info: Total cell delay = 2.716 ns ( 34.01 % )
+            Info: Total interconnect delay = 5.271 ns ( 65.99 % )
+        Info: - Longest clock path from clock "mclk" to source register is 7.984 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+            Info: 2: + IC(1.959 ns) + CELL(0.970 ns) = 4.009 ns; Loc. = LCFF_X37_Y19_N7; Fanout = 1; REG Node = 'div_256:inst1|clk'
+            Info: 3: + IC(2.131 ns) + CELL(0.000 ns) = 6.140 ns; Loc. = CLKCTRL_G4; Fanout = 59; COMB Node = 'div_256:inst1|clk~clkctrl'
+            Info: 4: + IC(1.178 ns) + CELL(0.666 ns) = 7.984 ns; Loc. = LCFF_X42_Y21_N19; Fanout = 33; REG Node = 'ps2_keyboard_interface:inst3|q[4]'
+            Info: Total cell delay = 2.716 ns ( 34.02 % )
+            Info: Total interconnect delay = 5.268 ns ( 65.98 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Micro setup delay of destination is -0.040 ns
+Warning: Circuit may not operate. Detected 161 non-operational path(s) clocked by clock "mclk" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "ps2_keyboard_interface:inst3|rx_released" and destination pin or register "lcd:inst2|lcd_rs" for clock "mclk" (Hold time is 5.367 ns)
+    Info: + Largest clock skew is 7.692 ns
+        Info: + Longest clock path from clock "mclk" to destination register is 15.696 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+            Info: 2: + IC(1.614 ns) + CELL(0.970 ns) = 3.664 ns; Loc. = LCFF_X34_Y20_N11; Fanout = 18; REG Node = 'div_256:inst1|count[3]'
+            Info: 3: + IC(0.691 ns) + CELL(0.970 ns) = 5.325 ns; Loc. = LCFF_X35_Y20_N19; Fanout = 3; REG Node = 'lcd:inst2|clkcnt[9]'
+            Info: 4: + IC(1.096 ns) + CELL(0.370 ns) = 6.791 ns; Loc. = LCCOMB_X36_Y20_N20; Fanout = 1; COMB Node = 'lcd:inst2|Equal0~156'
+            Info: 5: + IC(0.404 ns) + CELL(0.614 ns) = 7.809 ns; Loc. = LCCOMB_X36_Y20_N6; Fanout = 2; COMB Node = 'lcd:inst2|Equal0'
+            Info: 6: + IC(0.327 ns) + CELL(0.970 ns) = 9.106 ns; Loc. = LCFF_X36_Y20_N31; Fanout = 3; REG Node = 'lcd:inst2|clkdiv'
+            Info: 7: + IC(1.130 ns) + CELL(0.970 ns) = 11.206 ns; Loc. = LCFF_X37_Y18_N23; Fanout = 2; REG Node = 'lcd:inst2|clk_int'
+            Info: 8: + IC(2.651 ns) + CELL(0.000 ns) = 13.857 ns; Loc. = CLKCTRL_G6; Fanout = 25; COMB Node = 'lcd:inst2|clk_int~clkctrl'
+            Info: 9: + IC(1.173 ns) + CELL(0.666 ns) = 15.696 ns; Loc. = LCFF_X36_Y19_N17; Fanout = 2; REG Node = 'lcd:inst2|lcd_rs'
+            Info: Total cell delay = 6.610 ns ( 42.11 % )
+            Info: Total interconnect delay = 9.086 ns ( 57.89 % )
+        Info: - Shortest clock path from clock "mclk" to source register is 8.004 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+            Info: 2: + IC(1.959 ns) + CELL(0.970 ns) = 4.009 ns; Loc. = LCFF_X37_Y19_N7; Fanout = 1; REG Node = 'div_256:inst1|clk'
+            Info: 3: + IC(2.131 ns) + CELL(0.000 ns) = 6.140 ns; Loc. = CLKCTRL_G4; Fanout = 59; COMB Node = 'div_256:inst1|clk~clkctrl'
+            Info: 4: + IC(1.198 ns) + CELL(0.666 ns) = 8.004 ns; Loc. = LCFF_X37_Y18_N27; Fanout = 16; REG Node = 'ps2_keyboard_interface:inst3|rx_released'
+            Info: Total cell delay = 2.716 ns ( 33.93 % )
+            Info: Total interconnect delay = 5.288 ns ( 66.07 % )
+    Info: - Micro clock to output delay of source is 0.304 ns
+    Info: - Shortest register to register delay is 2.327 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X37_Y18_N27; Fanout = 16; REG Node = 'ps2_keyboard_interface:inst3|rx_released'
+        Info: 2: + IC(1.472 ns) + CELL(0.855 ns) = 2.327 ns; Loc. = LCFF_X36_Y19_N17; Fanout = 2; REG Node = 'lcd:inst2|lcd_rs'
+        Info: Total cell delay = 0.855 ns ( 36.74 % )
+        Info: Total interconnect delay = 1.472 ns ( 63.26 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+Info: tsu for register "ps2_keyboard_interface:inst3|bit_count[3]" (data pin = "reset", clock pin = "mclk") is 5.837 ns
+    Info: + Longest pin to register delay is 13.860 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.944 ns) = 0.944 ns; Loc. = PIN_AA3; Fanout = 43; PIN Node = 'reset'
+        Info: 2: + IC(8.543 ns) + CELL(0.647 ns) = 10.134 ns; Loc. = LCCOMB_X40_Y20_N24; Fanout = 1; COMB Node = 'ps2_keyboard_interface:inst3|bit_count[1]~116'
+        Info: 3: + IC(1.099 ns) + CELL(0.580 ns) = 11.813 ns; Loc. = LCCOMB_X40_Y18_N10; Fanout = 4; COMB Node = 'ps2_keyboard_interface:inst3|bit_count[1]~117'
+        Info: 4: + IC(1.387 ns) + CELL(0.660 ns) = 13.860 ns; Loc. = LCFF_X38_Y20_N31; Fanout = 3; REG Node = 'ps2_keyboard_interface:inst3|bit_count[3]'
+        Info: Total cell delay = 2.831 ns ( 20.43 % )
+        Info: Total interconnect delay = 11.029 ns ( 79.57 % )
+    Info: + Micro setup delay of destination is -0.040 ns
+    Info: - Shortest clock path from clock "mclk" to destination register is 7.983 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+        Info: 2: + IC(1.959 ns) + CELL(0.970 ns) = 4.009 ns; Loc. = LCFF_X37_Y19_N7; Fanout = 1; REG Node = 'div_256:inst1|clk'
+        Info: 3: + IC(2.131 ns) + CELL(0.000 ns) = 6.140 ns; Loc. = CLKCTRL_G4; Fanout = 59; COMB Node = 'div_256:inst1|clk~clkctrl'
+        Info: 4: + IC(1.177 ns) + CELL(0.666 ns) = 7.983 ns; Loc. = LCFF_X38_Y20_N31; Fanout = 3; REG Node = 'ps2_keyboard_interface:inst3|bit_count[3]'
+        Info: Total cell delay = 2.716 ns ( 34.02 % )
+        Info: Total interconnect delay = 5.267 ns ( 65.98 % )
+Info: tco from clock "mclk" to destination pin "data[3]" through register "lcd:inst2|data[3]" is 23.286 ns
+    Info: + Longest clock path from clock "mclk" to source register is 15.696 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+        Info: 2: + IC(1.614 ns) + CELL(0.970 ns) = 3.664 ns; Loc. = LCFF_X34_Y20_N11; Fanout = 18; REG Node = 'div_256:inst1|count[3]'
+        Info: 3: + IC(0.691 ns) + CELL(0.970 ns) = 5.325 ns; Loc. = LCFF_X35_Y20_N19; Fanout = 3; REG Node = 'lcd:inst2|clkcnt[9]'
+        Info: 4: + IC(1.096 ns) + CELL(0.370 ns) = 6.791 ns; Loc. = LCCOMB_X36_Y20_N20; Fanout = 1; COMB Node = 'lcd:inst2|Equal0~156'
+        Info: 5: + IC(0.404 ns) + CELL(0.614 ns) = 7.809 ns; Loc. = LCCOMB_X36_Y20_N6; Fanout = 2; COMB Node = 'lcd:inst2|Equal0'
+        Info: 6: + IC(0.327 ns) + CELL(0.970 ns) = 9.106 ns; Loc. = LCFF_X36_Y20_N31; Fanout = 3; REG Node = 'lcd:inst2|clkdiv'
+        Info: 7: + IC(1.130 ns) + CELL(0.970 ns) = 11.206 ns; Loc. = LCFF_X37_Y18_N23; Fanout = 2; REG Node = 'lcd:inst2|clk_int'
+        Info: 8: + IC(2.651 ns) + CELL(0.000 ns) = 13.857 ns; Loc. = CLKCTRL_G6; Fanout = 25; COMB Node = 'lcd:inst2|clk_int~clkctrl'
+        Info: 9: + IC(1.173 ns) + CELL(0.666 ns) = 15.696 ns; Loc. = LCFF_X36_Y19_N21; Fanout = 2; REG Node = 'lcd:inst2|data[3]'
+        Info: Total cell delay = 6.610 ns ( 42.11 % )
+        Info: Total interconnect delay = 9.086 ns ( 57.89 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Longest register to pin delay is 7.286 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X36_Y19_N21; Fanout = 2; REG Node = 'lcd:inst2|data[3]'
+        Info: 2: + IC(4.080 ns) + CELL(3.206 ns) = 7.286 ns; Loc. = PIN_Y14; Fanout = 0; PIN Node = 'data[3]'
+        Info: Total cell delay = 3.206 ns ( 44.00 % )
+        Info: Total interconnect delay = 4.080 ns ( 56.00 % )
+Info: th for register "ps2_keyboard_interface:inst3|ps2_data_s" (data pin = "ps2_data", clock pin = "mclk") is -0.457 ns
+    Info: + Longest clock path from clock "mclk" to destination register is 8.007 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.080 ns) = 1.080 ns; Loc. = PIN_W12; Fanout = 3; CLK Node = 'mclk'
+        Info: 2: + IC(1.959 ns) + CELL(0.970 ns) = 4.009 ns; Loc. = LCFF_X37_Y19_N7; Fanout = 1; REG Node = 'div_256:inst1|clk'
+        Info: 3: + IC(2.131 ns) + CELL(0.000 ns) = 6.140 ns; Loc. = CLKCTRL_G4; Fanout = 59; COMB Node = 'div_256:inst1|clk~clkctrl'
+        Info: 4: + IC(1.201 ns) + CELL(0.666 ns) = 8.007 ns; Loc. = LCFF_X40_Y18_N23; Fanout = 4; REG Node = 'ps2_keyboard_interface:inst3|ps2_data_s'
+        Info: Total cell delay = 2.716 ns ( 33.92 % )
+        Info: Total interconnect delay = 5.291 ns ( 66.08 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+    Info: - Shortest pin to register delay is 8.770 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = PIN_AB17; Fanout = 1; PIN Node = 'ps2_data'
+        Info: 2: + IC(0.000 ns) + CELL(0.934 ns) = 0.934 ns; Loc. = IOC_X48_Y0_N3; Fanout = 1; COMB Node = 'ps2_data~0'
+        Info: 3: + IC(7.376 ns) + CELL(0.460 ns) = 8.770 ns; Loc. = LCFF_X40_Y18_N23; Fanout = 4; REG Node = 'ps2_keyboard_interface:inst3|ps2_data_s'
+        Info: Total cell delay = 1.394 ns ( 15.90 % )
+        Info: Total interconnect delay = 7.376 ns ( 84.10 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 25 warnings
+    Info: Allocated 121 megabytes of memory during processing
+    Info: Processing ended: Tue Mar 31 17:36:41 2009
+    Info: Elapsed time: 00:00:01
+
+

@@ -1,0 +1,163 @@
+# Reading E:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do UART_Byte_Tx_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/key_stable/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/key_stable/rtl/key_stable.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:38 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/key_stable/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/key_stable/rtl/key_stable.v 
+# -- Compiling module key_stable
+# 
+# Top level modules:
+# 	key_stable
+# End time: 22:17:38 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/Div_cnt.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/Div_cnt.v 
+# -- Compiling module Div_cnt
+# 
+# Top level modules:
+# 	Div_cnt
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/DR_LUT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/DR_LUT.v 
+# -- Compiling module DR_LUT
+# 
+# Top level modules:
+# 	DR_LUT
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/bps_cnt.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/bps_cnt.v 
+# -- Compiling module bps_cnt
+# 
+# Top level modules:
+# 	bps_cnt
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/MUX2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/MUX2.v 
+# -- Compiling module MUX2
+# 
+# Top level modules:
+# 	MUX2
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/Data_reg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/Data_reg.v 
+# -- Compiling module Data_reg
+# 
+# Top level modules:
+# 	Data_reg
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/MUX10.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/MUX10.v 
+# -- Compiling module MUX10
+# 
+# Top level modules:
+# 	MUX10
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/UART_Byte_Tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/UART_Byte_Tx.v 
+# -- Compiling module UART_Byte_Tx
+# 
+# Top level modules:
+# 	UART_Byte_Tx
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/UART_Tx_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:39 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/rtl/UART_Tx_top.v 
+# -- Compiling module UART_Tx_top
+# 
+# Top level modules:
+# 	UART_Tx_top
+# End time: 22:17:39 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib hex_data
+# ** Warning: (vlib-34) Library already exists at "hex_data".
+# vmap hex_data hex_data
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap hex_data hex_data 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work hex_data +incdir+h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data {h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data/hex_data.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:40 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work hex_data "+incdir+h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data" h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data/hex_data.v 
+# -- Compiling module hex_data
+# 
+# Top level modules:
+# 	hex_data
+# End time: 22:17:40 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hex_data +incdir+h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data/submodules {h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data/submodules/altsource_probe_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:40 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work hex_data "+incdir+h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data/submodules" h:/my_workshop/learn_fpga/exercises/test/prj/uart_byte_tx/prj/db/ip/hex_data/submodules/altsource_probe_top.v 
+# -- Compiling module altsource_probe_top
+# 
+# Top level modules:
+# 	altsource_probe_top
+# End time: 22:17:40 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/prj/../testbench {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/prj/../testbench/UART_Byte_Tx_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:17:40 on May 22,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/prj/../testbench" H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/prj/../testbench/UART_Byte_Tx_tb.v 
+# -- Compiling module UART_Byte_Tx_tb
+# 
+# Top level modules:
+# 	UART_Byte_Tx_tb
+# End time: 22:17:40 on May 22,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L hex_data -voptargs="+acc"  UART_Byte_Tx_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L hex_data -voptargs=""+acc"" UART_Byte_Tx_tb 
+# Start time: 22:17:40 on May 22,2019
+# Loading work.UART_Byte_Tx_tb
+# Loading work.UART_Byte_Tx
+# Loading work.DR_LUT
+# Loading work.Div_cnt
+# Loading work.bps_cnt
+# Loading work.MUX2
+# Loading work.Data_reg
+# Loading work.MUX10
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/prj/../testbench/UART_Byte_Tx_tb.v(56)
+#    Time: 375180 ns  Iteration: 0  Instance: /UART_Byte_Tx_tb
+# Break in Module UART_Byte_Tx_tb at H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/UART_Byte_Tx/prj/../testbench/UART_Byte_Tx_tb.v line 56
+# End time: 22:18:15 on May 22,2019, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0

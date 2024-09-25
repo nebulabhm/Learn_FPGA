@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "key_flag",
+					"strict" : false
+				},
+				{
+					"name" : "key_state",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "key_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

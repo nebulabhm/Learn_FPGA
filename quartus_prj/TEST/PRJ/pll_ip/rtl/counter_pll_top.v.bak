@@ -1,0 +1,7 @@
+module counter_pll_top(
+	Clk, 
+	Rst_n,
+	led
+	);
+
+endmodule

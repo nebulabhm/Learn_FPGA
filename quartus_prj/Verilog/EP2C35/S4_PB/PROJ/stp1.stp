@@ -1,0 +1,125 @@
+<session jtag_chain="ByteBlasterII [LPT1]" jtag_device="@1: EP2C35 (0x020B40DD)" sof_file="sw_pb.sof" top_level_entity="sw_pb">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance compilation_mode="full" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2009/03/31 16:32:54  #0">
+      <clock name="auto_stp_external_clock_0" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="yes" trigger_in_node="pb[1]" trigger_in_tap_mode="classic" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="led[0]" tap_mode="classic" type="output pin"/>
+          <wire name="led[1]" tap_mode="classic" type="output pin"/>
+          <wire name="led[2]" tap_mode="classic" type="output pin"/>
+          <wire name="led[3]" tap_mode="classic" type="output pin"/>
+          <wire name="led[4]" tap_mode="classic" type="output pin"/>
+          <wire name="led[5]" tap_mode="classic" type="output pin"/>
+          <wire name="led[6]" tap_mode="classic" type="output pin"/>
+          <wire name="led[7]" tap_mode="classic" type="output pin"/>
+          <wire name="pb[0]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[1]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[2]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[3]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[4]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[5]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[6]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[7]" tap_mode="classic" type="input pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="led[0]" tap_mode="classic" type="output pin"/>
+          <wire name="led[1]" tap_mode="classic" type="output pin"/>
+          <wire name="led[2]" tap_mode="classic" type="output pin"/>
+          <wire name="led[3]" tap_mode="classic" type="output pin"/>
+          <wire name="led[4]" tap_mode="classic" type="output pin"/>
+          <wire name="led[5]" tap_mode="classic" type="output pin"/>
+          <wire name="led[6]" tap_mode="classic" type="output pin"/>
+          <wire name="led[7]" tap_mode="classic" type="output pin"/>
+          <wire name="pb[0]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[1]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[2]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[3]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[4]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[5]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[6]" tap_mode="classic" type="input pin"/>
+          <wire name="pb[7]" tap_mode="classic" type="input pin"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="led" order="lsb_to_msb" radix="hex" state="expand" type="output pin">
+            <net is_signal_inverted="no" name="led[0]"/>
+            <net is_signal_inverted="no" name="led[1]"/>
+            <net is_signal_inverted="no" name="led[2]"/>
+            <net is_signal_inverted="no" name="led[3]"/>
+            <net is_signal_inverted="no" name="led[4]"/>
+            <net is_signal_inverted="no" name="led[5]"/>
+            <net is_signal_inverted="no" name="led[6]"/>
+            <net is_signal_inverted="no" name="led[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="pb" order="lsb_to_msb" radix="hex" state="expand" type="input pin">
+            <net is_signal_inverted="no" name="pb[0]"/>
+            <net is_signal_inverted="no" name="pb[1]"/>
+            <net is_signal_inverted="no" name="pb[2]"/>
+            <net is_signal_inverted="no" name="pb[3]"/>
+            <net is_signal_inverted="no" name="pb[4]"/>
+            <net is_signal_inverted="no" name="pb[5]"/>
+            <net is_signal_inverted="no" name="pb[6]"/>
+            <net is_signal_inverted="no" name="pb[7]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="led" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="led[0]"/>
+            <net is_signal_inverted="no" name="led[1]"/>
+            <net is_signal_inverted="no" name="led[2]"/>
+            <net is_signal_inverted="no" name="led[3]"/>
+            <net is_signal_inverted="no" name="led[4]"/>
+            <net is_signal_inverted="no" name="led[5]"/>
+            <net is_signal_inverted="no" name="led[6]"/>
+            <net is_signal_inverted="no" name="led[7]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="pb" order="lsb_to_msb" radix="hex" state="collapse" type="input pin">
+            <net is_signal_inverted="no" name="pb[0]"/>
+            <net is_signal_inverted="no" name="pb[1]"/>
+            <net is_signal_inverted="no" name="pb[2]"/>
+            <net is_signal_inverted="no" name="pb[3]"/>
+            <net is_signal_inverted="no" name="pb[4]"/>
+            <net is_signal_inverted="no" name="pb[5]"/>
+            <net is_signal_inverted="no" name="pb[6]"/>
+            <net is_signal_inverted="no" name="pb[7]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="E8B30DF1" global_temp="1" is_expanded="true" name="trigger: 2009/03/31 16:39:31  #0" position="pre" power_up_trigger_mode="false" segment_size="1" trigger_in="falling edge" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="20"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="16"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="8184"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1003,448,398,124,356,50,124,0,3"/>
+  </global_info>
+</session>

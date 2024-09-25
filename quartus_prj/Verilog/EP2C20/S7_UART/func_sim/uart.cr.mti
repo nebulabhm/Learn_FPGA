@@ -1,0 +1,36 @@
+E:/code/ep1c20_fudan/S10_UART/Src/uart.v {1 {vlog -work work E:/code/ep1c20_fudan/S10_UART/Src/uart.v
+Model Technology ModelSim SE vlog 6.0 Compiler 2004.08 Aug 19 2004
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}} E:/code/ep1c20_fudan/S10_UART/Src/rcvr.v {1 {vlog -work work E:/code/ep1c20_fudan/S10_UART/Src/rcvr.v
+Model Technology ModelSim SE vlog 6.0 Compiler 2004.08 Aug 19 2004
+-- Compiling module rcvr
+
+Top level modules:
+	rcvr
+
+} {} {}} E:/code/ep1c20_fudan/S10_UART/Src/uart_tb.v {1 {vlog -work work E:/code/ep1c20_fudan/S10_UART/Src/uart_tb.v
+Model Technology ModelSim SE vlog 6.0 Compiler 2004.08 Aug 19 2004
+-- Compiling module UART_tb
+
+Top level modules:
+	UART_tb
+
+} {} {}} E:/code/ep1c20_fudan/S10_UART/Src/txmit.v {1 {vlog -work work E:/code/ep1c20_fudan/S10_UART/Src/txmit.v
+Model Technology ModelSim SE vlog 6.0 Compiler 2004.08 Aug 19 2004
+-- Compiling module txmit
+
+Top level modules:
+	txmit
+
+} {} {}} E:/code/ep1c20_fudan/S10_UART/Src/uart_if.v {1 {vlog -work work E:/code/ep1c20_fudan/S10_UART/Src/uart.v
+Model Technology ModelSim SE vlog 6.0 Compiler 2004.08 Aug 19 2004
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}}

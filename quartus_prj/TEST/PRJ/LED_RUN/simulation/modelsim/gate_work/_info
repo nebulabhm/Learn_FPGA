@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/simulation/modelsim
+vhard_block
+Z1 !s110 1557155263
+!i10b 1
+!s100 BJR65j@hIJB@eRPkM<`DT2
+IWXA7a:Aa6j872N?9OF^K83
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1557155156
+Z4 8LED_RUN_8_1200mv_85c_slow.vo
+Z5 FLED_RUN_8_1200mv_85c_slow.vo
+L0 139
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1557155263.000000
+Z8 !s107 LED_RUN_8_1200mv_85c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|LED_RUN_8_1200mv_85c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vLED_RUN
+R1
+!i10b 1
+!s100 PGa01kBZdi=W3aFNeI:f42
+IijGA0g=O1aPafEFJUUDSE3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@l@e@d_@r@u@n
+vLED_RUN_tb
+R1
+!i10b 1
+!s100 RRn7ooUOYJXl<6iPRPMib3
+IQNDj@O3ANj;3Vb6BRkhS81
+R2
+R0
+w1557154510
+8H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v
+FH:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch|H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch/LED_RUN_tb.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/LED_RUN/testbendch
+R12
+n@l@e@d_@r@u@n_tb

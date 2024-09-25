@@ -1,0 +1,63 @@
+# Reading E:/intelFPGA/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do block_nonblock_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/block_nonblock {H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:45:05 on May 10,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/exercise/block_nonblock" H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock.v 
+# -- Compiling module block_nonblock
+# 
+# Top level modules:
+# 	block_nonblock
+# End time: 08:45:05 on May 10,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/block_nonblock {H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:45:05 on May 10,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+H:/my_workshop/learn_fpga/exercise/block_nonblock" H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock_tb.v 
+# -- Compiling module block_nonblock_tb
+# 
+# Top level modules:
+# 	block_nonblock_tb
+# End time: 08:45:06 on May 10,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  block_nonblock_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" block_nonblock_tb 
+# Start time: 08:45:06 on May 10,2019
+# Loading work.block_nonblock_tb
+# Loading work.block_nonblock
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: nebulabhm760  Hostname: NEBULABHM-PC  ProcessID: 6896
+#           Attempting to use alternate WLF file "./wlftjwir44".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjwir44
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock_tb.v(42)
+#    Time: 44001 ns  Iteration: 0  Instance: /block_nonblock_tb
+# Break in Module block_nonblock_tb at H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock_tb.v line 42
+add wave -position insertpoint  \
+sim:/block_nonblock_tb/block_nonblock0/d
+restart
+run
+# ** Note: $stop    : H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock_tb.v(42)
+#    Time: 44001 ns  Iteration: 0  Instance: /block_nonblock_tb
+# Break in Module block_nonblock_tb at H:/my_workshop/learn_fpga/exercise/block_nonblock/block_nonblock_tb.v line 42
+# End time: 15:46:20 on May 10,2019, Elapsed time: 7:01:14
+# Errors: 0, Warnings: 2

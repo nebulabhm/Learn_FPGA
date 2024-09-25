@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/simulation/modelsim
+vdpram
+Z1 !s110 1558419379
+!i10b 1
+!s100 _m[[=BdRB3Rjk8jmkAW]e1
+IfFd;J`A8EaYN`GJWkC2Ze2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1558400875
+8H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/ip/dpram.v
+FH:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/ip/dpram.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1558419379.000000
+!s107 H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/ip/dpram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/ip|H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/ip/dpram.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/ip
+Z6 tCvgOpt 0
+vdpram_tb
+R1
+!i10b 1
+!s100 6R;99[5ZL_RCMQ:a?Z=Wo0
+Il1loNND8=g9>=c7XfFz@o0
+R2
+R0
+w1558419147
+8H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/../testbench/dpram_tb.v
+FH:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/../testbench/dpram_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/../testbench/dpram_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/../testbench|H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/../testbench/dpram_tb.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/exercise/DRAM_IPCORE/prj/../testbench
+R6

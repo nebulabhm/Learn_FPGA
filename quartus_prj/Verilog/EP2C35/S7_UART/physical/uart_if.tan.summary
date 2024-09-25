@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.480 ns
+From           : rst_n
+To             : filter:inst3|rst_out
+From Clock     : --
+To Clock       : MCLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.593 ns
+From           : uart_if:inst5|uart:U1|txmit:u2|sdo_i
+To             : txd
+From Clock     : MCLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.780 ns
+From           : rxd
+To             : uart_if:inst5|uart:U1|rcvr:u1|rxd1_i_0
+From Clock     : --
+To Clock       : MCLK
+Failed Paths   : 0
+
+Type           : Worst-case Minimum tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.593 ns
+From           : uart_if:inst5|uart:U1|txmit:u2|sdo_i
+To             : txd
+From Clock     : MCLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'MCLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 95.49 MHz ( period = 10.472 ns )
+From           : uart_if:inst5|uart:U1|txmit:u2|tbr[0]
+To             : uart_if:inst5|uart:U1|txmit:u2|tsr_0
+From Clock     : MCLK
+To Clock       : MCLK
+Failed Paths   : 0
+
+Type           : Clock Hold: 'MCLK'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : uart_rom:inst1|altsyncram:altsyncram_component|altsyncram_eh31:auto_generated|q_a[6]
+To             : uart_if:inst5|din[6]
+From Clock     : MCLK
+To Clock       : MCLK
+Failed Paths   : 17
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 17
+
+--------------------------------------------------------------------------------------
+

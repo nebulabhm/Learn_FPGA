@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 23 07:00:19 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : UART_DPRAM
+Top-level Entity Name : UART_DPRAM
+Family : Cyclone IV E
+Total logic elements : 219
+    Total combinational functions : 194
+    Dedicated logic registers : 150
+Total registers : 150
+Total pins : 5
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

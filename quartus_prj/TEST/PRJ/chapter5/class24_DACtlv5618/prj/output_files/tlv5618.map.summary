@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 13 22:25:14 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : tlv5618
+Top-level Entity Name : tlv5618
+Family : Cyclone IV E
+Total logic elements : 52
+    Total combinational functions : 36
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

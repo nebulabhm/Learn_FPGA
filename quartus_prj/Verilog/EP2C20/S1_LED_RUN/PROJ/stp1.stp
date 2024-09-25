@@ -1,0 +1,77 @@
+<session jtag_chain="ByteBlasterII [LPT1]" jtag_device="@1: EP2C20 (0x020B30DD)" sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <multi attribute="window position" size="7" value="675,317,398,124,0,50,77"/>
+    <single attribute="active instance" value="0"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="3"/>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2006/08/10 15:55:16  #0">
+      <clock name="count[21]" polarity="posedge"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_trigger_nodes="0" sample_depth="4096" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire connection_status="true" name="led[0]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[1]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[2]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[3]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[4]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[5]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[6]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[7]" tap_mode="classic" type="output pin"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire connection_status="true" name="led[0]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[1]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[2]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[3]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[4]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[5]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[6]" tap_mode="classic" type="output pin"/>
+          <wire connection_status="true" name="led[7]" tap_mode="classic" type="output pin"/>
+        </data_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="led" order="msb_to_lsb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="led[7]"/>
+            <net is_signal_inverted="no" name="led[6]"/>
+            <net is_signal_inverted="no" name="led[5]"/>
+            <net is_signal_inverted="no" name="led[4]"/>
+            <net is_signal_inverted="no" name="led[3]"/>
+            <net is_signal_inverted="no" name="led[2]"/>
+            <net is_signal_inverted="no" name="led[1]"/>
+            <net is_signal_inverted="no" name="led[0]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="led" order="msb_to_lsb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="led[7]"/>
+            <net is_signal_inverted="no" name="led[6]"/>
+            <net is_signal_inverted="no" name="led[5]"/>
+            <net is_signal_inverted="no" name="led[4]"/>
+            <net is_signal_inverted="no" name="led[3]"/>
+            <net is_signal_inverted="no" name="led[2]"/>
+            <net is_signal_inverted="no" name="led[1]"/>
+            <net is_signal_inverted="no" name="led[0]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger CRC="CFE11C1E" global_temp="1" name="trigger: 2006/08/10 15:55:16  #1" position="pre" segment_size="1" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <events>
+          <level enabled="yes" type="basic">
+            <op_node/>
+          </level>
+        </events>
+        <data global_temp="1" name="log: 2006/08/10 16:12:56  #0"/>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+</session>

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 08 20:44:51 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : pwm_generator
+Top-level Entity Name : pwm_generator_test
+Family : Cyclone IV E
+Total logic elements : 160
+    Total combinational functions : 160
+    Dedicated logic registers : 63
+Total registers : 63
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,238 @@
+#### START OF AREA REPORT #####[
+
+Part:			EP1C12QC240-8 (Altera)
+
+-----------------------------------------------------------------------
+########   Utilization report for  Top level view:   uart_if   ########
+=======================================================================
+
+SEQUENTIAL ATOMS
+****************
+
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     192                100 %                
+======================================================
+Total SEQUENTIAL ATOMS in the block uart_if:	192 (117.79 % Utilization)
+
+
+COMBINATIONAL ATOMS
+*******************
+
+Name                     Total elements     Utilization     Notes
+-----------------------------------------------------------------
+ATOMS                    71                 100 %                
+ARITHMETIC MODE          24                 100 %                
+SHARED MODE              0                  0.0 %                
+COMB ARITHMETIC MODE     24                 100 %                
+=================================================================
+Total COMBINATIONAL ATOMS in the block uart_if:	119 (73.01 % Utilization)
+
+
+RAMS
+****
+
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     0                  0                  0.0 %                
+LPMs          0                  0                  0.0 %                
+=========================================================================
+Total RAMS in the block uart_if:	0 (0.00 % Utilization)
+
+
+DSPs
+****
+
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     0                  0.0 %                
+=================================================
+Total DSPs in the block uart_if:	0 (0.00 % Utilization)
+
+
+Black Boxes
+***********
+
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     0                  0.0 %                
+========================================================
+Total Black Boxes in the block uart_if:	0 (0.00 % Utilization)
+
+----------------------------------------------------------
+########   Utilization report for  cell:   uart   ########
+Instance path:   uart_if.uart                             
+==========================================================
+
+SEQUENTIAL ATOMS
+****************
+
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     159                82.8 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block uart_if.uart:	159 (97.55 % Utilization)
+
+
+COMBINATIONAL ATOMS
+*******************
+
+Name                     Total elements     Utilization     Notes
+-----------------------------------------------------------------
+ATOMS                    58                 81.7 %               
+ARITHMETIC MODE          18                 75. %                
+SHARED MODE              0                  0.0 %                
+COMB ARITHMETIC MODE     18                 75. %                
+=================================================================
+Total COMBINATIONAL ATOMS in the block uart_if.uart:	94 (57.67 % Utilization)
+
+
+RAMS
+****
+
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     0                  0                  0.0 %                
+LPMs          0                  0                  0.0 %                
+=========================================================================
+Total RAMS in the block uart_if.uart:	0 (0.00 % Utilization)
+
+
+DSPs
+****
+
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     0                  0.0 %                
+=================================================
+Total DSPs in the block uart_if.uart:	0 (0.00 % Utilization)
+
+
+Black Boxes
+***********
+
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     0                  0.0 %                
+========================================================
+Total Black Boxes in the block uart_if.uart:	0 (0.00 % Utilization)
+
+----------------------------------------------------------
+########   Utilization report for  cell:   rcvr   ########
+Instance path:   uart.rcvr                                
+==========================================================
+
+SEQUENTIAL ATOMS
+****************
+
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     62                 32.3 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block uart.rcvr:	62 (38.04 % Utilization)
+
+
+COMBINATIONAL ATOMS
+*******************
+
+Name                     Total elements     Utilization     Notes
+-----------------------------------------------------------------
+ATOMS                    20                 28.2 %               
+ARITHMETIC MODE          6                  25. %                
+SHARED MODE              0                  0.0 %                
+COMB ARITHMETIC MODE     6                  25. %                
+=================================================================
+Total COMBINATIONAL ATOMS in the block uart.rcvr:	32 (19.63 % Utilization)
+
+
+RAMS
+****
+
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     0                  0                  0.0 %                
+LPMs          0                  0                  0.0 %                
+=========================================================================
+Total RAMS in the block uart.rcvr:	0 (0.00 % Utilization)
+
+
+DSPs
+****
+
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     0                  0.0 %                
+=================================================
+Total DSPs in the block uart.rcvr:	0 (0.00 % Utilization)
+
+
+Black Boxes
+***********
+
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     0                  0.0 %                
+========================================================
+Total Black Boxes in the block uart.rcvr:	0 (0.00 % Utilization)
+
+-----------------------------------------------------------
+########   Utilization report for  cell:   txmit   ########
+Instance path:   uart.txmit                                
+===========================================================
+
+SEQUENTIAL ATOMS
+****************
+
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     64                 33.3 %               
+======================================================
+Total SEQUENTIAL ATOMS in the block uart.txmit:	64 (39.26 % Utilization)
+
+
+COMBINATIONAL ATOMS
+*******************
+
+Name                     Total elements     Utilization     Notes
+-----------------------------------------------------------------
+ATOMS                    25                 35.2 %               
+ARITHMETIC MODE          6                  25. %                
+SHARED MODE              0                  0.0 %                
+COMB ARITHMETIC MODE     6                  25. %                
+=================================================================
+Total COMBINATIONAL ATOMS in the block uart.txmit:	37 (22.70 % Utilization)
+
+
+RAMS
+****
+
+Name          Total elements     Number of bits     Utilization     Notes
+-------------------------------------------------------------------------
+SYNC RAMS     0                  0                  0.0 %                
+LPMs          0                  0                  0.0 %                
+=========================================================================
+Total RAMS in the block uart.txmit:	0 (0.00 % Utilization)
+
+
+DSPs
+****
+
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+MACs     0                  0.0 %                
+=================================================
+Total DSPs in the block uart.txmit:	0 (0.00 % Utilization)
+
+
+Black Boxes
+***********
+
+Name            Total elements     Utilization     Notes
+--------------------------------------------------------
+BLACK BOXES     0                  0.0 %                
+========================================================
+Total Black Boxes in the block uart.txmit:	0 (0.00 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

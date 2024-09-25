@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat May 18 01:50:48 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : dled_driver
+Top-level Entity Name : HXE_top
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 339 / 10,320 ( 3 % )
+    Total combinational functions : 317 / 10,320 ( 3 % )
+    Dedicated logic registers : 197 / 10,320 ( 2 % )
+Total registers : 197
+Total pins : 5 / 180 ( 3 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

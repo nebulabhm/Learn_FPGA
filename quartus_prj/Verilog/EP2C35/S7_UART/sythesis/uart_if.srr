@@ -1,0 +1,493 @@
+$ Start of Compile
+#Mon May 09 12:08:20 2005
+
+Synplicity Verilog Compiler, version Compilers 2.7.0, Build 030R, built May 13 2004
+Copyright (C) 1994-2004, Synplicity Inc.  All Rights Reserved
+
+@I::"D:\RedLogic\RCII_samples\UART\Src\rcvr.v"
+@I::"D:\RedLogic\RCII_samples\UART\Src\txmit.v"
+@I::"D:\RedLogic\RCII_samples\UART\Src\uart.v"
+@I::"D:\RedLogic\RCII_samples\UART\Src\uart_if.v"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module uart_if
+Synthesizing module rcvr
+Synthesizing module txmit
+Synthesizing module uart
+Synthesizing module uart_if
+@W: CL112 :"D:\RedLogic\RCII_samples\UART\Src\uart_if.v":57:0:57:5|Feedback mux created for signal read_once. Did you forget the set/reset assignment for this signal?
+@W: CL190 :"D:\RedLogic\RCII_samples\UART\Src\uart_if.v":57:0:57:5|Optimizing register bit rom_addr_d[7] to a constant 0
+@W: CL171 :"D:\RedLogic\RCII_samples\UART\Src\uart_if.v":57:0:57:5|Pruning Register bit <7> of rom_addr_d[7:0] 
+
+@END
+Process took 0h:0m:0s realtime, 0h:0m:0s cputime
+###########################################################[
+Synplicity Altera Technology Mapper, version 7.6.0, Build 080R, built May 21 2004
+Copyright (C) 1994-2004, Synplicity Inc.  All Rights Reserved
+
+
+@N:"d:\redlogic\rcii_samples\uart\src\uart_if.v":57:0:57:5|Found counter in view:work.uart_if(verilog) inst rom_addr_d[6:0]
+@W: BN116 :"d:\redlogic\rcii_samples\uart\src\rcvr.v":86:0:86:5|Removing sequential instance U1.u1.parity of view:PrimLib.dffs(prim) because there are no references to its outputs 
+@W: BN116 :"d:\redlogic\rcii_samples\uart\src\rcvr.v":86:0:86:5|Removing sequential instance U1.u1.framing_error of view:PrimLib.dffr(prim) because there are no references to its outputs 
+@W: BN116 :"d:\redlogic\rcii_samples\uart\src\rcvr.v":86:0:86:5|Removing sequential instance U1.u1.parity_error of view:PrimLib.dffr(prim) because there are no references to its outputs 
+@W: FA160 :"d:\redlogic\rcii_samples\uart\src\uart_if.v":57:0:57:5|Removing sequential instance rom_addr[7] of view:ALTERA_APEX.S_DFFE(PRIM) because its output is stuck at constant value 
+
+Writing Analyst data base D:\RedLogic\RCII_samples\UART\sythesis\uart_if.srm
+Writing Verilog Netlist and constraint files
+Writing .vqm output for Quartus
+Writing Cross reference file for Quartus to D:\RedLogic\RCII_samples\UART\sythesis\uart_if.xrf
+Found clock uart_if|clk with period 1000.00ns 
+Found clock uart_if|cnt_inferred_clock[3] with period 1000.00ns 
+Found clock uart_if|wrn_inferred_clock with period 1000.00ns 
+Found clock uart_if|U1.u1.clkdiv_inferred_clock[3] with period 1000.00ns 
+Found clock uart_if|U1.u2.clkdiv_inferred_clock[3] with period 1000.00ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon May 09 12:08:24 2005
+#
+
+
+Top view:               uart_if
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT195 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT197 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 494.686
+
+                                           Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                             Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------------------
+uart_if|U1.u1.clkdiv_inferred_clock[3]     1.0 MHz       262.8 MHz     1000.000      3.805         996.195     inferred     Inferred_clkgroup_1
+uart_if|U1.u2.clkdiv_inferred_clock[3]     1.0 MHz       2.0 MHz       1000.000      505.314       494.686     inferred     Inferred_clkgroup_2
+uart_if|clk                                1.0 MHz       250.2 MHz     1000.000      3.997         996.003     inferred     Inferred_clkgroup_0
+uart_if|cnt_inferred_clock[3]              1.0 MHz       170.3 MHz     1000.000      5.873         994.127     inferred     Inferred_clkgroup_4
+===============================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                          |    rise  to  rise     |    fall  to  fall     |    rise  to  fall     |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                Ending                                  |  constraint  slack    |  constraint  slack    |  constraint  slack    |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+uart_if|cnt_inferred_clock[3]           uart_if|cnt_inferred_clock[3]           |  1000.000    994.127  |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|cnt_inferred_clock[3]           uart_if|wrn_inferred_clock              |  No paths    -        |  No paths    -        |  Diff grp    -        |  No paths    -    
+uart_if|cnt_inferred_clock[3]           uart_if|clk                             |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|wrn_inferred_clock              uart_if|U1.u2.clkdiv_inferred_clock[3]  |  No paths    -        |  Diff grp    -        |  No paths    -        |  No paths    -    
+uart_if|U1.u2.clkdiv_inferred_clock[3]  uart_if|cnt_inferred_clock[3]           |  No paths    -        |  No paths    -        |  No paths    -        |  Diff grp    -    
+uart_if|U1.u2.clkdiv_inferred_clock[3]  uart_if|U1.u2.clkdiv_inferred_clock[3]  |  1000.000    997.739  |  1000.000    997.035  |  500.000     494.686  |  No paths    -    
+uart_if|U1.u2.clkdiv_inferred_clock[3]  uart_if|clk                             |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|U1.u1.clkdiv_inferred_clock[3]  uart_if|cnt_inferred_clock[3]           |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|U1.u1.clkdiv_inferred_clock[3]  uart_if|U1.u1.clkdiv_inferred_clock[3]  |  1000.000    996.195  |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|U1.u1.clkdiv_inferred_clock[3]  uart_if|clk                             |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|clk                             uart_if|cnt_inferred_clock[3]           |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|clk                             uart_if|U1.u1.clkdiv_inferred_clock[3]  |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -    
+uart_if|clk                             uart_if|clk                             |  1000.000    996.003  |  No paths    -        |  No paths    -        |  No paths    -    
+============================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+
+====================================
+Detailed Report for Clock: uart_if|U1.u1.clkdiv_inferred_clock[3]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                                                                       Arrival            
+Instance                  Reference                                  Type                 Pin        Net                 Time        Slack  
+                          Clock                                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------------
+U1.u1.no_bits_rcvd[0]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_rcvd[0]     0.224       996.195
+U1.u1.no_bits_rcvd[1]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_rcvd[1]     0.224       996.229
+U1.u1.no_bits_rcvd[2]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_rcvd[2]     0.224       996.377
+U1.u1.no_bits_rcvd[3]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_rcvd[3]     0.224       996.377
+U1.u1.rsr[1]              uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     rsr[1]              0.224       998.385
+U1.u1.rsr[2]              uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     rsr[2]              0.224       998.385
+U1.u1.rsr[3]              uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     rsr[3]              0.224       998.385
+U1.u1.rsr[4]              uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     rsr[4]              0.224       998.385
+U1.u1.rsr[5]              uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     rsr[5]              0.224       998.385
+U1.u1.rsr[6]              uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     rsr[6]              0.224       998.385
+============================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                                                 Required            
+Instance         Reference                                  Type                 Pin     Net              Time         Slack  
+                 Clock                                                                                                        
+------------------------------------------------------------------------------------------------------------------------------
+U1.u1.rbr[0]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[1]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[2]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[3]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[4]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[5]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[6]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rbr[7]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity9_0_a3     999.096      996.195
+U1.u1.rsr[0]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity8_0_x2     999.096      996.229
+U1.u1.rsr[1]     uart_if|U1.u1.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     parity8_0_x2     999.096      996.229
+==============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1000.000
+    - Setup time:                            0.904
+    = Required time:                         999.096
+
+    - Propagation time:                      2.901
+    = Slack (non-critical) :                 996.195
+
+    Number of logic level(s):                1
+    Starting point:                          U1.u1.no_bits_rcvd[0] / regout
+    Ending point:                            U1.u1.rbr[0] / ena
+    The start point is clocked by            uart_if|U1.u1.clkdiv_inferred_clock[3] [rising] on pin clk
+    The end   point is clocked by            uart_if|U1.u1.clkdiv_inferred_clock[3] [rising] on pin clk
+
+Instance / Net                                 Pin         Pin               Arrival     No. of    
+Name                      Type                 Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+U1.u1.no_bits_rcvd[0]     cyclone_lcell_ff     regout      Out     0.224     0.224       -         
+no_bits_rcvd[0]           Net                  -           -       1.043     -           8         
+U1.u1.parity9_0_a3        cyclone_lcell        dataa       In      -         1.267       -         
+U1.u1.parity9_0_a3        cyclone_lcell        combout     Out     0.590     1.857       -         
+parity9_0_a3              Net                  -           -       1.043     -           8         
+U1.u1.rbr[0]              cyclone_lcell_ff     ena         In      -         2.901       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 3.805 is 1.718(45.2%) logic and 2.087(54.8%) route.
+
+
+
+
+====================================
+Detailed Report for Clock: uart_if|U1.u2.clkdiv_inferred_clock[3]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                                                                      Arrival            
+Instance                  Reference                                  Type                 Pin        Net                Time        Slack  
+                          Clock                                                                                                            
+-------------------------------------------------------------------------------------------------------------------------------------------
+U1.u2.no_bits_sent[0]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_sent_0     0.224       494.686
+U1.u2.no_bits_sent[2]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_sent_2     0.224       494.900
+U1.u2.no_bits_sent[1]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_sent_1     0.224       494.926
+U1.u2.no_bits_sent[3]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     no_bits_sent_3     0.224       495.150
+U1.u2.parity_i            uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     parity_i           0.224       997.035
+U1.u2.tsr[0]              uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     tsr_0              0.224       997.183
+U1.u2.tsr[1]              uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     tsr[1]             0.224       998.114
+U1.u2.tsr[2]              uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     tsr[2]             0.224       998.114
+U1.u2.tsr[3]              uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     tsr[3]             0.224       998.114
+U1.u2.tsr[4]              uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     regout     tsr[4]             0.224       998.114
+===========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                                            Required            
+Instance         Reference                                  Type                 Pin     Net         Time         Slack  
+                 Clock                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------
+U1.u2.tsr[0]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[1]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[2]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[3]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[4]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[5]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[6]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsr[7]     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_485_i     499.096      494.686
+U1.u2.tsre_i     uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_385_i     499.096      495.241
+U1.u2.sdo_i      uart_if|U1.u2.clkdiv_inferred_clock[3]     cyclone_lcell_ff     ena     N_380_i     499.096      495.777
+=========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        500.000
+    - Setup time:                            0.904
+    = Required time:                         499.096
+
+    - Propagation time:                      4.410
+    = Slack (critical) :                     494.686
+
+    Number of logic level(s):                2
+    Starting point:                          U1.u2.no_bits_sent[0] / regout
+    Ending point:                            U1.u2.tsr[0] / ena
+    The start point is clocked by            uart_if|U1.u2.clkdiv_inferred_clock[3] [rising] on pin clk
+    The end   point is clocked by            uart_if|U1.u2.clkdiv_inferred_clock[3] [falling] on pin clk
+
+Instance / Net                                 Pin         Pin               Arrival     No. of    
+Name                      Type                 Name        Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+U1.u2.no_bits_sent[0]     cyclone_lcell_ff     regout      Out     0.224     0.224       -         
+no_bits_sent_0            Net                  -           -       1.236     -           12        
+U1.u2.tsr14               cyclone_lcell        dataa       In      -         1.460       -         
+U1.u2.tsr14               cyclone_lcell        combout     Out     0.590     2.050       -         
+tsr14                     Net                  -           -       1.145     -           10        
+U1.u2.un20_tsr            cyclone_lcell        datad       In      -         3.195       -         
+U1.u2.un20_tsr            cyclone_lcell        combout     Out     0.171     3.366       -         
+N_485_i                   Net                  -           -       1.043     -           8         
+U1.u2.tsr[0]              cyclone_lcell_ff     ena         In      -         4.410       -         
+===================================================================================================
+Total path delay (propagation time + setup) of 5.314 is 1.889(35.6%) logic and 3.425(64.4%) route.
+
+
+
+
+====================================
+Detailed Report for Clock: uart_if|clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                       Starting                                                          Arrival            
+Instance               Reference       Type                 Pin        Net               Time        Slack  
+                       Clock                                                                                
+------------------------------------------------------------------------------------------------------------
+U1.u2.wrn2_i           uart_if|clk     cyclone_lcell_ff     regout     wrn2_i            0.224       996.003
+U1.u2.wrn1_i_0         uart_if|clk     cyclone_lcell_ff     regout     wrn1_i_0          0.224       996.151
+U1.u1.rxd2_i           uart_if|clk     cyclone_lcell_ff     regout     rxd2_i            0.224       996.806
+U1.u1.rxd1_i_0         uart_if|clk     cyclone_lcell_ff     regout     rxd1_i_0          0.224       996.956
+U1.u2.clk1x_enable     uart_if|clk     cyclone_lcell_ff     regout     clk1x_enable      0.224       997.306
+U1.u1.clk1x_enable     uart_if|clk     cyclone_lcell_ff     regout     clk1x_enable      0.224       997.306
+U1.u2.clkdiv[0]        uart_if|clk     cyclone_lcell_ff     regout     clkdiv[0]         0.224       997.454
+U1.u1.clkdiv[0]        uart_if|clk     cyclone_lcell_ff     regout     clkdiv[0]         0.224       997.454
+U1.u1.clkdiv[3]        uart_if|clk     cyclone_lcell_ff     regout     clkdiv_i[3]       0.224       997.966
+U1.u2.clkdiv[3]        uart_if|clk     cyclone_lcell_ff     regout     clkdiv_i_0[3]     0.224       997.966
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                         Starting                                                                  Required            
+Instance                 Reference       Type                 Pin       Net                        Time         Slack  
+                         Clock                                                                                         
+-----------------------------------------------------------------------------------------------------------------------
+U1.u2.tbre               uart_if|clk     cyclone_lcell_ff     ena       un1_clk1x_enable13_2_i     999.096      996.003
+U1.u2.clk1x_enable       uart_if|clk     cyclone_lcell_ff     datab     wrn1_i_0                   997.385      996.151
+U1.u2.clk1x_enable       uart_if|clk     cyclone_lcell_ff     ena       un17_clk1x_enable          999.096      996.784
+U1.u1.clk1x_enable       uart_if|clk     cyclone_lcell_ff     ena       N_396_i                    999.096      996.806
+U1.u1.clk1x_enable_0     uart_if|clk     cyclone_lcell_ff     ena       N_396_i                    999.096      996.806
+U1.u1.clkdiv[3]          uart_if|clk     cyclone_lcell_ff     datad     clkdiv_5_sum3_a            999.619      997.306
+U1.u2.clkdiv[3]          uart_if|clk     cyclone_lcell_ff     datad     clkdiv_5_sum3_a            999.619      997.306
+U1.u1.clk1x_enable       uart_if|clk     cyclone_lcell_ff     dataa     rxd2_i                     999.199      997.966
+U1.u1.clk1x_enable_0     uart_if|clk     cyclone_lcell_ff     dataa     rxd2_i                     999.199      997.966
+U1.u1.clkdiv[0]          uart_if|clk     cyclone_lcell_ff     dataa     clkdiv[0]                  999.199      997.966
+=======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1000.000
+    - Setup time:                            0.904
+    = Required time:                         999.096
+
+    - Propagation time:                      3.093
+    = Slack (non-critical) :                 996.003
+
+    Number of logic level(s):                2
+    Starting point:                          U1.u2.wrn2_i / regout
+    Ending point:                            U1.u2.tbre / ena
+    The start point is clocked by            uart_if|clk [rising] on pin clk
+    The end   point is clocked by            uart_if|clk [rising] on pin clk
+
+Instance / Net                                      Pin         Pin               Arrival     No. of    
+Name                           Type                 Name        Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+U1.u2.wrn2_i                   cyclone_lcell_ff     regout      Out     0.224     0.224       -         
+wrn2_i                         Net                  -           -       1.010     -           3         
+U1.u2.clk1x_enable             cyclone_lcell_ff     dataa       In      -         1.234       -         
+U1.u2.clk1x_enable             cyclone_lcell_ff     combout     Out     0.590     1.824       -         
+clk1x_enable13                 Net                  -           -       0.488     -           1         
+U1.u2.un1_clk1x_enable13_2     cyclone_lcell        datac       In      -         2.312       -         
+U1.u2.un1_clk1x_enable13_2     cyclone_lcell        combout     Out     0.292     2.604       -         
+un1_clk1x_enable13_2_i         Net                  -           -       0.488     -           1         
+U1.u2.tbre                     cyclone_lcell_ff     ena         In      -         3.093       -         
+========================================================================================================
+Total path delay (propagation time + setup) of 3.997 is 2.010(50.3%) logic and 1.987(49.7%) route.
+
+
+
+
+====================================
+Detailed Report for Clock: uart_if|cnt_inferred_clock[3]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                  Starting                                                                            Arrival            
+Instance          Reference                         Type                 Pin        Net               Time        Slack  
+                  Clock                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------
+rom_addr_d[3]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[3]     0.224       994.127
+rom_addr_d[4]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[4]     0.224       994.275
+rom_addr_d[5]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[5]     0.224       994.425
+rom_addr_d[6]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[6]     0.224       994.546
+rom_addr_d[1]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[1]     0.224       994.912
+rom_addr_d[2]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[2]     0.224       995.060
+rom_addr[1]       uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addrz[1]      0.224       995.068
+rom_addr_d[0]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addr_d[0]     0.224       995.210
+rom_addr[4]       uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addrz[4]      0.224       995.216
+rom_addr[0]       uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     regout     rom_addrz[0]      0.224       995.366
+=========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                                                                    Required            
+Instance          Reference                         Type                 Pin     Net                          Time         Slack  
+                  Clock                                                                                                           
+----------------------------------------------------------------------------------------------------------------------------------
+rom_addr_d[6]     uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     cin     rom_addr_d_cout[5]           998.891      994.127
+read_en_i         uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     N_376_1_i                    999.096      995.068
+read_en_i_0       uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     N_376_1_i                    999.096      995.068
+din[0]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+din[1]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+din[2]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+din[3]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+din[4]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+din[5]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+din[6]            uart_if|cnt_inferred_clock[3]     cyclone_lcell_ff     ena     sclrun1_rom_addr9_1_0_a2     999.096      996.466
+==================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Requested Period:                        1000.000
+    - Setup time:                            1.109
+    = Required time:                         998.891
+
+    - Propagation time:                      4.765
+    = Slack (non-critical) :                 994.127
+
+    Number of logic level(s):                9
+    Starting point:                          rom_addr_d[3] / regout
+    Ending point:                            rom_addr_d[6] / cin
+    The start point is clocked by            uart_if|cnt_inferred_clock[3] [rising] on pin clk
+    The end   point is clocked by            uart_if|cnt_inferred_clock[3] [rising] on pin clk
+
+Instance / Net                                     Pin         Pin               Arrival     No. of    
+Name                          Type                 Name        Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+rom_addr_d[3]                 cyclone_lcell_ff     regout      Out     0.224     0.224       -         
+rom_addr_d[3]                 Net                  -           -       1.010     -           3         
+read_once_9_iv_i_0_a2_0_5     cyclone_lcell        dataa       In      -         1.234       -         
+read_once_9_iv_i_0_a2_0_5     cyclone_lcell        combout     Out     0.590     1.824       -         
+read_once_9_iv_i_0_a2_0_5     Net                  -           -       0.614     -           2         
+un1_rom_addr9_3_i_a           cyclone_lcell        datad       In      -         2.438       -         
+un1_rom_addr9_3_i_a           cyclone_lcell        combout     Out     0.171     2.609       -         
+un1_rom_addr9_3_i_a           Net                  -           -       0.488     -           1         
+un1_rom_addr9_3_i             cyclone_lcell        datad       In      -         3.097       -         
+un1_rom_addr9_3_i             cyclone_lcell        combout     Out     0.171     3.268       -         
+un1_rom_addr9_3_i             Net                  -           -       0.488     -           1         
+rom_addr_d[0]                 cyclone_lcell_ff     datab       In      -         3.757       -         
+rom_addr_d[0]                 cyclone_lcell_ff     cout        Out     0.838     4.595       -         
+rom_addr_d_cout[0]            Net                  -           -       0.000     -           1         
+rom_addr_d[1]                 cyclone_lcell_ff     cin         In      -         4.595       -         
+rom_addr_d[1]                 cyclone_lcell_ff     cout        Out     0.034     4.629       -         
+rom_addr_d_cout[1]            Net                  -           -       0.000     -           1         
+rom_addr_d[2]                 cyclone_lcell_ff     cin         In      -         4.629       -         
+rom_addr_d[2]                 cyclone_lcell_ff     cout        Out     0.034     4.663       -         
+rom_addr_d_cout[2]            Net                  -           -       0.000     -           1         
+rom_addr_d[3]                 cyclone_lcell_ff     cin         In      -         4.663       -         
+rom_addr_d[3]                 cyclone_lcell_ff     cout        Out     0.034     4.697       -         
+rom_addr_d_cout[3]            Net                  -           -       0.000     -           1         
+rom_addr_d[4]                 cyclone_lcell_ff     cin         In      -         4.697       -         
+rom_addr_d[4]                 cyclone_lcell_ff     cout        Out     0.034     4.731       -         
+rom_addr_d_cout[4]            Net                  -           -       0.000     -           1         
+rom_addr_d[5]                 cyclone_lcell_ff     cin         In      -         4.731       -         
+rom_addr_d[5]                 cyclone_lcell_ff     cout        Out     0.034     4.765       -         
+rom_addr_d_cout[5]            Net                  -           -       0.000     -           1         
+rom_addr_d[6]                 cyclone_lcell_ff     cin         In      -         4.765       -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 5.873 is 3.273(55.7%) logic and 2.601(44.3%) route.
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+##### START OF AREA REPORT #####[
+Design view:work.uart_if(verilog)
+Selecting part EP1C12Q240C8
+@N: FA174 |The following device usage report estimates place and route data. Please look at the place and route report for final resource usage..
+
+I/O ATOMs:       19
+
+Total LUTs:  125 of 12060 ( 1%)
+Logic resources:  125 ATOMs of 12060 ( 1%)
+ATOM count by mode:
+  normal:       119
+  arithmetic:   6
+
+ShiftTap:       0  (0 registers)
+Total ESB:      0 bits   (0% of 212992)
+
+ATOMs using regout pin: 91
+  also using enable pin: 48
+  also using combout pin: 2
+ATOMs using combout pin: 36
+Number of Inputs on ATOMs: 535
+Number of Nets:   246
+
+##### END OF AREA REPORT #####]
+
+Mapper successful!
+Process took 0h:0m:1s realtime, 0h:0m:1s cputime
+###########################################################]
