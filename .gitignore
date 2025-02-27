@@ -1,0 +1,95 @@
+# Quartus Prime generated files
+*_generation_script*
+*_inst.vhd
+*.bak
+*.cmp
+*.done
+*.eqn
+*.hex
+*.html
+*.jdi
+*.jpg
+*.mif
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.rpt
+*.smsg
+*.sof
+*.sopc_builder
+*.summary
+*.tcl
+*.txt # Explicitly add any text files used
+
+# Quartus generated folders
+*/db/
+*/incremental_db/
+*/simulation/
+*/timing/
+*/testbench/
+*/*_sim/
+incremental_db/
+db/
+_output_files/
+PLLJ_PLLSPE_INFO.txt
+
+# Modelsim generated files and folders
+[_@]*
+*.wlf
+*.data
+*.setup.bak
+*.vho
+*.vo
+*.vstf
+*.qdb
+*.qpg
+*.qtl
+*.wlf
+modelsim.ini
+wlf*
+_info
+_vmake
+*.mti
+*.mpf
+transcript
+work/
+
+# ISE & Vivado generated files
+*.log
+*.jou
+*.rpr
+*.svf
+*.scr
+*.cmd
+*.bxl
+*.xwbt
+work/
+*.xpr
+*.hw/
+*.ip_user_files/
+*.cache/
+*.runs/
+*.srcs/
+*.sdk/
+*.hls/
+*.sim/
+
+# Programming hardware files
+*.svd
+*.bin
+
+# iMPACT generated files
+_impactbatch.log
+impact.xsl
+impact_impact.xwbt
+ise_impact.cmd
+webtalk_impact.xml
+
+# Core Generator generated files
+xaw2verilog.log
+
+# Project-specific files
+# Add any project-specific files that should be ignored
