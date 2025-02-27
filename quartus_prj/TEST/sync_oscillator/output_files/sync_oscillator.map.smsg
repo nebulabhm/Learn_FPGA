@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at sync_oscillator.v(8): always construct contains both blocking and non-blocking assignments File: H:/my_workshop/learn_fpga/Exercises/TEST/sync_oscillator/rtl/sync_oscillator.v Line: 8

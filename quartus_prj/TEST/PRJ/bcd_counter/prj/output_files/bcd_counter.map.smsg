@@ -1,1 +1,0 @@
-Info (10281): Verilog HDL Declaration information at bcd_counter.v(7): object "Q" differs only in case from object "q" in the same scope File: H:/my_workshop/learn_fpga/bcd_counter/rtl/bcd_counter.v Line: 7

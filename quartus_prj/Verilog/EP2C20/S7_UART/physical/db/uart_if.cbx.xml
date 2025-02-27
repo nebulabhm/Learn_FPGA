@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="uart_if">
-		<CBX_INST_ENTRY INSTANCE_NAME="|uart_if_rom|uart_rom:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_eh31.tdf"/>
-	</PROJECT>
-</LOG_ROOT>

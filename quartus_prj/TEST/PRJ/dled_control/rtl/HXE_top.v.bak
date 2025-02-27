@@ -1,3 +1,0 @@
-module HXE_top(Clk, Rst_n, SH_CP, ST_CP, DS);
-
-endmodule

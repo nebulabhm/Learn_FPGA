@@ -1,9 +1,0 @@
-module key_stable(Clk, Rst_n, key_in, key_flag, key_state);
-
-	input Clk;
-	input Rst_n;
-	input key_in;
-	output key_flag;
-	output key_state;
-//code...
-endmodule

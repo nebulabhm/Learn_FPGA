@@ -1,7 +1,0 @@
-
-State Machine - |IR_remote_controller|state
-Name state.DATA_GET state.LEADER_T4_5 state.LEADER_T9 state.IDEL 
-state.IDEL 0 0 0 0 
-state.LEADER_T9 0 0 1 1 
-state.LEADER_T4_5 0 1 0 1 
-state.DATA_GET 1 0 0 1 

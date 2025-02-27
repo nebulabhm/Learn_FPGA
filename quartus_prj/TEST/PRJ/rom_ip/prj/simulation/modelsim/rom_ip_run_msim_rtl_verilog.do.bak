@@ -1,9 +1,0 @@
-transcript on
-if {[file exists rtl_work]} {
-	vdel -lib rtl_work -all
-}
-vlib rtl_work
-vmap work rtl_work
-
-vlog -vlog01compat -work work +incdir+H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/rom_ip/prj/ip {H:/my_workshop/learn_fpga/Exercises/TEST/PRJ/rom_ip/prj/ip/rom.v}
-
